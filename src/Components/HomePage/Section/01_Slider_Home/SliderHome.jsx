@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import img2 from "../../../../Assets/Components/HomePage/01_Slider_Home/slide-1.png";
 import img3 from "../../../../Assets/Components/HomePage/01_Slider_Home/slide-2.png";
 import Navbar from "../../../Navbar/Navbar";
-
+import ArrowRight from "../../../../Assets/Components/HomePage/01_Slider_Home/arrow-right.png";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const SliderHome = () => {
   const [isFirstVisible, setIsFirstVisible] = useState(true);
   const [backgroundImage, setBackgroundImage] = useState(img2);
@@ -18,7 +19,7 @@ const SliderHome = () => {
 
   return (
     <div
-      className="w-full lg:h-[790px] md:h-[790x] bg-cover bg-center relative"
+      className="w-full h-[790px]  bg-cover bg-center relative"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Navbar />
@@ -26,44 +27,55 @@ const SliderHome = () => {
         <div
           className={`transition-opacity duration-2000 ${
             isFirstVisible ? "opacity-100" : "opacity-0"
-          } absolute ml-20 mt-60`}
+          } absolute ml-4 md:ml-20 mt-12 md:mt-60`}
         >
-          <p className="text-6xl font-semibold font-Poppins text-white">
+          <p className="text-3xl md:text-6xl font-semibold font-Poppins text-white">
             Innovating Insights,
           </p>
-          <p className="text-6xl font-semibold font-Poppins text-white  pt-10">
+          <p className="text-3xl md:text-6xl font-semibold font-Poppins text-white pt-4 md:pt-10">
             Accelerating Growth
           </p>
-          <p className="text-4xl  text-white font-Poppins font-medium  pt-10">
+          <p className="text-xl md:text-4xl text-white font-Poppins font-medium pt-4 md:pt-10">
             Your data, our Expertise
           </p>
           <button
-            className="px-4 py-2 mt-8 text-white font-Poppins font-bold rounded-3xl"
+            className="flex items-center justify-center w-40 h-11 mt-10 text-white font-bold rounded-3xl"
             style={{ background: "#016C7B" }}
           >
-            Get Started
+            <MdOutlineKeyboardArrowRight
+              className="w-6 h-6 mr-2 rounded-full text-black"
+              style={{ background: "#ffffff" }}
+            />
+            <span>Get Started</span>
           </button>
         </div>
         <div
           className={`transition-opacity duration-2000 ${
             isFirstVisible ? "opacity-0" : "opacity-100"
-          } absolute ml-20 mt-60`}
+          } absolute ml-4 md:ml-20 mt-12 md:mt-60`}
         >
-          <p className="text-6xl font-semibold text-white font-Poppins">
+          <p className="text-3xl md:text-6xl font-semibold text-white font-Poppins">
             Frictionless AI With Shodat
           </p>
-          <p className="text-4xl font-semibold text-white font-Poppins pt-10">
+          <p className="text-xl md:text-4xl font-semibold text-white font-Poppins pt-4 md:pt-10">
             Our AI Solutions Pave the way for a
           </p>
-          <p className="text-4xl  text-white font-Poppins font-medium pt-4">
+          <p className="text-xl md:text-4xl text-white font-Poppins font-medium pt-2 md:pt-4">
             frictionaless future,
           </p>
           <button
-            className="px-4 py-2 mt-8 text-white font-bold rounded-3xl "
+            className="flex items-center justify-center w-40 h-11 mt-10 text-white font-bold rounded-3xl"
             style={{ background: "#016C7B" }}
           >
-            Get Started
+            <MdOutlineKeyboardArrowRight
+              className="w-6 h-6  mr-2 rounded-full text-black"
+              style={{ background: "#ffffff" }}
+            />
+            <span>Get Started</span>
           </button>
+        </div>
+        <div className="h-100 w-100 bg-yellow-300 flex items-center justify-center absolute bottom-0 left-80">
+          <img className="mt-12" src={ArrowRight} alt="Arrow Right" />
         </div>
       </div>
     </div>
