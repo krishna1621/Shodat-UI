@@ -32,10 +32,14 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="relative px-2 py-4 font-sans text-white bg-transparent max-w-7xl  ">
-        <div className="container mx-auto flex justify-around items-center">
-          <img className="w-45 h-11" src={logo} alt="Tailwindcss Navigation" />
-          <ul className="hidden md:flex space-x-6">
+      <nav className="relative  py-8 font-sans text-white bg-transparent max-w-full ">
+        <div className="container  flex justify-evenly items-center">
+          <img
+            className="w-[180px] h-11"
+            src={logo}
+            alt="Tailwindcss Navigation"
+          />
+          <ul className="hidden md:flex">
             <li>
               <a
                 href="#"
@@ -151,7 +155,7 @@ function Navbar() {
                 </li>
                 <li className="text-sm leading-8 text-left">
                   <a href="#" className="text-white hover:text-[#f3d157] sans">
-                    Oil&Gas
+                    Oil & Gas
                   </a>
                 </li>
                 <li className="text-sm leading-8 text-left">
@@ -166,7 +170,7 @@ function Navbar() {
                 href="#"
                 className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  inline-block px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
-                Customer service
+                Customer Success
               </a>
             </li>
             <li>
@@ -174,7 +178,7 @@ function Navbar() {
                 href="#"
                 className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  inline-block px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
-                ShodatAI
+                Shodat AI
               </a>
             </li>
             <li>
@@ -225,45 +229,45 @@ function Navbar() {
                   </li>
                   <li className="border-b-2 border-white hover:bg-red-400 hover:text-white">
                     <a href="#" className="block pl-11">
-                      Services{" "}
+                      Services
                       <i className="fa-solid fa-chevron-down fa-2xs pt-4"></i>
                     </a>
                     <ul className="bg-white text-gray-800 w-full">
                       <li className="text-sm leading-8 font-normal hover:bg-slate-200">
                         <a className="block pl-16" href="#">
-                          Webdesign
+                          Platform
                         </a>
                       </li>
                       <li className="text-sm leading-8 font-normal hover:bg-slate-200">
                         <a className="block pl-16" href="#">
-                          Digital marketing
+                          Solutions
                         </a>
                       </li>
                       <li className="text-sm leading-8 font-normal hover:bg-slate-200">
                         <a className="block pl-16" href="#">
-                          SEO
+                          Services
                         </a>
                       </li>
                       <li className="text-sm leading-8 font-normal hover:bg-slate-200">
                         <a className="block pl-16" href="#">
-                          Ad campaigns
+                          Industries
                         </a>
                       </li>
                       <li className="text-sm leading-8 font-normal hover:bg-slate-200">
                         <a className="block pl-16" href="#">
-                          UX Design
+                          Customer Success
                         </a>
                       </li>
                     </ul>
                   </li>
                   <li className="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4">
                     <a href="#" className="block pl-7">
-                      About
+                      Shodat AI
                     </a>
                   </li>
                   <li className="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4">
                     <a href="#" className="block pl-7">
-                      Contact
+                      About
                     </a>
                   </li>
                 </ul>
