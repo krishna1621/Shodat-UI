@@ -1,3 +1,18 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+.mobile-menu {
+  z-index: 1;
+  transition: 0.5s;
+  margin-top: 30px;
+  margin-right: 190px;
+}
+.mobile-menu.active {
+  left: 0;
+}
+.mobile-menu ul li ul {
+  display: none;
+}
+.mobile-menu ul li:hover ul {
+  display: block;
+}

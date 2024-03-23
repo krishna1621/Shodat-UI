@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../../Assets/Components/Navbar/Shodat-logo.png";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const CustomAnchor = styled.a`
   background-color: #016c7b;
   padding: 0.75rem 1.25rem; /* px-5 py-1 */
@@ -41,20 +41,20 @@ function Navbar() {
           />
           <ul className="hidden md:flex">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/platform"
                 className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
                 Platform
-              </a>
+              </Link>
             </li>
             <li className="flex relative group">
-              <a
-                href="#"
+              <Link
+                to="/solutionAI"
                 className="text-white hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] inline-block px-4 py-2 font-Open-Sans font-normal text-base rounded leading-6 fas fa-chevron-down"
               >
                 Solutions
-              </a>
+              </Link>
               <i className="fa-solid fa-chevron-down fa-2xs pt-3"></i>
               <ul
                 style={{ background: "#340D73" }}
@@ -98,12 +98,12 @@ function Navbar() {
               </ul>
             </li>
             <li className="flex relative group">
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="white hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded inline-block px-4 py-2 Open-Sans font-normal text-base leading-6"
               >
                 Services
-              </a>
+              </Link>
               <i className="fa-solid fa-chevron-down fa-2xs pt-3"></i>
               <ul
                 style={{ background: "#340D73" }}
@@ -166,12 +166,12 @@ function Navbar() {
               </ul>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/contact"
                 className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  inline-block px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
                 Customer Success
-              </a>
+              </Link>
             </li>
             <li>
               <a

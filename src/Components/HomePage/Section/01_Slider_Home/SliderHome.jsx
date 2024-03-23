@@ -4,6 +4,8 @@ import img3 from "../../../../Assets/Components/HomePage/01_Slider_Home/slide-2.
 import Navbar from "../../../Navbar/Navbar";
 import ArrowRight from "../../../../Assets/Components/HomePage/01_Slider_Home/arrow-right.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+// import Navbar from "../../../Navbar1/Navbar";
+
 const SliderHome = () => {
   const [isFirstVisible, setIsFirstVisible] = useState(true);
   const [backgroundImage, setBackgroundImage] = useState(img2);
@@ -23,6 +25,8 @@ const SliderHome = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Navbar />
+      {/* <Navbar /> */}
+
       <div>
         <div
           className={`transition-opacity duration-2000 ${
@@ -74,8 +78,10 @@ const SliderHome = () => {
             <span>Get Started</span>
           </button>
         </div>
-        <div className="h-100 w-100 bg-yellow-300 flex items-center justify-center absolute bottom-0 left-80">
-          <img className="mt-12" src={ArrowRight} alt="Arrow Right" />
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-0">
+          <div className="h-[100px] w-[100px] bg-[#F3D157]  flex items-center justify-center ">
+            <img src={ArrowRight} alt="Arrow Right" />
+          </div>
         </div>
       </div>
     </div>
