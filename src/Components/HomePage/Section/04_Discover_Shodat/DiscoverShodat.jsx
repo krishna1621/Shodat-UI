@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { IoMdArrowForward } from "react-icons/io";
+// import Grid from "@mui/material/Grid";
+// import Paper from "@mui/material/Paper";
+// import Typography from "@mui/material/Typography";
+// import IconButton from "@mui/material/IconButton";
+// import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Engineering from "../../../../Assets/Components/HomePage/04_Discover_Shodat/Data Engineering.png";
 import Innovation from "../../../../Assets/Components/HomePage/04_Discover_Shodat/AI Innovation.png";
 import Vision from "../../../../Assets/Components/HomePage/04_Discover_Shodat/Vision AI.png";
@@ -7,61 +11,70 @@ import Analytics from "../../../../Assets/Components/HomePage/04_Discover_Shodat
 import Enterprise from "../../../../Assets/Components/HomePage/04_Discover_Shodat/Inteligent Enterprise.png";
 import ERP from "../../../../Assets/Components/HomePage/04_Discover_Shodat/ERP System.png";
 import Cloud from "../../../../Assets/Components/HomePage/04_Discover_Shodat/Cloud Transformation.png";
+import { GoArrowRight } from "react-icons/go";
+// import { styled } from "@mui/material/styles";
 
 const cards = [
   {
     title: "",
-    fontSize: "text-5xl",
-    lg: 8,
+    fontSize: "text-4xl",
+    lg: "lg:col-span-8",
   },
   {
     title: "Data Engineering",
     image: Engineering,
     content: "Empowering Insights through robust data engineering",
-    lg: 4,
+    lg: "lg:col-span-4",
   },
   {
     title: "AI Innovation",
     image: Innovation,
     content:
       "Pioneering AI innovations transforming data into intelligent action",
-    lg: 4,
+    lg: "lg:col-span-4",
   },
   {
     title: "Vision AI",
     image: Vision,
     content: "Seeing beyond data revolutionize decision-making with vision AI",
-    lg: 4,
+    lg: "lg:col-span-4",
   },
   {
     title: "Edge Analytics",
     image: Analytics,
     content:
       "Step into the era of instant intelligence with our edge analytics solutions",
-    lg: 4,
+    lg: "lg:col-span-4",
   },
   {
-    title: "Inteligent Enterprise",
+    title: "Intelligent Enterprise",
     image: Enterprise,
     content:
       "Transforming businesses into intelligent enterprises explore the power of data",
-    lg: 4,
+    lg: "lg:col-span-4",
   },
   {
     title: "ERP Systems & Analytics",
     image: ERP,
-    content: "Unleashing the power of ERP systems & addvanced analytics",
-    lg: 4,
+    content: "Unleashing the power of ERP systems & advanced analytics",
+    lg: "lg:col-span-4",
   },
   {
     title: "Cloud Transformation",
     image: Cloud,
     content:
       "Discover how the power of the cloud redefines the way businesses leverage data analytics",
-    lg: 4,
+    lg: "lg:col-span-4",
   },
 ];
-
+// const CenteredContainer = styled("div")({
+//   display: "flex",
+//   justifyContent: "center",
+//   alignItems: "center",
+//   margin: "100px",
+//   // background: "#e6f0f2",
+//   // background: "#f8f4ff",
+// });
 const DiscoverShodat = () => {
   const [hovered, setHovered] = useState(Array(cards.length).fill(false));
 
@@ -84,67 +97,129 @@ const DiscoverShodat = () => {
   const handleImageClick = () => {};
 
   return (
-    <div className="flex justify-center items-center m-20">
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="flex justify-center items-center mt-24">
+      <div class="grid grid-cols-1 md:grid-cols-3  gap-4 ">
         {cards.map((card, index) => (
-          <div key={index} className={`col-span-${card.lg}`}>
+          <div class="w-full sm:w-full md:w-[card.lg] lg:w-[card.lg]">
             <div
+              className={`relative transition duration-300 overflow-hidden h-64 w-full rounded-lg ${
+                index !== 0 ? "shadow-md" : ""
+              }`}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
-              className="relative transition-all overflow-hidden rounded-lg shadow-md"
             >
               {index === 0 && (
-                <h2 className={`text-center ${card.fontSize}`}>
-                  <span className="font-bold text-purple-800">Discover </span>
-                  <span>
+                <div
+                  className=" "
+                  gutterBottom
+                  style={{
+                    fontSize: card.fontSize,
+                  }}
+                >
+                  <span
+                    style={{
+                      fontWeight: 700,
+                      color: "#432071",
+                      marginRight: "10px",
+                    }}
+                  >
+                    Discover
+                  </span>
+                  <span style={{ fontWeight: 300, color: "#000000" }}>
                     how Shodat can elevate your business with our bespoke data
                     analytics solutions
                   </span>
-                </h2>
+                </div>
               )}
-              {index === 0 ? (
-                <></>
-              ) : (
+              {index === 0 && (
+                <h3
+                  variant="h3"
+                  gutterBottom
+                  style={{
+                    color: card.color,
+                    fontSize: card.fontSize,
+                    padding: "20px",
+                  }}
+                >
+                  {card.title}
+                </h3>
+              )}
+              {index !== 0 && (
                 <>
                   <div
-                    className={`absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 ${
-                      hovered[index] && "bg-opacity-50"
-                    }`}
-                  ></div>
-                  <div className="absolute inset-0 p-6 flex flex-col justify-center">
-                    <h3
-                      className={`text-white font-semibold ${
-                        hovered[index] ? "text-yellow-400" : ""
-                      }`}
+                    style={{
+                      position: "relative",
+                      zIndex: 2,
+                      backgroundColor:
+                        index !== 0 && hovered[index]
+                          ? "rgba(67, 32, 113, 0.7)"
+                          : "transparent",
+                      padding: "20px",
+                      borderRadius: "8px",
+                      height: "100%",
+                    }}
+                  >
+                    <h4
+                      variant="h6"
+                      align="left"
+                      mt={12}
+                      ml={3}
+                      gutterBottom
+                      style={{
+                        color: hovered[index] ? "#e6c458" : "black",
+                        fontFamily: "Open Sans,sans-serif",
+                        fontSize: "20px",
+                        fontWeight: 600,
+                        lineHeight: "30px",
+                        letterSpacing: "0em",
+                        opacity: hovered[index] ? 1 : 0.9,
+                      }}
                     >
                       {card.title}
-                    </h3>
-                    <p
-                      className={`text-sm text-gray-400 mt-2 ${
-                        hovered[index] ? "text-yellow-400" : ""
-                      }`}
+                    </h4>
+                    <h4
+                      variant="body2"
+                      align="left"
+                      ml={3}
+                      style={{
+                        color: hovered[index] ? "#e6c458" : "#5E5E5E",
+                        fontFamily: "Open Sans,sans-serif",
+                        fontSize: "14px",
+                        fontWeight: 400,
+                        lineHeight: "21px",
+                        letterSpacing: "0em",
+                      }}
                     >
                       {card.content}
-                    </p>
+                    </h4>
                   </div>
-                  <button
-                    style={{ transition: "opacity 0.3s, right 0.3s" }}
-                    className={`absolute top-4 right-4 transition-opacity opacity-0 ${
-                      hovered[index] ? "opacity-100" : ""
-                    }`}
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "8px",
+                      right: hovered[index] ? "8px" : "24px",
+                      transition: "right 0.3s, opacity 0.3s",
+                      opacity: hovered[index] ? 1 : 0,
+                      color: "#e6c458",
+                      zIndex: 3,
+                    }}
                   >
-                    <IoMdArrowForward className="text-yellow-400" />
-                  </button>
-                  <img
-                    src={card.image}
-                    alt={card.title}
-                    className={`absolute top-0 right-0 transform ${
-                      hovered[index]
-                        ? "scale-150 transition-transform duration-300"
-                        : "scale-100"
-                    } origin-top-right`}
-                    onClick={handleImageClick}
-                  />
+                    <button>
+                      <GoArrowRight />
+                    </button>
+                  </div>
+                  <div
+                    className={`absolute top-0 right-[-20px] transition-transform duration-300 
+              transform-origin-top-right ${hovered[index] ? "scale-150" : ""}`}
+                    style={{ zIndex: 1 }}
+                  >
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      style={{ width: "220px", height: "auto" }}
+                      onClick={handleImageClick}
+                    />
+                  </div>
                 </>
               )}
             </div>

@@ -69,7 +69,7 @@ function Navbar() {
             <li className="flex relative group">
               <a
                 href="#"
-                className="text-white  w-full justify-center hover:text-black hover:bg-yellow-400 active:bg-yellow-400 inline-block pl-4 py-2 font-sans font-normal text-base rounded leading-6 "
+                className="text-white inline-flex w-full justify-center hover:text-black hover:bg-yellow-400 active:bg-yellow-400 inline-block pl-4 py-2 font-sans font-normal text-base rounded leading-6 "
               >
                 Solutions
                 <svg
@@ -150,7 +150,7 @@ function Navbar() {
             <li className="flex relative group">
               <a
                 href="#"
-                className=" w-full justify-center white hover:text-black hover:bg-yellow-400 active:bg-yellow-400 rounded inline-block px-4 py-2 font-sans font-normal text-base leading-6"
+                className="inline-flex w-full justify-center white hover:text-black hover:bg-yellow-400 active:bg-yellow-400 rounded inline-block px-4 py-2 font-sans font-normal text-base leading-6"
               >
                 Services
                 <svg
@@ -207,7 +207,7 @@ function Navbar() {
             <li className="flex relative group">
               <a
                 href="#"
-                className=" w-full justify-center text-white hover:text-black hover:bg-yellow-400 active:bg-yellow-400 rounded inline-block px-4 py-2 font-sans font-normal text-base leading-6"
+                className="inline-flex w-full justify-center text-white hover:text-black hover:bg-yellow-400 active:bg-yellow-400 rounded inline-block px-4 py-2 font-sans font-normal text-base leading-6"
               >
                 Industries
                 <svg
@@ -327,37 +327,37 @@ function Navbar() {
                       style={{ background: "#340D73" }}
                       className="text-white w-full"
                     >
-                      <li className="text-sm leading-8   hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal  hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Data Engineering
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Ai Innovation
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           ERP System & Analaytics
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Vision Ai
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Edge Analytics
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           intelligent Enterprise
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Cloud Transformation
                         </a>
@@ -373,22 +373,22 @@ function Navbar() {
                       style={{ background: "#340D73" }}
                       className="text-white w-full"
                     >
-                      <li className="text-sm leading-8   hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal  hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           innovate
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Manage
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Modernize
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Security
                         </a>
@@ -404,22 +404,22 @@ function Navbar() {
                       style={{ background: "#340D73" }}
                       className="text-white w-full"
                     >
-                      <li className="text-sm leading-8   hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal  hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Automative
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Manufacturing
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Oil & Gas
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 font-normal hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Transportation
                         </a>
