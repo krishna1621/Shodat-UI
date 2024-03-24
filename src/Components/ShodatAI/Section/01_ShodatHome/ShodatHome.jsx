@@ -1,12 +1,17 @@
 import shome from "../../../../Assets/Components/ShodaAIPage/shodathome.png";
 import arrow from "../../../../Assets/Components/HomePage/01_Slider_Home/arrow-right.png";
-
+import Navbar from "../../../Navbar1/Navbar";
+import ArrowRight from "../../../../Assets/Components/HomePage/01_Slider_Home/arrow-right.png";
 const ShodatHome = () => {
   return (
     <div
       className="w-full min-h-screen relative bg-no-repeat bg-cover flex items-center "
       style={{ backgroundImage: `url(${shome})` }}
     >
+      <div className="absolute top-0 ml-20 ">
+        <Navbar />
+      </div>
+
       <div className="p-4 md:p-20 text-left">
         <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4">
           Ushering Era of
@@ -27,14 +32,10 @@ const ShodatHome = () => {
           </p>
         </div>
       </div>
-      <div
-        style={{
-          marginLeft: "300px",
-          width: "100px",
-        }}
-        className="h-100 w-100 bg-yellow-300 flex items-center justify-center ml-20 absolute bottom-0 left-80"
-      >
-        <img className="mt-12" src={arrow} alt="Arrow Right" />
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-0">
+        <div className="h-[100px] w-[100px] bg-[#F3D157]  flex items-center justify-center ">
+          <img src={ArrowRight} alt="Arrow Right" />
+        </div>
       </div>
     </div>
   );

@@ -5,8 +5,7 @@ import Tabs2 from "../06_PartnerOfChoice/Tabs2";
 import Tabs3 from "../06_PartnerOfChoice/Tabs3";
 import Tabs4 from "../06_PartnerOfChoice/Tabs4";
 import Tabs5 from "../06_PartnerOfChoice/Tabs5";
-
-export default function TabsContainer() {
+export default function Platformtabs() {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -18,25 +17,27 @@ export default function TabsContainer() {
   };
 
   return (
-    <div className="grid grid-cols-6 gap-4 ">
+    <div className="grid grid-cols-6  ">
       <div className="col-span-12 md:col-span-10 lg:col-span-8">
         <div className="w-full mt-3">
           <div className="flex justify-center">
+            {" "}
             {/* Centering the buttons */}
             <nav className="w-full">
-              <div className="flex flex-wrap justify-evenly border-b">
+              <div className="flex flex-wrap justify-evenly">
                 <button
                   className={`w-full md:w-auto p-4 text-left ${
                     value === 0
-                      ? "text-blue-600 border-b-2 border-blue-600"
+                      ? "text-blue-600 border-b-2 border-335BA2 h-40"
                       : "text-black"
                   }`}
                   onClick={(e) => handleChange(e, 0)}
                 >
-                  <span className="font-normal text-base md:text-lg text-left font-open-sans">
+                  <span className="font-normal text-base md:text-lg text-left font-Sans">
                     Proven
                   </span>
                 </button>
+
                 <button
                   className={`w-full md:w-auto p-4 text-left ${
                     value === 1
