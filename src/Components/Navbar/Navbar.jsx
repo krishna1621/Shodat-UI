@@ -174,20 +174,20 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/shodatAI"
                 className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  inline-block px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
                 Shodat AI
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/about"
                 className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
                 About
-              </a>
+              </Link>
             </li>
           </ul>
           <CustomAnchor

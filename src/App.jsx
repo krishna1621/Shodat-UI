@@ -5,6 +5,8 @@ import Home from "./Components/HomePage/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PlatformPage from "./Components/PlatformPage/PlatformPage";
 import SolutionAi from "./Components/SolutionAI/SolutionAi";
+import ShodatAI from "./Components/ShodatAI/ShodatAI";
+import About from "./Components/AboutPage/About";
 function App() {
   return (
     <>
@@ -16,6 +18,8 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/platform" element={<PlatformPage />} />
             <Route path="/solutionAI" element={<SolutionAi />} />
+            <Route path="/shodatAI" element={<ShodatAI />} />
+            <Route path="/about" element={<About />} />
             {/* Add more routes for additional pages */}
           </Routes>
           <FinalFooter />
