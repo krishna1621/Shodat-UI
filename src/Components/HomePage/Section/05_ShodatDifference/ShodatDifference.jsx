@@ -7,10 +7,13 @@ import { FaArrowRight } from "react-icons/fa";
 
 function ShodatDifference() {
   return (
-    <div className=" min-h-screen py-8">
+    <div className=" py-8">
       <div className="container mx-auto">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold">Discover the Shodat difference</h1>
+        <div className="text-left mb-8">
+          <h1 className=" font-sans leading-[66px] text-[44px] font-bold">
+            <span className="font-bold">Discover</span>{" "}
+            <span className="font-semibold">&nbsp; the Shodat difference</span>
+          </h1>
         </div>
         <div className="flex flex-wrap ">
           <div className="w-full sm:w-1/2 md:w-1/4  mb-4 relative">
@@ -20,16 +23,19 @@ function ShodatDifference() {
                 alt="Innovate"
                 className="w-full h-64 object-cover"
               />
-              <div className="absolute inset-0 flex flex-col justify-between p-4">
+              <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
                 <div>
-                  <h2 className="text-lg font-bold mb-2">Innovate</h2>
-                  <p className="text-sm">
-                    Cultivating innovation Redefining possibilities in data
-                    analytics
+                  <h2 className="font-sans text-xl leading-[30px] text-white font-bold mb-2">
+                    Innovate
+                  </h2>
+                  <p className="text-sm font-sans text-white font-bold leading-5">
+                    Cultivating innovation
+                    <br />
+                    Redefining possibilities in data analytics
                   </p>
                 </div>
-                <div className="flex justify-end">
-                  <FaArrowRight className="text-white p-2 rounded-full" />
+                <div className="flex justify-end text-pink-600">
+                  <FaArrowRight className=" w-9 p-2 rounded-full" />
                 </div>
               </div>
             </div>
@@ -42,12 +48,14 @@ function ShodatDifference() {
                 alt="Manage"
                 className="w-full h-64 object-cover"
               />
-              <div className="absolute inset-0 flex flex-col justify-between p-4">
+              <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
                 <div>
-                  <h2 className="text-lg font-bold mb-2">Manage</h2>
-                  <p className="text-sm">
-                    Effortless data management Unleashing control and insight in
-                    every byte
+                  <h2 className="font-sans text-xl leading-[30px] text-white font-bold mb-2">
+                    Manage
+                  </h2>
+                  <p className="text-sm font-sans text-white font-bold leading-5">
+                    Effortless data management <br /> Unleashing control and
+                    insight in every byte
                   </p>
                 </div>
                 <div className="flex justify-end">
@@ -63,12 +71,14 @@ function ShodatDifference() {
                 alt="Modernize"
                 className="w-full h-64 object-cover"
               />
-              <div className="absolute inset-0 flex flex-col justify-between p-4">
+              <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
                 <div>
-                  <h2 className="text-lg font-bold mb-2">Modernize</h2>
-                  <p className="text-sm">
-                    Modernizing data and applications Transforming your business
-                    for the digital era
+                  <h2 className="font-sans text-xl leading-[30px] text-white font-bold mb-2">
+                    Modernize
+                  </h2>
+                  <p className="text-sm font-sans text-white font-bold leading-5">
+                    Modernizing data and applications <br />
+                    Transforming your business for the digital era
                   </p>
                 </div>
                 <div className="flex justify-end">
@@ -84,12 +94,14 @@ function ShodatDifference() {
                 alt="Secure"
                 className="w-full h-64 object-cover"
               />
-              <div className="absolute inset-0 flex flex-col justify-between p-4">
+              <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
                 <div>
-                  <h2 className="text-lg font-bold mb-2">Secure</h2>
-                  <p className="text-sm">
-                    Securing your data Ensuring compliance with Cybersecurity
-                    solutions
+                  <h2 className="font-sans text-xl leading-[30px] text-white font-bold mb-2">
+                    Secure
+                  </h2>
+                  <p className="text-sm font-sans text-white font-bold leading-5">
+                    Securing your data <br />
+                    Ensuring compliance with Cybersecurity solutions
                   </p>
                 </div>
                 <div className="flex justify-end">

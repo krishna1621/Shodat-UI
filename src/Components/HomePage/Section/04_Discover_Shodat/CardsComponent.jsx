@@ -86,9 +86,9 @@ const CardsComponent = () => {
 
   return (
     <div className="flex justify-center items-center m-8.0 py-10">
-      <div className="grid grid-cols-12 gap-8 px-8">
+      <div className="grid grid-cols-12 gap-8 md:px-4">
         {cards.map((card, index) => (
-          <div key={index} className={`col-span-12 ${card.lg}`} style={{}}>
+          <div key={index} className={`col-span-12 ${card.lg}`}>
             <div
               className={`relative transition duration-300 overflow-hidden h-64 w-full rounded-lg ${
                 index !== 0 ? "shadow-md" : ""
@@ -97,34 +97,15 @@ const CardsComponent = () => {
               onMouseLeave={() => handleMouseLeave(index)}
             >
               {index === 0 ? (
-                <div
-                  className="p-25 font-sans "
-                  style={{
-                    fontWeight: 700,
-                    fontSize: "44px",
-                    lineHeight: "55px",
-                  }}
-                >
+                <div className=" font-sans md:text-[44px] text-3xl leading-6 md:leading-[55px] ">
                   <span
                     className={`font-bold ${card.fontSize} text-indigo-900 text-xl md:text-[44px]`}
-                    style={{
-                      fontWeight: 700,
-                      fontSize: "44px",
-                      lineHeight: "55px",
-                    }}
                   >
                     Discover
                   </span>
-                  <span
-                    className="font-normal text-black ml-7 text-xl md:text-[44px]"
-                    style={{
-                      fontWeight: 300,
-                      fontSize: "44px",
-                      lineHeight: "55px",
-                    }}
-                  >
-                    how Shodat can elevate your business with our bespoke data
-                    analytics solutions
+                  <span className="font-normal text-black  text-xl md:text-[44px] md:leading-[55px] leading-9">
+                    &nbsp;how Shodat can elevate your business with our bespoke
+                    data analytics solutions
                   </span>
                 </div>
               ) : (
@@ -143,13 +124,12 @@ const CardsComponent = () => {
                       borderRadius: "8px",
                       height: "100%",
                     }}
-                    className="p-15 w-420 h-250"
+                    className="h-250"
                   >
                     <h6
                       variant="h6"
                       align="left"
                       mt={12}
-                      ml={3}
                       gutterBottom
                       style={{
                         color: hovered[index] ? "#E6C458" : "black",

@@ -8,18 +8,16 @@ const EmbracingPower = () => {
   };
 
   return (
-    <div className="px-8 py-16 md:px-20 md:py-24">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div className="px-8 py-16 md:px-20 lg:py-24">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
         <div>
           <h1 className="text-4xl md:text-5xl font-semibold leading-snug text-purple-900">
-            <span className="font-bold text-purple-900 text-6xl leading-13">
+            <span className="font-bold text-purple-900 text-4xl leading-13">
               Embracing
-            </span>{" "}
-            <span
-              className="text-black font-thin text-4xl leading-11"
-              style={{ fontSize: "44px", lineHeight: "52.8px" }}
-            >
-              power of data and advanced AI for the automotive industry
+            </span>
+
+            <span className="text-black font-thin text-4xl md:text-[42px] md:leading-[52.8px] leading-11">
+              &nbsp; power of data and advanced AI for the automotive industry
             </span>
           </h1>
           <p
@@ -53,8 +51,7 @@ const EmbracingPower = () => {
             </span>
           </button>
         </div>
-
-        <div className=" md:block">
+        <div className=" lg:block">
           <EmbracingImages />
         </div>
       </div>
