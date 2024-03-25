@@ -1,9 +1,4 @@
 import React, { useState } from "react";
-// import Grid from "@mui/material/Grid";
-// import Paper from "@mui/material/Paper";
-// import Typography from "@mui/material/Typography";
-// import IconButton from "@mui/material/IconButton";
-// import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Engineering from "../../../../Assets/Components/HomePage/04_Discover_Shodat/Data Engineering.png";
 import Innovation from "../../../../Assets/Components/HomePage/04_Discover_Shodat/AI Innovation.png";
 import Vision from "../../../../Assets/Components/HomePage/04_Discover_Shodat/Vision AI.png";
@@ -12,7 +7,7 @@ import Enterprise from "../../../../Assets/Components/HomePage/04_Discover_Shoda
 import ERP from "../../../../Assets/Components/HomePage/04_Discover_Shodat/ERP System.png";
 import Cloud from "../../../../Assets/Components/HomePage/04_Discover_Shodat/Cloud Transformation.png";
 import { GoArrowRight } from "react-icons/go";
-// import { styled } from "@mui/material/styles";
+import { MdArrowForward } from "react-icons/md";
 
 const cards = [
   {
@@ -67,15 +62,8 @@ const cards = [
     lg: "lg:col-span-4",
   },
 ];
-// const CenteredContainer = styled("div")({
-//   display: "flex",
-//   justifyContent: "center",
-//   alignItems: "center",
-//   margin: "100px",
-//   // background: "#e6f0f2",
-//   // background: "#f8f4ff",
-// });
-const DiscoverShodat = () => {
+
+const CardsComponent = () => {
   const [hovered, setHovered] = useState(Array(cards.length).fill(false));
 
   const handleMouseEnter = (index) => {
@@ -97,10 +85,10 @@ const DiscoverShodat = () => {
   const handleImageClick = () => {};
 
   return (
-    <div className="flex justify-center items-center mt-24">
-      <div class="grid grid-cols-1 md:grid-cols-3  gap-4 ">
+    <div className="flex justify-center items-center m-8.0 py-10">
+      <div className="grid grid-cols-12 gap-8 md:px-4">
         {cards.map((card, index) => (
-          <div class="w-full sm:w-full md:w-[card.lg] lg:w-[card.lg]">
+          <div key={index} className={`col-span-12 ${card.lg}`}>
             <div
               className={`relative transition duration-300 overflow-hidden h-64 w-full rounded-lg ${
                 index !== 0 ? "shadow-md" : ""
@@ -108,109 +96,93 @@ const DiscoverShodat = () => {
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
             >
-              {index === 0 && (
-                <div
-                  className=" "
-                  gutterBottom
-                  style={{
-                    fontSize: card.fontSize,
-                  }}
-                >
+              {index === 0 ? (
+                <div className=" font-sans md:text-[44px] text-3xl leading-6 md:leading-[55px] ">
                   <span
-                    style={{
-                      fontWeight: 700,
-                      color: "#432071",
-                      marginRight: "10px",
-                    }}
+                    className={`font-bold ${card.fontSize} text-indigo-900 text-xl md:text-[44px]`}
                   >
                     Discover
                   </span>
-                  <span style={{ fontWeight: 300, color: "#000000" }}>
-                    how Shodat can elevate your business with our bespoke data
-                    analytics solutions
+                  <span className="font-normal text-black  text-xl md:text-[44px] md:leading-[55px] leading-9">
+                    &nbsp;how Shodat can elevate your business with our bespoke
+                    data analytics solutions
                   </span>
                 </div>
-              )}
-              {index === 0 && (
-                <h3
-                  variant="h3"
-                  gutterBottom
-                  style={{
-                    color: card.color,
-                    fontSize: card.fontSize,
-                    padding: "20px",
-                  }}
-                >
-                  {card.title}
-                </h3>
-              )}
-              {index !== 0 && (
+              ) : (
                 <>
                   <div
                     style={{
                       position: "relative",
                       zIndex: 2,
+
                       backgroundColor:
                         index !== 0 && hovered[index]
-                          ? "rgba(67, 32, 113, 0.7)"
+                          ? "rgba(67, 32, 113, 0.9)"
                           : "transparent",
-                      padding: "20px",
+                      padding: "60px",
+                      paddingTop: "130px",
                       borderRadius: "8px",
                       height: "100%",
                     }}
+                    className="h-250"
                   >
-                    <h4
+                    <h6
                       variant="h6"
                       align="left"
                       mt={12}
-                      ml={3}
                       gutterBottom
                       style={{
-                        color: hovered[index] ? "#e6c458" : "black",
-                        fontFamily: "Open Sans,sans-serif",
+                        color: hovered[index] ? "#E6C458" : "black",
+                        fontFamily: "Sans,",
                         fontSize: "20px",
+
                         fontWeight: 600,
                         lineHeight: "30px",
                         letterSpacing: "0em",
+                        paddingTop: "5px",
                         opacity: hovered[index] ? 1 : 0.9,
                       }}
+                      className={`font-semibold text-lg leading-6 font-sans ${
+                        hovered[index] ? "text-yellow-400" : "text-black"
+                      }`}
                     >
                       {card.title}
-                    </h4>
+                    </h6>
                     <h4
-                      variant="body2"
-                      align="left"
-                      ml={3}
                       style={{
-                        color: hovered[index] ? "#e6c458" : "#5E5E5E",
-                        fontFamily: "Open Sans,sans-serif",
-                        fontSize: "14px",
-                        fontWeight: 400,
-                        lineHeight: "21px",
-                        letterSpacing: "0em",
+                        marginTop: "5px",
                       }}
+                      className={`font-normal text-sm ${
+                        hovered[index] ? "text-yellow-400" : "text-gray-600"
+                      }`}
                     >
                       {card.content}
                     </h4>
                   </div>
                   <div
+                    className={`${
+                      hovered[index] ? "text-yellow-400" : "text-black"
+                    }`}
                     style={{
                       position: "absolute",
                       top: "8px",
-                      right: hovered[index] ? "8px" : "24px",
+                      right: hovered[index] ? "8px" : "70px",
                       transition: "right 0.3s, opacity 0.3s",
                       opacity: hovered[index] ? 1 : 0,
-                      color: "#e6c458",
+
                       zIndex: 3,
+                      fontSize: "14px",
+                      lineHeight: "21px",
                     }}
                   >
-                    <button>
-                      <GoArrowRight />
+                    <button className="h-8 w-10">
+                      <GoArrowRight className="h-full w-full" />
                     </button>
                   </div>
                   <div
-                    className={`absolute top-0 right-[-20px] transition-transform duration-300 
-              transform-origin-top-right ${hovered[index] ? "scale-150" : ""}`}
+                    className={`absolute top-0 right-0 transition-transform transform origin-top-right ${
+                      hovered[index] ? "scale-150" : ""
+                    }`}
                     style={{ zIndex: 1 }}
                   >
                     <img
@@ -230,4 +202,4 @@ const DiscoverShodat = () => {
   );
 };
 
-export default DiscoverShodat;
+export default CardsComponent;

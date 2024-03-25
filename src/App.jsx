@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PlatformPage from "./Components/PlatformPage/PlatformPage";
 import SolutionAi from "./Components/SolutionAI/SolutionAi";
 import ShodatAI from "./Components/ShodatAI/ShodatAI";
-import About from "./Components/AboutPage/About";
+import About from "./Components/About/About";
+
 function App() {
   return (
     <>

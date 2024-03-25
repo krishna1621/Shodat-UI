@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import img2 from "../../../../Assets/Components/HomePage/01_Slider_Home/slide-1.png";
 import img3 from "../../../../Assets/Components/HomePage/01_Slider_Home/slide-2.png";
-import Navbar from "../../../Navbar/Navbar";
+// import Navbar from "../../../Navbar/Navbar";
 import ArrowRight from "../../../../Assets/Components/HomePage/01_Slider_Home/arrow-right.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-// import Navbar from "../../../Navbar1/Navbar";
+import Navbar from "../../../Navbar1/Navbar";
 
 const SliderHome = () => {
   const [isFirstVisible, setIsFirstVisible] = useState(true);
@@ -25,7 +25,6 @@ const SliderHome = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Navbar />
-      {/* <Navbar /> */}
 
       <div>
         <div

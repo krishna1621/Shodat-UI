@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="relative  py-8 font-sans text-white bg-transparent max-w-full ">
+      <nav className="relative  py-8 font-sans text-white bg-transparent max-w-full z-10 ">
         <div className="container  flex justify-evenly items-center">
           <img
             className="w-[180px] h-11"

@@ -5,6 +5,8 @@ import WhyeOps from "./Section/04_WhyEOps/WhyeOps";
 import Banner from "./Section/01_Banner/Banner";
 import Platform2 from "./Section/02_WhyShodatAI/Platform2";
 import { Platform } from "./Section/08_OperationalChallenges/Platform";
+import EopsFabric from "./Section/06_eOpsFabric/EopsFabric";
+import IntelligentEdge from "./Section/03_IntelligentEdge/IntelligentEdge";
 
 const PlatformPage = () => {
   return (
@@ -12,8 +14,11 @@ const PlatformPage = () => {
       <Banner />
       <Platform2 />
       <WhyeOps />
+      <IntelligentEdge />
       <EdgeInfrastructure />
-      <EdgeOperation /> <Platform />
+      <EopsFabric />
+      <EdgeOperation />
+      <Platform />
     </div>
   );
 };

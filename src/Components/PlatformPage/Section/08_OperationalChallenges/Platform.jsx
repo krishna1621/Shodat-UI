@@ -71,7 +71,7 @@ export const Platform = () => {
 const renderFeature = (title, description, image) => (
   <div className="flex items-center">
     <div
-      className="w-24 h-24 bg-cover bg-center rounded-md"
+      className="w-24 h-24 bg-contain bg-no-repeat"
       style={{ backgroundImage: `url(${image})` }}
     ></div>
     <div className="ml-4">

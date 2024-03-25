@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "../../Assets/Components/Navbar/Shodat-logo.png";
 import styled from "styled-components";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link } from "react-router-dom";
 const CustomAnchor = styled.a`
   background-color: #016c7b;
   padding: 0.75rem 1.25rem; /* px-5 py-1 */
@@ -50,7 +51,7 @@ function Navbar() {
   };
   return (
     <div>
-      <nav className="relative py-8 font-sans text-white bg-transparent max-w-full ">
+      <nav className="relative py-8 font-sans text-white bg-black max-w-full ">
         <div className="container flex justify-evenly items-center">
           <img
             className="w-[180px] h-11"
@@ -59,17 +60,17 @@ function Navbar() {
           />
           <ul className="hidden md:flex ">
             <li>
-              <a
-                href="#"
-                className="text-white hover:text-black hover:bg-yellow-400 rounded active:bg-yellow-400 inline-block px-4 py-2 font-sans font-normal text-base leading-6"
+              <Link
+                to="/platform"
+                className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block  px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
                 Platform
-              </a>
+              </Link>
             </li>
             <li className="flex relative group">
-              <a
-                href="#"
-                className="text-white  w-full justify-center hover:text-black hover:bg-yellow-400 active:bg-yellow-400 inline-block pl-4 py-2 font-sans font-normal text-base rounded leading-6 "
+              <Link
+                to="/solutionAI"
+                className="inline-flex w-full justify-center white hover:text-black hover:bg-[#f3d157]  active:bg-[#f3d157] rounded  px-4 py-2 font-sans font-normal text-base leading-6"
               >
                 Solutions
                 <svg
@@ -83,7 +84,7 @@ function Navbar() {
                     d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                   />
                 </svg>
-              </a>
+              </Link>
 
               <ul
                 style={{ background: "#340D73" }}
@@ -150,7 +151,7 @@ function Navbar() {
             <li className="flex relative group">
               <a
                 href="#"
-                className=" w-full justify-center white hover:text-black hover:bg-yellow-400 active:bg-yellow-400 rounded inline-block px-4 py-2 font-sans font-normal text-base leading-6"
+                className="inline-flex w-full justify-center white hover:text-black hover:bg-[#f3d157]  active:bg-[#f3d157] rounded md:px-2 px-4 py-2 font-sans font-normal text-base leading-6"
               >
                 Services
                 <svg
@@ -207,7 +208,7 @@ function Navbar() {
             <li className="flex relative group">
               <a
                 href="#"
-                className=" w-full justify-center text-white hover:text-black hover:bg-yellow-400 active:bg-yellow-400 rounded inline-block px-4 py-2 font-sans font-normal text-base leading-6"
+                className="inline-flex w-full justify-center text-white hover:text-black hover:bg-[#f3d157]  active:bg-[#f3d157] rounded md:px-2 px-4 py-2 font-sans font-normal text-base leading-6"
               >
                 Industries
                 <svg
@@ -262,28 +263,28 @@ function Navbar() {
               </ul>
             </li>
             <li>
-              <a
-                href="#"
-                className="text-white hover:text-black hover:bg-yellow-400 rounded active:bg-yellow-400 inline-block px-4 py-2 font-sans font-normal text-base leading-6"
+              <Link
+                to="/contact"
+                className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  inline-block md:px-2 px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
-                Customersrevice
-              </a>
+                Customer Success
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="text-white hover:text-black hover:bg-yellow-400 rounded active:bg-yellow-400 inline-block px-4 py-2 font-sans font-normal text-base leading-6"
+              <Link
+                to="/shodatAI"
+                className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  inline-block md:px-2 px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
-                ShodatAI
-              </a>
+                Shodat AI
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="text-white hover:text-black hover:bg-yellow-400 rounded active:bg-yellow-400 inline-block px-4 py-2 font-sans font-normal text-base leading-6"
+              <Link
+                to="/about"
+                className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block md:px-2 px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
                 About
-              </a>
+              </Link>
             </li>
           </ul>
           <CustomAnchor
@@ -342,7 +343,7 @@ function Navbar() {
                           ERP System & Analaytics
                         </a>
                       </li>
-                      <li className="text-sm leading-8  hover:text-[#f3d157]  font-sans font-normal">
+                      <li className="text-sm leading-8 hover:text-[#f3d157]  font-sans font-normal">
                         <a className="block pl-16" href="#">
                           Vision Ai
                         </a>
