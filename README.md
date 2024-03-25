@@ -1,5 +1,5 @@
 # Shodat AI
-# Redefining the infusion of machine learning in heavy industries for a decade, we at Shodat Inc are poised for a paradigm shift in the industry with ready AI—eOps Fabric™, an edge analytics, and operations platform. The platform leverages a powerful combination of computer vision, predictive analytics, and generative AI to predict operational defects, automate RCA reports, and propose impactful enhancements that promise significant cost benefits.
+## Redefining the infusion of machine learning in heavy industries for a decade, we at Shodat Inc are poised for a paradigm shift in the industry with ready AI—eOps Fabric™, an edge analytics, and operations platform. The platform leverages a powerful combination of computer vision, predictive analytics, and generative AI to predict operational defects, automate RCA reports, and propose impactful enhancements that promise significant cost benefits.
 
 Installation
 Shodat requires [Node.js](https://nodejs.org/) (version v18.17.1 or higher) to run
