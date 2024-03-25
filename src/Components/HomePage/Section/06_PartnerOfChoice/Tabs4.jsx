@@ -5,7 +5,7 @@ const Tabs4 = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div>
-        <img src={Ai} alt="AI" className="w-full h-auto md:max-w-none" />
+        <img src={Ai} alt="AI" className="w-90 h-80" />
       </div>
       <div>
         <div className="p-4">
