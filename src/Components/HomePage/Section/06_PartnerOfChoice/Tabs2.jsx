@@ -5,15 +5,7 @@ const Tabs2 = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div>
-        <img
-          src={tab2}
-          alt="AI"
-          className="w-full h-auto md:max-w-none"
-          style={{
-            height: "100%",
-            width: "100%",
-          }}
-        />
+        <img src={tab2} alt="AI" className="w-100 h-80" style={{}} />
       </div>
       <div className="mt-5 md:mt-0">
         <div className="p-6">
@@ -21,7 +13,7 @@ const Tabs2 = () => {
             Benefit from deep industry expertise
           </h5>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-blue-100 p-4 rounded-lg">
+            <div className="bg-#D3F5FF p-4 rounded-lg">
               <p className="font-normal">
                 Our team comprises seasoned professionals with a wealth of
                 experience, ensuring that our AI solutions are tailored to meet
