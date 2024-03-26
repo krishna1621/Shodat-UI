@@ -9,7 +9,7 @@ const SolutionBanner = () => {
       className="w-full h-[790px] bg-cover bg-center relative "
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="absolute ml-4 md:ml-20 mt-12 md:mt-60 ">
         <p className="text-3xl md:text-[61px] font-semibold leading-[50px] md:leading-[91.5px] font-poppins text-white ">
           Pioneering AI Innovations

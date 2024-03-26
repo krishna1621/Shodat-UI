@@ -7,7 +7,9 @@ const ShodatHome = () => {
       className="w-full min-h-screen relative bg-no-repeat bg-cover flex items-center "
       style={{ backgroundImage: `url(${shome})` }}
     >
-      <div className="absolute top-0 ml-20 ">{/* <Navbar /> */}</div>
+      <div className="absolute top-0 ml-20 ">
+        <Navbar />
+      </div>
 
       <div className="p-4 md:p-20 text-left">
         <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4">
