@@ -5,52 +5,94 @@ const Proven = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div className="flex justify-center md:justify-center">
-        <img src={Ai} alt="AI" className="w-80 h-80" />
+        <img
+          src={Ai}
+          alt="AI"
+          style={{
+            justifyContent: "center",
+            display: "flex",
+          }}
+        />
       </div>
       <div>
         <div className="p-4">
-          <h6 className="text-lg font-bold mb-4">
+          <h6
+            className="text-2xl font-semibold mb-4 leading-9 font-Open Sans"
+            style={{
+              fontWeight: "700",
+            }}
+          >
             Shodat's global experience in developing AI technology includes
           </h6>
           <ul
-            className="list-disc list-inside mb-6"
-            style={{ listStyleType: "none" }}
+            className="list-disc list-inside mb-6 text-black"
+            style={{
+              listStyleType: "none",
+              color: "#000000",
+              fontWeight: "400px",
+            }}
           >
-            <li className="mb-2">
-              &#10003; Turnkey enterprise platform for all data integration &
-              analytics needs
+            <li class="mb-2 text-base font-normal leading-7 font-Sans">
+              <span class="checkmark" style={{ marginRight: "20px" }}>
+                &#10003;
+              </span>
+              Turnkey enterprise platform for all data integration & analytics
+              needs
             </li>
-            <li className="mb-2">
-              &#10003; No implementation delays with minimal customizations
+            <li className="mb-2 text-base font-normal leading-7 font-open-sans">
+              {" "}
+              <span class="checkmark" style={{ marginRight: "20px" }}>
+                &#10003;
+              </span>{" "}
+              No implementation delays with minimal customizations
             </li>
-            <li className="mb-2">
-              &#10003; Seamless deployment & build for global scale
+            <li className="mb-2 text-base font-normal leading-7 font-open-sans">
+              {" "}
+              <span class="checkmark" style={{ marginRight: "20px" }}>
+                &#10003;
+              </span>{" "}
+              Seamless deployment & build for global scale
             </li>
-            <li className="mb-2">
-              &#10003; Low/No code data ingestion, harmonization & ML features
+            <li className="mb-2 text-base font-normal leading-7 font-open-sans">
+              {" "}
+              <span class="checkmark" style={{ marginRight: "20px" }}>
+                &#10003;
+              </span>{" "}
+              Low/No code data ingestion, harmonization & ML features
             </li>
-            <li>&#10003; Industry-proven ML Models</li>
+            <li className="mb-2 text-base font-normal leading-7 font-open-sans">
+              {" "}
+              <span class="checkmark" style={{ marginRight: "20px" }}>
+                &#10003;
+              </span>{" "}
+              Industry-proven ML Models
+            </li>
           </ul>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div className="bg-blue-200 text-center p-4 rounded-lg">
-              <p className="font-bold mb-2">consistent</p>
-              <p className="font-bold mb-2">CSAT ratings</p>
-              <p className="font-bold">97%</p>
+          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4">
+            <div className="bg-blue-200 text-center p-6 rounded-lg w-full">
+              <p className="font-bold mb-2 text-base leading-6">
+                Consistent CSAT ratings
+              </p>
+              <p className="font-bold text-4xl leading-10">97%</p>
             </div>
-            <div className="bg-purple-200 text-center p-4 rounded-lg">
-              <p className="font-bold mb-2">Renewal</p>
-              <p className="font-bold mb-2">ratio</p>
-              <p className="font-bold">95</p>
+            <div className="bg-purple-200 text-center p-4 rounded-lg w-full">
+              <p
+                className="font-bold mb-2 text-base leading-6 "
+                style={{
+                  gap: "20px",
+                }}
+              >
+                Renewal <br></br> ratio
+              </p>
+              <p className="font-bold text-4xl leading-10">95%</p>
             </div>
-            <div className="bg-purple-300 text-center p-4 rounded-lg">
-              <p className="font-bold mb-2">successful</p>
-              <p className="font-bold mb-2">projects</p>
-              <p className="font-bold">100+</p>
+            <div className="bg-purple-300 text-center p-4 rounded-lg w-full">
+              <p className="text-base leading-[24px]">Successful projects</p>
+              <p className="font-bold text-4xl leading-10">100+</p>
             </div>
-            <div className="bg-gray-200 text-center p-4 rounded-lg">
-              <p className="font-bold mb-2">consistent</p>
-              <p className="font-bold mb-2">CSAT ratings</p>
-              <p className="font-bold">100TB</p>
+            <div className="bg-gray-200 text-center p-4 rounded-lg w-full">
+              <p className="text-base leading-7">Data sources managed</p>
+              <p className="font-bold text-4xl leading-10">100TB</p>
             </div>
           </div>
         </div>
@@ -58,5 +100,4 @@ const Proven = () => {
     </div>
   );
 };
-
 export default Proven;
