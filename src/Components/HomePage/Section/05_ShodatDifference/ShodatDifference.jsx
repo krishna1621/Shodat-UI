@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function ShodatDifference() {
   return (
-    <div className=" py-8">
+    <div className=" py-8 bg-white">
       <div className="container mx-auto">
         <div className="text-left mb-8">
           <h1 className=" font-sans leading-[66px] text-[44px] font-bold">

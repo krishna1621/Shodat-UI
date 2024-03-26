@@ -6,9 +6,9 @@ import RequestForm from "./Section/04_Request/RequestForm";
 Contact1;
 const ContactPage = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Contact1 /> <ParaGraph />
-      <div className="font-sans  text-[27px]  leading-[40.5px] mb-4 mt-4 items-center px-6 ml-4">
+      <div className="font-sans font-normal  text-xl md:text-[27px] leading-7 md:leading-[40.5px] mb-4 mt-4 items-center px-6 ml-4">
         Contact our solution advisers. Leave your information below and we will
         give you a callback.
       </div>

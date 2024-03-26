@@ -6,7 +6,7 @@ import insights from "../../../../Assets/Components/HomePage/02_EmbracingPower/e
 
 function EmbracingImages() {
   return (
-    <div className=" grid grid-cols-1 md:grid-cols- lg:grid-cols-3 gap-50 lg:w-full  mx-auto lg:mt-20 lg:h-[500px] lg:ml-10">
+    <div className=" grid grid-cols-1 md:grid-cols- lg:grid-cols-3 bg-white gap-50 lg:w-full  mx-auto lg:mt-20 lg:h-[500px] lg:ml-10">
       <div className="mt-7 lg:mt-10 ">
         <div className="grid grid-cols-1 gap-4">
           <div className="lg:ml-7 ">
