@@ -23,7 +23,6 @@ function App() {
             <Route path="/about" element={<About />} />
             {/* Add more routes for additional pages */}
           </Routes>
-          <FinalFooter />
         </div>
       </Router>
     </>

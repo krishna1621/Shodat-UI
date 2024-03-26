@@ -8,7 +8,7 @@ import ecl7 from "../../../../Assets/Components/PlatformPage/02_WhyShodatAI/Elli
 
 const Platform2 = () => {
   return (
-    <div className="bg-purple-50 p-8 rounded-2xl">
+    <div className=" bg-white p-8 rounded-2xl">
       <div className="grid gap-8">
         <div className="bg-white p-8 rounded-xl">
           <p className="text-black text-2xl font-semibold mb-4">

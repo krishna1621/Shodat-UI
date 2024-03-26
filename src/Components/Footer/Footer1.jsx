@@ -8,10 +8,10 @@ const Footer1 = () => {
           {/* 1st column */}
           <div className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 2xl:col-span-1">
             <div className="mb-4 text-center lg:text-left">
-              <div className="font-sans text-xl font-semibold mb-2   lg:mr-5 lg:ml-10 ">
+              <div className="font-sans text-xl font-semibold mb-2   md:mr-5 md:ml-0 ">
                 How can AI help scale your business?
               </div>
-              <div className="font-sans text-xl font-semibold mb-4  lg:mr-5 lg:ml-10 ">
+              <div className="font-sans text-xl font-semibold mb-4  md:mr-5 md:ml-0 ">
                 Let's talk and discover the answers together.
               </div>
             </div>
