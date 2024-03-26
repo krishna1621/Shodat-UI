@@ -9,7 +9,7 @@ const Contact1 = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* <Navbar /> */}
-      <div className="absolute ml-4 md:ml-20 mt-12 md:mt-60 ">
+      <div className="absolute ml-4 md:ml-12 mt-10 md:mt-60 ">
         <p className="text-3xl md:text-[56px] font-bold leading-[67.2px] font-sans text-white ">
           Welcome to Shodat,
         </p>

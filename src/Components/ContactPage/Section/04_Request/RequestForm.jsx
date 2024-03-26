@@ -8,7 +8,7 @@ const RequestForm = () => {
   };
 
   return (
-    <div className="bg-white rounded-3xl py-8 lg:ml-20 md:h-[453.5px] max-w-md md:mb-6 mt-5 mb-5  ">
+    <div className="bg-white rounded-3xl py-8 lg:ml-10 md:h-[453.5px] max-w-md md:mb-6 mt-5 mb-5  ">
       <h2 className=" font-openSans text-[27px] leading-10 flex justify-center md:justify-normal font-semibold ml-2 mb-8 ">
         Send us a message
       </h2>
