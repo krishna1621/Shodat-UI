@@ -6,10 +6,10 @@ import insights from "../../../../Assets/Components/HomePage/02_EmbracingPower/e
 
 function EmbracingImages() {
   return (
-    <div className=" grid grid-cols-1 md:grid-cols- lg:grid-cols-3 bg-white gap-50 lg:w-full  mx-auto lg:mt-20 lg:h-[500px] lg:ml-10">
-      <div className="mt-7 lg:mt-10 ">
+    <div className=" grid grid-cols-1 md:grid-cols- lg:grid-cols-3 bg-white gap-50 lg:w-full mx-auto md:mt-[80px] lg:h-[500px] md:ml-10 md:py-8">
+      <div className="mt-10  ">
         <div className="grid grid-cols-1 gap-4">
-          <div className="lg:ml-7 ">
+          <div className="md:ml-10 ">
             <div className="bg-white shadow-2xl flex flex-col justify-between rounded-xl min-h-120 lg:w-[200px] md:w-190 sm:w-190 xs:w-150">
               <img
                 src={watch}
@@ -35,9 +35,9 @@ function EmbracingImages() {
           </div>
         </div>
       </div>
-      <div className="lg:ml-16 ">
+      <div className="md:ml-16 ">
         <div className="grid grid-cols-1 gap-4">
-          <div className="">
+          <div className="pt-4 md:pt-0">
             <div className="bg-white shadow-2xl flex flex-col justify-between rounded-xl min-h-120 lg:w-[200px] md:w-190 sm:w-190 xs:w-150">
               <img
                 src={trace}

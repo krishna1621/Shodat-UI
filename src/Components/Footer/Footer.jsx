@@ -5,7 +5,7 @@ import { BiPhoneCall } from "react-icons/bi";
 const Footer = () => {
   return (
     <footer className="bg-black text-white text-center md:text-left pt-4 ">
-      <div className="mx-auto w-full max-w-screen-xl text-center md:text-left ">
+      <div className="mx-auto   text-center md:text-left ">
         <div className="border-b-2">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5  md:ml-8">
             {/* 1st column */}
