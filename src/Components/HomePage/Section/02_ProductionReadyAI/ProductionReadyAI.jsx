@@ -10,7 +10,7 @@ const ProductionReadyAi = () => {
       {/* Top Grid (lg 12) */}
       <div className="col-span-12 lg:col-span-full mt-6">
         <p className="font-sans text-4xl md:text-[44px] md:leading-[52.8px] leading-9   text-left pl-10 pt-10 md:ml-6 text-black">
-          <span className=" text-[#340D73] md:font-bold">
+          <span className=" text-[#340D73] font-bold">
             Production-ready AI,
           </span>
           <br />
