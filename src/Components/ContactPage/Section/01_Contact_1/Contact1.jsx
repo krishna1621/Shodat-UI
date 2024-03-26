@@ -8,7 +8,7 @@ const Contact1 = () => {
       className="w-full h-[790px] bg-cover bg-white bg-center relative "
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="absolute ml-4 md:ml-12 mt-10 md:mt-60 ">
         <p className="text-3xl md:text-[56px] font-bold leading-[67.2px] font-sans text-white ">
           Welcome to Shodat,

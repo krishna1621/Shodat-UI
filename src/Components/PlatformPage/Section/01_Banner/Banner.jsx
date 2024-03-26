@@ -5,7 +5,9 @@ import Navbar from "../../../Navbar1/Navbar";
 function Banner() {
   return (
     <div>
-      <div className="z-10 relative">{/* <Navbar /> */}</div>
+      <div className="z-10 relative">
+        <Navbar />
+      </div>
       <div className="relative ">
         {/* Background image */}
         <img
