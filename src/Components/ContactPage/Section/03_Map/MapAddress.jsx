@@ -6,7 +6,7 @@ const MapAddress = () => {
       <img
         src={map}
         alt="Image"
-        className="w-full mb-4   lg:max-w-2xl md:mt-10"
+        className="w-full mb-4   lg:max-w-2xl md:mt-8"
       />
       <div className="flex justify-center w-full lg:max-w-2xl ">
         <div className="w-full lg:w-1/2 px-2 py-4">
