@@ -8,7 +8,7 @@ const EmbracingPower = () => {
   };
 
   return (
-    <div className="px-8 py-16 md:px-20 lg:py-24">
+    <div className="px-8 py-16 bg-white md:px-20 md:py-0">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
         <div>
           <h1 className="text-4xl md:text-5xl font-semibold leading-snug text-purple-900">

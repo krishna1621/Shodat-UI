@@ -3,16 +3,16 @@ import Innovate from "../../../../Assets/Components/HomePage/05_ShodatDifference
 import Manage from "../../../../Assets/Components/HomePage/05_ShodatDifference/Manage.png";
 import Modernize from "../../../../Assets/Components/HomePage/05_ShodatDifference/Modernize.png";
 import Secure from "../../../../Assets/Components/HomePage/05_ShodatDifference/Secure.png";
-import { FaArrowRight } from "react-icons/fa";
+import { GoArrowRight } from "react-icons/go";
 
 function ShodatDifference() {
   return (
-    <div className=" py-8">
-      <div className="container mx-auto">
+    <div className=" py-8 bg-white">
+      <div className="container md:mx-10 px-10 md:px-0">
         <div className="text-left mb-8">
-          <h1 className=" font-sans leading-[66px] text-[44px] font-bold">
-            <span className="font-bold">Discover</span>{" "}
-            <span className="font-semibold">&nbsp; the Shodat difference</span>
+          <h1 className=" font-sans leading-[66px] text-[44px] ">
+            <span className="font-bold">Discover</span>
+            <span className="font-light">&nbsp; the Shodat difference</span>
           </h1>
         </div>
         <div className="flex flex-wrap ">
@@ -21,7 +21,7 @@ function ShodatDifference() {
               <img
                 src={Innovate}
                 alt="Innovate"
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-cover "
               />
               <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
                 <div>
@@ -30,12 +30,13 @@ function ShodatDifference() {
                   </h2>
                   <p className="text-sm font-sans text-white font-bold leading-5">
                     Cultivating innovation
-                    <br />
+                  </p>
+                  <p className="text-sm font-sans text-white font-normal leading-5">
                     Redefining possibilities in data analytics
                   </p>
                 </div>
-                <div className="flex justify-end text-pink-600">
-                  <FaArrowRight className=" w-9 p-2 rounded-full" />
+                <div className="flex justify-end">
+                  <GoArrowRight className=" text-white p-2 w-11 h-10" />
                 </div>
               </div>
             </div>
@@ -54,12 +55,15 @@ function ShodatDifference() {
                     Manage
                   </h2>
                   <p className="text-sm font-sans text-white font-bold leading-5">
-                    Effortless data management <br /> Unleashing control and
-                    insight in every byte
+                    Effortless data management{" "}
+                  </p>{" "}
+                  <p className="text-sm font-sans text-white font-normal leading-5">
+                    {" "}
+                    Unleashing control and insight in <br /> every byte
                   </p>
                 </div>
                 <div className="flex justify-end">
-                  <FaArrowRight className="text-white p-2 rounded-full" />
+                  <GoArrowRight className=" text-white p-2 w-11 h-10" />
                 </div>
               </div>
             </div>
@@ -77,12 +81,14 @@ function ShodatDifference() {
                     Modernize
                   </h2>
                   <p className="text-sm font-sans text-white font-bold leading-5">
-                    Modernizing data and applications <br />
-                    Transforming your business for the digital era
+                    Modernizing data and applications{" "}
+                  </p>{" "}
+                  <p className="text-sm font-sans text-white font-normal leading-5">
+                    Transforming your business for the <br /> digital era
                   </p>
                 </div>
                 <div className="flex justify-end">
-                  <FaArrowRight className="text-white p-2 rounded-full" />
+                  <GoArrowRight className=" text-white p-2 w-11 h-10" />
                 </div>
               </div>
             </div>
@@ -100,12 +106,14 @@ function ShodatDifference() {
                     Secure
                   </h2>
                   <p className="text-sm font-sans text-white font-bold leading-5">
-                    Securing your data <br />
-                    Ensuring compliance with Cybersecurity solutions
+                    Securing your data{" "}
+                  </p>{" "}
+                  <p className="text-sm font-sans text-white font-normal leading-5">
+                    Ensuring compliance with Cybersecurity <br /> solutions
                   </p>
                 </div>
                 <div className="flex justify-end">
-                  <FaArrowRight className="text-white p-2 rounded-full" />
+                  <GoArrowRight className=" text-white p-2 w-11 h-10" />
                 </div>
               </div>
             </div>

@@ -3,25 +3,71 @@ import tab2 from "../../../../Assets/Components/HomePage/06_PartnerOfChoice/tabi
 
 const Tabs2 = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div>
-        <img src={tab2} alt="AI" className="w-100 h-80" style={{}} />
+    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="flex justify-center lg:justify-center" style={{}}>
+        <img
+          src={tab2}
+          alt="AI"
+          style={{
+            mixBlendMode: "multiply",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "50px",
+            height: "auto",
+            width: "60%",
+          }}
+        />
       </div>
-      <div className="mt-5 md:mt-0">
-        <div className="p-6">
-          <h5 className="text-lg font-semibold mb-4">
+      <div className="mt-5 md:mt-0 lg:mt-2">
+        <div className="p-6 font-Sans">
+          <h5
+            className="mb-4 fon-Sans"
+            style={{
+              fontWeight: "700",
+              fontSize: "20px",
+              lineHeight: "30px",
+              color: "black",
+            }}
+          >
             Benefit from deep industry expertise
           </h5>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-#D3F5FF p-4 rounded-lg">
-              <p className="font-normal">
+            <div
+              className="p-10 md:mt-8 rounded-lg font-Sans"
+              style={{
+                backgroundColor: "#D3F5FF",
+              }}
+            >
+              <h3
+                className="font-open-sans"
+                style={{
+                  fontWeight: 400,
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                  color: "black",
+                }}
+              >
                 Our team comprises seasoned professionals with a wealth of
                 experience, ensuring that our AI solutions are tailored to meet
                 the specific needs and challenges of your industry.
-              </p>
+              </h3>
             </div>
-            <div className="bg-purple-100 p-4 rounded-lg">
-              <p className="font-normal">
+            <div
+              className=" rounded-lg md:mt-8 "
+              style={{
+                backgroundColor: "#E4E5FF",
+                padding: "42px 30px 42px 30px",
+              }}
+            >
+              <p
+                className="font-normal font-open-sans"
+                style={{
+                  fontWeight: 400,
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                  color: "black",
+                }}
+              >
                 We have the advantage of using proprietary network intelligence
                 to enhance precision and detection above and beyond our clients’
                 own datasets.
@@ -33,5 +79,4 @@ const Tabs2 = () => {
     </div>
   );
 };
-
 export default Tabs2;

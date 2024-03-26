@@ -7,6 +7,7 @@ import EmbracingPower from "./Section/03_EmbracingPower/EmbracingPower";
 import CardsComponent from "./Section/04_Discover_Shodat/CardsComponent";
 import ShodatDifference from "./Section/05_ShodatDifference/ShodatDifference";
 import ProductionReadyAi from "./Section/02_ProductionReadyAI/ProductionReadyAI";
+import FinalFooter from "../Footer/FinalFooter";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <ShodatDifference />
       <TabsContain />
       <MeetingForm />
+      <FinalFooter />
     </div>
   );
 };

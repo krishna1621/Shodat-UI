@@ -4,23 +4,8 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Navbar from "../../../Navbar1/Navbar";
 function Banner() {
   return (
-    // <div
-    //   className="w-full h-[790px] bg-cover bg-center relative "
-    //   style={{ backgroundImage: `url(${backgroundImage})` }}
-    // >
-    //   <div className="absolute ml-4 md:ml-20 mt-12 md:mt-60 ">
-    //     <p className="text-3xl md:text-[56px] font-bold leading-[67px] font-sans text-white ">
-    //       Welcome to Shodat,
-    //     </p>
-    //     <p className="text-3xl font-normal font-Open sans lg:font-[34px] leading-10 text-white pt-2 md:pt-4">
-    //       Where innovation converges with <br /> intelligence
-    //     </p>
-    //   </div>{" "}
-    // </div>
     <div>
-      <div className="z-10 relative">
-        <Navbar />
-      </div>
+      <div className="z-10 relative">{/* <Navbar /> */}</div>
       <div className="relative ">
         {/* Background image */}
         <img

@@ -8,12 +8,12 @@ const RequestForm = () => {
   };
 
   return (
-    <div className="bg-white rounded-3xl py-8 lg:ml-20 max-w-md md:mb-6 mt-5 mb-5 ">
-      <h2 className=" font-openSans text-3xl font-semibold mb-8 text-left">
+    <div className="bg-white rounded-3xl py-5 lg:ml-10 md:h-[453.5px] max-w-md md:mb-6 mt-5 mb-5  ">
+      <h2 className=" font-openSans text-[27px] leading-10 flex justify-center md:justify-normal font-semibold ml-2 mb-8 ">
         Send us a message
       </h2>
-      <form>
-        <div className="mb-4">
+      <form className="font-sans font-normal px-4 md:px-0 text-sm  leading-5 ">
+        <div className="mb-4 ">
           <select
             id="meetingType"
             name="meetingType"
@@ -35,7 +35,7 @@ const RequestForm = () => {
             id="name"
             name="name"
             placeholder="Name"
-            className="border-b border-gray-300 p-2 w-full focus:outline-none"
+            className="border-b border-gray-300 p-2  w-full focus:outline-none"
           />
         </div>
         <div className="mb-4">
@@ -47,7 +47,7 @@ const RequestForm = () => {
             className="border-b border-gray-300 p-2 w-full focus:outline-none"
           />
         </div>
-        <div className="mb-4">
+        <div className="mb-4 ">
           <input
             type="text"
             id="company"
@@ -72,10 +72,10 @@ const RequestForm = () => {
             placeholder="Enter your query in details"
             className="border-b border-gray-300 p-2 w-full focus:outline-none"
           ></textarea>
-          <div className="mt-10">
+          <div className="mt-10 flex md:justify-normal ml-5 md:ml-0 justify-center">
             <button
               type="submit"
-              className="bg-black text-white font-poppins font-medium py-2.5 px-10 rounded-full lg:w-[215px] "
+              className="bg-black text-white font-sans font-semibold text-base leading-6 py-2.5 px-10 rounded-full lg:w-[215px] "
             >
               SUBMIT REQUEST
             </button>
