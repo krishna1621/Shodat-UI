@@ -11,11 +11,13 @@ const Platform2 = () => {
     <div className=" bg-white p-8 rounded-2xl">
       <div className="grid gap-8">
         <div className="bg-white p-8 rounded-xl">
-          <p className="text-black text-2xl font-semibold mb-4">
+          <p className="text-black text-2xl font-semibold mb-4 font-sans">
             A one-stop cloud-native operations platform that transforms raw
-            operational data into business values and discovers potential
-            operational inefficiencies, risks & security threats faster by
-            providing
+            operational data into business values{" "}
+          </p>
+          <p className="text-black text-2xl font-semibold font-sans">
+            and discovers potential operational inefficiencies, risks & security
+            threats faster by providing
           </p>
           <div
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 "

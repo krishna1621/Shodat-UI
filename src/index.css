@@ -16,3 +16,16 @@
 .mobile-menu ul li:hover ul {
   display: block;
 }
+/* Reset default margins and padding */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Override default margins and padding for specific containers if needed */
+.container {
+  margin: 0 auto; /* Center the container */
+  padding: 0;
+  max-width: max-content;
+}

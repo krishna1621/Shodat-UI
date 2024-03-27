@@ -19,8 +19,11 @@ export const Platform = () => {
               justifyContent: "center",
             }}
           >
-            A suite of turnkey products to quickly unlock the value of data for
-            solving everyday business & operational challenges
+            <p>
+              A suite of turnkey products to quickly unlock the value of data
+              for
+            </p>
+            <p> solving everyday business & operational challenges</p>
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {renderFeature(

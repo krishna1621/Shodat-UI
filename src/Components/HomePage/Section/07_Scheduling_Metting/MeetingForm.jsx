@@ -5,7 +5,7 @@ import ScheduleMeetingForm from "./ScheduleMeetingForm";
 const MeetingForm = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row items-center justify-evenly lg:h-[600px] "
+      className="flex flex-col lg:flex-row items-center container justify-evenly lg:h-[600px] "
       style={{ background: "#340D73" }}
     >
       {/* Left side (70% width on large screens and above) */}

@@ -15,7 +15,7 @@ export default function Platformtabs() {
     setValue(index);
   };
   return (
-    <div className="grid grid-cols-6 gap-4 ">
+    <div className="grid container grid-cols-6 gap-4 ">
       <div className="col-span-12 md:col-span-10 lg:col-span-8">
         <div className="w-full lg: mt-3 ">
           <div className="flex justify-center  ">

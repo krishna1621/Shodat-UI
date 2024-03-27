@@ -20,7 +20,7 @@ const SliderHome = () => {
 
   return (
     <div
-      className="w-full h-[790px]  bg-cover bg-center relative"
+      className="w-full h-[790px] container bg-cover bg-center relative"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Navbar />

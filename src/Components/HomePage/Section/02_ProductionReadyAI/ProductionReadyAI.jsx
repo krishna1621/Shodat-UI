@@ -6,7 +6,7 @@ const ProductionReadyAi = () => {
     console.log("Button clicked!");
   };
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 py-3 bg-[#e6f0f2]">
+    <div className="grid grid-cols-1  lg:grid-cols-12 gap-3 py-3 bg-[#e6f0f2]">
       {/* Top Grid (lg 12) */}
       <div className="col-span-12 lg:col-span-full mt-6">
         <p className="font-sans text-4xl md:text-[44px] md:leading-[52.8px] leading-9   text-left pl-10 pt-10 md:ml-6 text-black">

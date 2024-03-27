@@ -1,13 +1,14 @@
 import React from "react";
 import backgroundImage from "../../../../Assets/Components/PlatformPage/platform-banner.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import Navbar from "../../../Navbar1/Navbar";
+import PlatformNavbar from "../PlatformNavbar";
 function Banner() {
   return (
     <div>
       <div className="z-10 relative">
-        <Navbar />
+        <PlatformNavbar />
       </div>
+
       <div className="relative ">
         {/* Background image */}
         <img
@@ -23,7 +24,8 @@ function Banner() {
           </h1>
           {/* Button */}
           <button
-            className=" text-black font-openSans text-base text-nowrap font-normal py-2 px-4 lg:h-11 lg:w-48 h-7 w-30 rounded-full flex items-center justify-center md:ml-8 md:mt-6 mt-2 ml-8"
+            className=" text-black font-openSans text-base text-nowrap font-normal py-2 px-4 lg:h-11 lg:w-48 h-7 w-30 
+            rounded-full flex items-center justify-center md:ml-2 md:mt-16 mt-2 ml-8"
             style={{ background: "#F3D157" }}
           >
             <MdOutlineKeyboardArrowRight

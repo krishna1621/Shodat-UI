@@ -7,7 +7,7 @@ import { GoArrowRight } from "react-icons/go";
 
 function ShodatDifference() {
   return (
-    <div className=" py-8 bg-white">
+    <div className=" py-8 bg-white container">
       <div className="container md:mx-10 px-10 md:px-0">
         <div className="text-left mb-8">
           <h1 className=" font-sans leading-[66px] text-[44px] ">

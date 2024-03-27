@@ -5,10 +5,10 @@ function WhyeOps() {
     <div className="flex flex-col md:flex-row bg-[#FFFBEF] pt-5">
       {/* First column */}
       <div className="md:w-1/4 p-4 ">
-        <h2 className="text-2xl font-semibold mb-4 flex justify-center md:justify-start md:ml-8 ">
+        <h2 className="text-2xl font-semibold mb-4 flex justify-center md:justify-start md:ml-12 ">
           Why eOps?
         </h2>
-        <div className="flex justify-center md:justify-start ">
+        <div className="flex justify-center md:justify-start md:ml-8">
           <img
             src={eOps}
             alt="eOps"

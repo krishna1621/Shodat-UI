@@ -1,6 +1,5 @@
 import "./App.css";
 import ContactPage from "./Components/ContactPage/ContactPage";
-import FinalFooter from "./Components/Footer/FinalFooter";
 import Home from "./Components/HomePage/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PlatformPage from "./Components/PlatformPage/PlatformPage";
@@ -13,7 +12,6 @@ function App() {
     <>
       <Router>
         <div>
-          {/* <Navbar /> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<ContactPage />} />

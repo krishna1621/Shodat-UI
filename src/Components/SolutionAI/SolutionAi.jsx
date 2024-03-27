@@ -13,18 +13,20 @@ import InnovationJourney from "./Section/11_InnovationJourney/InnovationJourney"
 
 const SolutionAi = () => {
   return (
-    <div>
-      <SolutionBanner />
-      <ParaGraph />
-      <PredictiveAnalytics />
-      <CognitiveComputing />
-      <NaturalLanguageProcessing />
-      <ComputerVision />
-      <EmergingTechnologies />
-      <ContinuousInnovation />
-      <InnovationAction />
-      <SuccessStories />
-      <InnovationJourney />
+    <div className="flex justify-center items-center w-auto">
+      <div className="container ">
+        <SolutionBanner />
+        <ParaGraph />
+        <PredictiveAnalytics />
+        <CognitiveComputing />
+        <NaturalLanguageProcessing />
+        <ComputerVision />
+        <EmergingTechnologies />
+        <ContinuousInnovation />
+        <InnovationAction />
+        <SuccessStories />
+        <InnovationJourney />
+      </div>
     </div>
   );
 };

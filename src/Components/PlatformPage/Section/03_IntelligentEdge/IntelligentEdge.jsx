@@ -2,8 +2,8 @@ import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const IntelligentEdge = () => {
   return (
-    <div className="flex flex-col md:flex-row md:items-center justify-envenly  ">
-      <div className="font-sans text-[42px] leading-[66px] px-6 font-bold  mb-4 md:mb-0">
+    <div className="flex flex-col md:flex-row md:items-center justify-envenly bg-[#FFFBEF]  ">
+      <div className="font-sans text-[42px] leading-[66px] px-6 font-bold  mb-4 md:mb-0 md:ml-8">
         Smarter Operations with Intelligent Edge
       </div>
 
