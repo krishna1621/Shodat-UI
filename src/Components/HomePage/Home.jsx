@@ -7,19 +7,20 @@ import CardsComponent from "./Section/04_Discover_Shodat/CardsComponent";
 import ShodatDifference from "./Section/05_ShodatDifference/ShodatDifference";
 import ProductionReadyAi from "./Section/02_ProductionReadyAI/ProductionReadyAI";
 import FinalFooter from "../Footer/FinalFooter";
+import FooterForAllPagesExceptHome from "../Footer/FooterForAllPagesExceptHome";
 
 const Home = () => {
   return (
-    <div className="flex justify-center items-center ">
+    <div className="flex justify-center items-center">
       <div className="container ">
         <SliderHome />
-        <ProductionReadyAi />
+        {/* <ProductionReadyAi /> */}
         <EmbracingPower />
         <CardsComponent />
         <ShodatDifference />
-        <TabsContain />
+        {/* <TabsContain /> */}
         <MeetingForm />
-        <FinalFooter />
+        <FooterForAllPagesExceptHome />
       </div>
     </div>
   );
