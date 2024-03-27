@@ -10,7 +10,7 @@ function NaturalLanguageProcessing() {
         <img
           src={NLPImage}
           alt="Predictive Analytics"
-          className="w-full h-auto "
+          className="w-full h-auto rounded-lg "
         />
       </div>
 
