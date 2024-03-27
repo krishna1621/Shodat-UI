@@ -12,13 +12,13 @@ import FooterForAllPagesExceptHome from "../Footer/FooterForAllPagesExceptHome";
 const Home = () => {
   return (
     <div className="flex justify-center items-center">
-      <div className="container ">
+      <div className="container mx-auto my-8">
         <SliderHome />
-        {/* <ProductionReadyAi /> */}
+        <ProductionReadyAi />
         <EmbracingPower />
         <CardsComponent />
         <ShodatDifference />
-        {/* <TabsContain /> */}
+        <TabsContain />
         <MeetingForm />
         <FooterForAllPagesExceptHome />
       </div>

@@ -8,15 +8,18 @@ const EmbracingPower = () => {
   };
 
   return (
-    <div className="px-8 py-16 bg-white md:px-20 md:py-0">
+    <div
+      className="px-8 py-16 bg-white md:px-20 md:py-0 container flex"
+      style={{
+        maxWidth: "2000px",
+      }}
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
         <div>
-          <h1 className="text-4xl md:text-5xl font-semibold leading-snug text-purple-900">
-            <span className="font-bold text-purple-900 text-4xl leading-13">
-              Embracing
-            </span>
+          <h1 className="text-4xl md:text-[44px]  leading-[52.8px] ">
+            <span className="font-bold  text-[#340D73]">Embracing</span>
 
-            <span className="text-black font-thin text-4xl md:text-[42px] md:leading-[52.8px] leading-11">
+            <span className="text-black font-light">
               &nbsp; power of data and advanced AI for the automotive industry
             </span>
           </h1>
