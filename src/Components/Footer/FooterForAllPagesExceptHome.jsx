@@ -5,7 +5,7 @@ import FooterForAll from "./FooterForAll";
 
 const FooterForAllPagesExceptHome = () => {
   return (
-    <div>
+    <div className="">
       <Footer1 />
       <FooterForAll />
       <Footer2 />

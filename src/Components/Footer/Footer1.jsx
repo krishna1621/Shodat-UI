@@ -2,7 +2,7 @@ import React from "react";
 import { MdOutlineCallMade } from "react-icons/md";
 const Footer1 = () => {
   return (
-    <footer className="bg-black text-white pt-10">
+    <footer className="bg-black text-white pt-10 ">
       <div className="mx-auto w-full max-w-screen-xl  ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
           {/* 1st column */}

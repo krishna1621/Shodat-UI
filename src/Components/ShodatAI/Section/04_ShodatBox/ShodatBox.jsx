@@ -3,13 +3,8 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export const ShodatBox = () => {
   return (
-    <div
-      style={{
-        marginTop: "500px",
-      }}
-      className="absolute left-0 w-full md:w-1280 h-300 bg-[#432071] z-20 flex flex-col md:flex-row items-center"
-    >
-      <div className="relative">
+    <div className=" w-full  bg-[#432071] z-20 flex flex-col md:flex-row items-center">
+      <div className="">
         <div className="md:ml-14">
           <h2 className="text-white text-2xl md:text-4xl font-semibold leading-10 md:leading-14 mb-2">
             Our Pillars
@@ -21,7 +16,7 @@ export const ShodatBox = () => {
       </div>
 
       <div
-        className="absolute h-29 bg-yellow-500 top-0 left-100 md:left-144 ml-80 md:ml-0 mt-1 md:mt-0"
+        className=" h-29 bg-yellow-500 top-0 left-100 md:left-144 ml-80 md:ml-0 mt-1 md:mt-0"
         style={{ width: "4px", height: "120" }}
       ></div>
       <div className="flex flex-col md:justify-between mt-4 md:mt-0 md:ml-6 pl-6 ">

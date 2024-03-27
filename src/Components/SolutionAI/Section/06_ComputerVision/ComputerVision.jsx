@@ -5,7 +5,7 @@ function ComputerVision() {
   return (
     <div className="flex flex-col md:flex-row md:space-x-8 bg-white p-14">
       {/* Content Column */}
-      <div className="md:w-3/5  pl-4 md:pl-10 sm:pt-3">
+      <div className="md:w-3/5  pl-4 md:pl-0 sm:pt-3">
         <div className="font-poppins md:text-[39px] text-2xl leading-9 md:leading-[58.5px]  font-semibold mb-4">
           Computer Vision
         </div>

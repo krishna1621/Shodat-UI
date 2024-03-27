@@ -4,7 +4,6 @@ import img3 from "../../../../Assets/Components/HomePage/01_Slider_Home/slide-2.
 import ArrowRight from "../../../../Assets/Components/HomePage/01_Slider_Home/arrow-right.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Navbar from "../../../Navbar1/Navbar";
-
 const SliderHome = () => {
   const [isFirstVisible, setIsFirstVisible] = useState(true);
   const [backgroundImage, setBackgroundImage] = useState(img2);
@@ -20,11 +19,10 @@ const SliderHome = () => {
 
   return (
     <div
-      className="w-full h-[790px]  bg-cover bg-center relative"
+      className=" h-[790px]  bg-cover conatiner bg-center relative"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Navbar />
-
       <div>
         <div
           className={`transition-opacity duration-2000 ${

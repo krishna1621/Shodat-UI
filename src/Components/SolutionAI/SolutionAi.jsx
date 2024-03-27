@@ -10,21 +10,25 @@ import EmergingTechnologies from "./Section/07_EmergingTechnologies/EmergingTech
 import InnovationAction from "./Section/09_InnovationAction/InnovationAction";
 import SuccessStories from "./Section/10_SuccessStories/SuccessStories";
 import InnovationJourney from "./Section/11_InnovationJourney/InnovationJourney";
+import FooterForAllPagesExceptHome from "../Footer/FooterForAllPagesExceptHome";
 
 const SolutionAi = () => {
   return (
-    <div>
-      <SolutionBanner />
-      <ParaGraph />
-      <PredictiveAnalytics />
-      <CognitiveComputing />
-      <NaturalLanguageProcessing />
-      <ComputerVision />
-      <EmergingTechnologies />
-      <ContinuousInnovation />
-      <InnovationAction />
-      <SuccessStories />
-      <InnovationJourney />
+    <div className="flex justify-center items-center w-auto">
+      <div className="container ">
+        <SolutionBanner />
+        <ParaGraph />
+        <PredictiveAnalytics />
+        <CognitiveComputing />
+        <NaturalLanguageProcessing />
+        <ComputerVision />
+        <EmergingTechnologies />
+        <ContinuousInnovation />
+        <InnovationAction />
+        <SuccessStories />
+        <InnovationJourney />
+        <FooterForAllPagesExceptHome />
+      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../Assets/Components/Navbar/Shodat-logo.png";
+import logo from "../../../Assets/Components/Navbar/Shodat-color-logo.png";
 import styled from "styled-components";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from "react-router-dom";
@@ -7,16 +7,13 @@ const CustomAnchor = styled.a`
   background-color: #016c7b;
   padding: 0.75rem 1.25rem; /* px-5 py-1 */
   color: #ffffff; /* text-white */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease; /* Added transition for smooth hover effect */
-
+  display: none; /* hidden */
+  justify-content: center; /* hidden */
+  align-items: center; /* hidden */
   /* Medium screen and above */
-  @media (max-width: 767px) {
-    display: none; /* Hide on smaller screens */
+  @media (min-width: 768px) {
+    display: flex; /* md:flex */
   }
-
   &:hover {
     background: linear-gradient(
       110.53deg,
@@ -27,7 +24,6 @@ const CustomAnchor = styled.a`
     );
   }
 `;
-
 const CustomAnchor1 = styled.a`
   background-color: #016c7b;
   padding: 0.75rem 1.25rem; /* px-5 py-1 */
@@ -48,75 +44,37 @@ const CustomAnchor1 = styled.a`
     );
   }
 `;
-function Navbar() {
+function PlatformNavbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isSolutionHovered, setIsSolutionHovered] = useState(false);
-  const [isServicesHovered, setIsServicesHovered] = useState(false);
-  const [isIndustriesHovered, setIsIndustriesHovered] = useState(false); // New state variable
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
-  const handleSolutionHover = () => {
-    setIsSolutionHovered(true);
-  };
-
-  const handleSolutionHoverOut = () => {
-    setIsSolutionHovered(false);
-  };
-
-  const handleServicesHover = () => {
-    setIsServicesHovered(true);
-  };
-
-  const handleServicesHoverOut = () => {
-    setIsServicesHovered(false);
-  };
-
-  const handleIndustriesHover = () => {
-    setIsIndustriesHovered(true);
-  };
-
-  const handleIndustriesHoverOut = () => {
-    setIsIndustriesHovered(false);
-  };
-
   return (
     <div>
-      <nav className="lg:flex relative py-8 font-sans text-white bg-transparent max-w-full ">
+      <nav className="relative py-8 font-sans text-black bg-transparent max-w-full ">
         <div className="container flex justify-evenly items-center">
           <img
-            className="w-[180px] h-11 lg:ml-20 lg:mr-6  "
+            className="w-[180px] h-11 ml-24"
             src={logo}
             alt="Tailwindcss Navigation"
           />
-          <ul className="hidden md:flex space-x-8 justify-center ">
+          <ul className="hidden md:flex space-x-8 justify-center flex-1">
             <li>
               <Link
                 to="/platform"
-                className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-1 lg:px-2 py-2 font-Open-Sans font-normal text-base leading-6"
+                className="text-black hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block  px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
                 Platform
               </Link>
             </li>
-            <li
-              className="flex relative group "
-              onMouseEnter={handleSolutionHover}
-              onMouseLeave={handleSolutionHoverOut}
-            >
+            <li className="flex relative group">
               <Link
                 to="/solutionAI"
-                className={`inline-flex w-full justify-center white hover:text-black ${
-                  isSolutionHovered
-                    ? "bg-[#f3d157] text-black "
-                    : "hover:bg-[#f3d157]"
-                } active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+                className="inline-flex w-full justify-center white hover:text-black hover:bg-[#f3d157]  active:bg-[#f3d157] rounded  px-4 py-2 font-sans font-normal text-base leading-6"
               >
                 Solutions
                 <svg
-                  className={`h-6 ml-1.5 ${
-                    isSolutionHovered ? "text-black rotate-180" : "text-white"
-                  }`}
+                  className=" h-6 text-black ml-1.5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
@@ -130,12 +88,12 @@ function Navbar() {
 
               <ul
                 style={{ background: "#340D73" }}
-                className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
+                className="absolute border-t-4 border-yellow-300 p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
               >
                 <li className="text-sm leading-8">
                   <a
                     href="#"
-                    className="text-white hover:text-[#f3d157] font-Sans"
+                    className="text-white hover:text-yellow-500 font-Sans"
                   >
                     Data Engineering
                   </a>
@@ -190,24 +148,14 @@ function Navbar() {
                 </li>
               </ul>
             </li>
-            <li
-              className="flex relative group"
-              onMouseEnter={handleServicesHover}
-              onMouseLeave={handleServicesHoverOut}
-            >
-              <Link
-                to="#"
-                className={`inline-flex w-full justify-center white hover:text-black ${
-                  isServicesHovered
-                    ? "bg-[#f3d157]  text-black "
-                    : "hover:bg-[#f3d157]"
-                } active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+            <li className="flex relative group">
+              <a
+                href="#"
+                className="inline-flex w-full justify-center white hover:text-black hover:bg-[#f3d157]  active:bg-[#f3d157] rounded md:px-2 px-4 py-2 font-sans font-normal text-base leading-6"
               >
-                Solutions
+                Services
                 <svg
-                  className={`h-6 ml-1.5 ${
-                    isServicesHovered ? "text-black rotate-180" : "text-white"
-                  }`}
+                  className=" h-6 text-black ml-1.5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
@@ -217,7 +165,7 @@ function Navbar() {
                     d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                   />
                 </svg>
-              </Link>
+              </a>
 
               <ul
                 style={{ background: "#340D73" }}
@@ -257,26 +205,14 @@ function Navbar() {
                 </li>
               </ul>
             </li>
-            <li
-              className="flex relative group"
-              onMouseEnter={handleIndustriesHover}
-              onMouseLeave={handleIndustriesHoverOut}
-            >
-              {" "}
-              {/* Add event handlers */}
-              <Link
-                to="#"
-                className={`inline-flex w-full justify-center white hover:text-black ${
-                  isIndustriesHovered
-                    ? "bg-[#f3d157]  text-black"
-                    : "hover:bg-[#f3d157]"
-                } active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+            <li className="flex relative group">
+              <a
+                href="#"
+                className="inline-flex w-full justify-center text-black hover:text-black hover:bg-[#f3d157]  active:bg-[#f3d157] rounded md:px-2 px-4 py-2 font-sans font-normal text-base leading-6"
               >
-                Indutries
+                Industries
                 <svg
-                  className={`h-6 ml-1.5 ${
-                    isIndustriesHovered ? "text-black rotate-180" : "text-white"
-                  }`}
+                  className=" h-6 text-black ml-1.5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
@@ -286,7 +222,8 @@ function Navbar() {
                     d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                   />
                 </svg>
-              </Link>
+              </a>
+
               <ul
                 style={{ background: "#340D73" }}
                 className="absolute border-t-4 border-yellow-300 p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
@@ -328,7 +265,7 @@ function Navbar() {
             <li>
               <Link
                 to="/contact"
-                className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  inline-block  px-1 lg:px-2 py-2 font-Open-Sans font-normal text-base leading-6"
+                className="text-black hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  inline-block md:px-2 px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
                 Customer Success
               </Link>
@@ -336,7 +273,7 @@ function Navbar() {
             <li>
               <Link
                 to="/shodatAI"
-                className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  inline-block px-1 lg:px-2 py-2 font-Open-Sans font-normal text-base leading-6"
+                className="text-black hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  inline-block md:px-2 px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
                 Shodat AI
               </Link>
@@ -344,19 +281,16 @@ function Navbar() {
             <li>
               <Link
                 to="/about"
-                className="text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-1 lg:px-2 py-2 font-Open-Sans font-normal text-base leading-6"
+                className="text-black hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block md:px-2 px-4 py-2 font-Open-Sans font-normal text-base leading-6"
               >
                 About
               </Link>
             </li>
           </ul>
           <CustomAnchor
-            style={{
-              marginLeft: "30px",
-            }}
             href="#"
             role="button"
-            className="rounded-full hover:rounded-xl lg:mr-16 "
+            className="rounded-full hover:rounded-xl mr-16"
           >
             Request Demo
           </CustomAnchor>
@@ -372,6 +306,7 @@ function Navbar() {
               }
             ></i>
           </button>
+
           {isMobileMenuOpen && (
             <div className="md:hidden flex justify-center mt-3 w-full">
               <div
@@ -384,10 +319,10 @@ function Navbar() {
                       Platform
                     </a>
                   </li>
-                  <li className="hover:bg-[#f3d157]   font-sans font-normal rounded active:bg-[#f3d157] hover:text-black">
+                  <li className="hover:bg-[#f3d157]  text-white font-sans font-normal rounded active:bg-[#f3d157] hover:text-black">
                     <a href="#" className="block pl-11">
                       Solutions
-                      <i className="fa-solid fa-chevron-down fa-2xs pt-4 pl-2"></i>
+                      <i className="fa-solid fa-chevron-down fa-2xs pt-4"></i>
                     </a>
                     <ul
                       style={{ background: "#340D73" }}
@@ -430,10 +365,10 @@ function Navbar() {
                       </li>
                     </ul>
                   </li>
-                  <li className="hover:bg-[#f3d157]   font-sans font-normal rounded active:bg-[#f3d157] hover:text-black">
+                  <li className="hover:bg-[#f3d157]  text-white font-sans font-normal rounded active:bg-[#f3d157] hover:text-black">
                     <a href="#" className="block pl-11">
                       Services
-                      <i className="fa-solid fa-chevron-down fa-2xs pt-4 pl-2"></i>
+                      <i className="fa-solid fa-chevron-down fa-2xs pt-4"></i>
                     </a>
                     <ul
                       style={{ background: "#340D73" }}
@@ -461,10 +396,10 @@ function Navbar() {
                       </li>
                     </ul>
                   </li>
-                  <li className="hover:bg-[#f3d157]   font-sans font-normal rounded active:bg-[#f3d157] hover:text-black">
+                  <li className="hover:bg-[#f3d157]  text-white font-sans font-normal rounded active:bg-[#f3d157] hover:text-black">
                     <a href="#" className="block pl-11">
                       Industries
-                      <i className="fa-solid fa-chevron-down fa-2xs pt-4 pl-2"></i>
+                      <i className="fa-solid fa-chevron-down fa-2xs pt-4"></i>
                     </a>
                     <ul
                       style={{ background: "#340D73" }}
@@ -502,17 +437,12 @@ function Navbar() {
                       Shodat AI
                     </a>
                   </li>
-                  <li className="pl-4  text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  font-sans font-normal">
+                  <li className="   pl-4 text-white hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157]  font-sans font-normal">
                     <a href="#" className="block pl-7">
                       About
                     </a>
                   </li>
-                  <li
-                    className="ml-4 md:ml-12"
-                    style={{
-                      marginLeft: "200px",
-                    }}
-                  >
+                  <li className="pl-4 mt-4">
                     <CustomAnchor1
                       href="#"
                       role="button"
@@ -530,4 +460,4 @@ function Navbar() {
     </div>
   );
 }
-export default Navbar;
+export default PlatformNavbar;

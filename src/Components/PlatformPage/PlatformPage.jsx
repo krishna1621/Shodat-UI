@@ -11,16 +11,18 @@ import FooterForAllPagesExceptHome from "../Footer/FooterForAllPagesExceptHome";
 
 const PlatformPage = () => {
   return (
-    <div>
-      <Banner />
-      <Platform2 />
-      <WhyeOps />
-      <IntelligentEdge />
-      <EdgeInfrastructure />
-      <EopsFabric />
-      <EdgeOperation />
-      <Platform />
-      <FooterForAllPagesExceptHome />
+    <div className="flex justify-center items-center w-auto">
+      <div className="container">
+        <Banner />
+        <Platform2 />
+        <WhyeOps />
+        <IntelligentEdge />
+        <EdgeInfrastructure />
+        <EopsFabric />
+        <EdgeOperation />
+        <Platform />
+        <FooterForAllPagesExceptHome />
+      </div>
     </div>
   );
 };

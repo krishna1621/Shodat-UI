@@ -85,118 +85,126 @@ const CardsComponent = () => {
   const handleImageClick = () => {};
 
   return (
-    <div className="flex justify-center bg-white items-center m-8.0 py-14 px-10">
-      <div className="grid grid-cols-12 gap-8 md:px-4">
-        {cards.map((card, index) => (
-          <div key={index} className={`col-span-12 ${card.lg}`}>
-            <div
-              className={`relative transition duration-300 overflow-hidden h-64 w-full rounded-lg ${
-                index !== 0 ? "shadow-md" : ""
-              }`}
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={() => handleMouseLeave(index)}
-            >
-              {index === 0 ? (
-                <div className=" font-sans md:text-[44px] text-3xl leading-6 md:leading-[55px] ">
-                  <span
-                    className={`font-bold ${card.fontSize} text-indigo-900 text-xl md:text-[44px]`}
-                  >
-                    Discover
-                  </span>
-                  <span className="font-normal text-black  text-xl md:text-[44px] md:leading-[55px] leading-9">
-                    &nbsp;how Shodat can elevate your business with our bespoke
-                    data analytics solutions
-                  </span>
-                </div>
-              ) : (
-                <>
-                  <div
-                    style={{
-                      position: "relative",
-                      zIndex: 2,
-
-                      backgroundColor:
-                        index !== 0 && hovered[index]
-                          ? "rgba(67, 32, 113, 0.9)"
-                          : "transparent",
-                      padding: "60px",
-                      paddingTop: "130px",
-                      borderRadius: "8px",
-                      height: "100%",
-                    }}
-                    className="h-250"
-                  >
-                    <h6
-                      variant="h6"
-                      align="left"
-                      mt={12}
-                      gutterBottom
+    <div
+      className="container"
+      style={{
+        maxWidth: "2000px",
+      }}
+    >
+      {" "}
+      <div className="flex justify-center  bg-white items-center m-8.0 py-14 px-10 ">
+        <div className="grid grid-cols-12 gap-8 md:px-4">
+          {cards.map((card, index) => (
+            <div key={index} className={`col-span-12 ${card.lg}`}>
+              <div
+                className={`relative transition duration-300 overflow-hidden h-64 w-full rounded-lg ${
+                  index !== 0 ? "shadow-md" : ""
+                }`}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={() => handleMouseLeave(index)}
+              >
+                {index === 0 ? (
+                  <div className=" font-sans md:text-[44px] text-3xl leading-6 md:leading-[55px] ">
+                    <span
+                      className={`font-bold ${card.fontSize} text-indigo-900 text-xl md:text-[44px]`}
+                    >
+                      Discover
+                    </span>
+                    <span className="font-light text-black  text-xl md:text-[44px] md:leading-[55px] leading-9">
+                      &nbsp;how Shodat can elevate your business with our
+                      bespoke data analytics solutions
+                    </span>
+                  </div>
+                ) : (
+                  <>
+                    <div
                       style={{
-                        color: hovered[index] ? "#E6C458" : "black",
-                        fontFamily: "Sans,",
-                        fontSize: "20px",
+                        position: "relative",
+                        zIndex: 2,
 
-                        fontWeight: 600,
-                        lineHeight: "30px",
-                        letterSpacing: "0em",
-                        paddingTop: "5px",
-                        opacity: hovered[index] ? 1 : 0.9,
+                        backgroundColor:
+                          index !== 0 && hovered[index]
+                            ? "rgba(67, 32, 113, 0.9)"
+                            : "transparent",
+                        padding: "60px",
+                        paddingTop: "130px",
+                        borderRadius: "8px",
+                        height: "100%",
                       }}
-                      className={`font-semibold text-lg leading-6 font-sans ${
+                      className="h-250"
+                    >
+                      <h6
+                        variant="h6"
+                        align="left"
+                        mt={12}
+                        gutterBottom
+                        style={{
+                          color: hovered[index] ? "#E6C458" : "black",
+                          fontFamily: "Sans,",
+                          fontSize: "20px",
+
+                          fontWeight: 600,
+                          lineHeight: "30px",
+                          letterSpacing: "0em",
+                          paddingTop: "5px",
+                          opacity: hovered[index] ? 1 : 0.9,
+                        }}
+                        className={`font-semibold text-lg leading-6 font-sans ${
+                          hovered[index] ? "text-yellow-400" : "text-black"
+                        }`}
+                      >
+                        {card.title}
+                      </h6>
+                      <h4
+                        style={{
+                          marginTop: "5px",
+                        }}
+                        className={`font-normal text-sm ${
+                          hovered[index] ? "text-yellow-400" : "text-gray-600"
+                        }`}
+                      >
+                        {card.content}
+                      </h4>
+                    </div>
+                    <div
+                      className={`${
                         hovered[index] ? "text-yellow-400" : "text-black"
                       }`}
-                    >
-                      {card.title}
-                    </h6>
-                    <h4
                       style={{
-                        marginTop: "5px",
-                      }}
-                      className={`font-normal text-sm ${
-                        hovered[index] ? "text-yellow-400" : "text-gray-600"
-                      }`}
-                    >
-                      {card.content}
-                    </h4>
-                  </div>
-                  <div
-                    className={`${
-                      hovered[index] ? "text-yellow-400" : "text-black"
-                    }`}
-                    style={{
-                      position: "absolute",
-                      top: "8px",
-                      right: hovered[index] ? "8px" : "70px",
-                      transition: "right 0.3s, opacity 0.3s",
-                      opacity: hovered[index] ? 1 : 0,
+                        position: "absolute",
+                        top: "8px",
+                        right: hovered[index] ? "8px" : "70px",
+                        transition: "right 0.3s, opacity 0.3s",
+                        opacity: hovered[index] ? 1 : 0,
 
-                      zIndex: 3,
-                      fontSize: "14px",
-                      lineHeight: "21px",
-                    }}
-                  >
-                    <button className="h-8 w-10">
-                      <GoArrowRight className="h-full w-full" />
-                    </button>
-                  </div>
-                  <div
-                    className={`absolute top-0 right-0 transition-transform transform origin-top-right ${
-                      hovered[index] ? "scale-150" : ""
-                    }`}
-                    style={{ zIndex: 1 }}
-                  >
-                    <img
-                      src={card.image}
-                      alt={card.title}
-                      style={{ width: "220px", height: "auto" }}
-                      onClick={handleImageClick}
-                    />
-                  </div>
-                </>
-              )}
+                        zIndex: 3,
+                        fontSize: "14px",
+                        lineHeight: "21px",
+                      }}
+                    >
+                      <button className="h-8 w-10">
+                        <GoArrowRight className="h-full w-full" />
+                      </button>
+                    </div>
+                    <div
+                      className={`absolute top-0 right-0 transition-transform transform origin-top-right ${
+                        hovered[index] ? "scale-150" : ""
+                      }`}
+                      style={{ zIndex: 1 }}
+                    >
+                      <img
+                        src={card.image}
+                        alt={card.title}
+                        style={{ width: "220px", height: "auto" }}
+                        onClick={handleImageClick}
+                      />
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
