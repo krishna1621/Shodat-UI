@@ -203,7 +203,7 @@ function Navbar() {
                     : "hover:bg-[#f3d157]"
                 } active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
               >
-                Solutions
+                Services
                 <svg
                   className={`h-6 ml-1.5 ${
                     isServicesHovered ? "text-black rotate-180" : "text-white"
