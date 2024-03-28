@@ -7,7 +7,7 @@ const ScheduleMeetingForm = () => {
         className="absolute h-full w-full  ml-[-50px] bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }} // Adjust opacity as needed
       ></div>
-      <div className="bg-white rounded-3xl p-8 max-w-md md:mb-6 mt-5 mb-5  relative z-10 ">
+      <div className="bg-white rounded-3xl p-8 max-w-md md:mb-6 mt-5 mb-5  relative  ">
         <h2 className="text-center font-openSans text-3xl font-semibold mb-8">
           Scheduling a Meeting
         </h2>
