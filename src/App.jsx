@@ -7,6 +7,7 @@ import SolutionAi from "./Components/SolutionAI/SolutionAi";
 import ShodatAI from "./Components/ShodatAI/ShodatAI";
 import About from "./Components/About/About";
 import Navbar from "./Components/Navbar1/Navbar";
+import FinalFooter from "./Components/Footer/FinalFooter";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
             <Route path="/about" element={<About />} />
             {/* Add more routes for additional pages */}
           </Routes>
-        </div>
+        </div>{" "}
+        <FinalFooter />
       </Router>
     </>
   );
