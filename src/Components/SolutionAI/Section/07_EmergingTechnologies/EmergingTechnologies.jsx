@@ -27,7 +27,7 @@ const EmergingTechnologies = () => {
   return (
     <div
       className="w-full bg-black h-[790px] bg-cover bg-center relative "
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${backgroundImage})`, maxWidth: "2000px" }}
     >
       <div className="absolute ml-4 md:ml-20 mt-12 md:mt-20 ">
         <p className="text-3xl md:text-[39px] font-semibold leading-[58.5px] font-poppins text-white ">

@@ -2,7 +2,10 @@ import innovate from "../../../../Assets/Components/About/about-innovate.png";
 
 function AboutInnovate() {
   return (
-    <div className="flex flex-col md:flex-row md:space-x-8 bg-[#F0F5FF] p-14 bg-[120vh]">
+    <div
+      className="flex flex-col w-full md:flex-row md:space-x-8 bg-[#F0F5FF] p-14 "
+      style={{ maxWidth: "2000px" }}
+    >
       <div className="md:w-3/5  pl-4 md:pl-10 sm:pt-3">
         <div className=" text-2xl font-sans text:2xl sm:text-4xl font-semibold">
           <p>Innovating Insights,</p>
@@ -41,14 +44,12 @@ function AboutInnovate() {
           <p>automotive, trading and banking multinationals.</p>
         </div>
       </div>
-      <div className=" bg-white md:ml-[20%]  sm:h-[60vh]  md:w-[42%] mt-8 md:mt-[1%]">
-        <div>
-          <img
-            src={innovate}
-            alt="Innovation at Shodat"
-            className="bg-no-repeat bg-cover bg-center md:h-[56vh] md:w-[92%] md:ml-[4%] pt-[4%]"
-          />
-        </div>
+      <div className="md:w-1/2 ">
+        <img
+          src={innovate}
+          alt="Innovation at Shodat"
+          className="w-full h-auto"
+        />
       </div>
     </div>
   );

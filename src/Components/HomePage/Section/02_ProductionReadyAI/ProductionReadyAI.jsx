@@ -26,24 +26,28 @@ const ProductionReadyAi = () => {
             </span>
           </p>
         </div>
-        <div className="col-span-12 sm:col-span-full md:col-span-full lg:col-span-6 mx-6 md:mx-0 md:ml-6 mt-8">
-          <p className="bg-[#340D73] text-white font-sans text-xl md:text-[27px] md:leading-[40.5px] leading-7 font-light text-left p-10 rounded-lg ml-8">
-            Our market ready solutions provide flexible and scalable
-            capabilities that enterprises need to successfully become AI-fueled{" "}
-            <br />
+        <div className="col-span-12 sm:col-span-full md:col-span-full lg:col-span-6 mx-6 md:mx-0 md:ml-6 mt-8 ">
+          <p className="bg-[#340D73] text-white font-sans text-xl md:text-[27px] md:leading-[40.5px] leading-7 font-light text-left p-10 rounded-lg ml-8 ">
+            Our market ready solutions provide flexible <br /> and scalable
+            capabilities that enterprises
+            <br /> need to successfully become AI-fueled <br />
             organizations
           </p>
         </div>
         {/* Bottom Grids (lg 6) */}
         <div className="col-span-12 sm:col-span-full md:col-span-full lg:col-span-6 mx-6 md:mx-0 mt-8">
           <p className="text-[#57647c] font-sans font-normal text-xl leading-[30px] text-left pl-10 md:pr-5 pb-5">
-            Redefining the infusion of machine learning in heavy industries for
-            a decade, we at Shodat Inc are poised for a paradigm shift in the
-            industry with ready AI—eOps Fabric™, an edge analytics, and
-            operations platform. The platform leverages a powerful combination
-            of computer vision, predictive analytics, and generative AI to
-            predict operational defects, automate RCA reports, and propose
-            impactful enhancements that promise significant cost benefits.
+            Redefining the infusion of machine learning in heavy <br />{" "}
+            industries for a decade, we at Shodat Inc are poised for a <br />
+            paradigm shift in the industry with ready AI—eOps Fabric™,
+            <br /> an edge analytics, and operations platform.
+            <br /> The platform leverages a powerful combination of computer
+            vision,
+            <br /> predictive analytics, and generative AI to predict <br />
+            operational defects, automate RCA reports, and propose
+            <br />
+            impactful enhancements that promise significant cost <br />
+            benefits.
           </p>
           <div className="py-5 ml-9">
             <button

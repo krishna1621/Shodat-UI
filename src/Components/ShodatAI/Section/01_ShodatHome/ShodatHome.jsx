@@ -1,16 +1,12 @@
 import shome from "../../../../Assets/Components/ShodaAIPage/shodathome.png";
-import Navbar from "../../../Navbar1/Navbar";
+
 import ArrowRight from "../../../../Assets/Components/HomePage/01_Slider_Home/arrow-right.png";
 const ShodatHome = () => {
   return (
     <div
-      className="w-full min-h-screen relative bg-no-repeat bg-cover flex items-center "
-      style={{ backgroundImage: `url(${shome})` }}
+      className=" w-full h-[790px] bg-cover relative bg-no-repeat flex items-center "
+      style={{ backgroundImage: `url(${shome})`, maxWidth: "2000px" }}
     >
-      <div className="absolute top-0 ml-20 ">
-        <Navbar />
-      </div>
-
       <div className="p-4 md:p-20 text-left">
         <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4">
           Ushering Era of

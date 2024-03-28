@@ -2,7 +2,12 @@ import React from "react";
 
 function ContinuousInnovation() {
   return (
-    <div className="w-full flex flex-col bg-[#E6F0F2] px-10 py-5">
+    <div
+      className="w-full flex flex-col bg-[#E6F0F2] px-10 py-5"
+      style={{
+        maxWidth: "2000px",
+      }}
+    >
       <div className="font-poppins text-2xl md:text-3xl leading-8 md:leading-[46.5px] px-4 font-semibold mb-4">
         Continuous Innovation
       </div>

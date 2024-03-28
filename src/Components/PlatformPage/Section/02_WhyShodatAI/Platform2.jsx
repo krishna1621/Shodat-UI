@@ -11,19 +11,15 @@ const Platform2 = () => {
     <div className=" bg-white p-8 rounded-2xl">
       <div className="grid gap-8">
         <div className="bg-white p-8 rounded-xl">
-          <p className="text-black text-2xl font-semibold mb-4 font-sans">
+          <p className="text-black text-2xl font-sans font-normal leading-10  mb-4">
             A one-stop cloud-native operations platform that transforms raw
-            operational data into business values{" "}
-          </p>
-          <p className="text-black text-2xl font-semibold font-sans">
-            and discovers potential operational inefficiencies, risks & security
-            threats faster by providing
+            operational data into business values and discovers potential
+            operational inefficiencies, risks & security threats faster by
+            providing
           </p>
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 "
-            style={{
-              marginTop: "70px",
-            }}
+            className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-5 gap-6 "
+            style={{}}
           >
             {renderFeature("Easy asset onboarding & tracking")}
             {renderFeature("Vision & telemetry powered ops visibility")}
@@ -33,38 +29,57 @@ const Platform2 = () => {
           </div>
         </div>
 
-        <div className="bg-white p-8 rounded-xl " style={{}}>
-          <p className="text-black text-2xl font-semibold mb-4">
+        <div className="bg-white  rounded-xl " style={{}}>
+          <p className="text-black text-4xl font-sans font-semibold mb-4">
             Why Shodat Platform?
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {renderStat(
               ecl1,
               ecl2,
               ecl4,
               "Reduce cost to adopt PDM & BI strategies by - 40%",
-              "#340D73"
+              "#340D73",
+              "130%",
+              "#340D73",
+              "-170px",
+              "50px"
             )}
             {renderStat(
               ecl1,
               ecl2,
               ecl7,
               "Predict & reduce operational failures by - 35%",
-              "#F9C407"
+              "#F9C407",
+              "110%",
+              "#F9C407",
+              "-112px", // Pass your desired marginTop value here
+              // Customize SVG line height,
+              "80px" // Pass your desired paragraphMarginTop value here // Pass your desired marginTop value here
             )}
             {renderStat(
               ecl1,
               ecl2,
               ecl5,
               "Predict time for complex RCA by - 80%",
-              "#01A79D"
+              "#01A79D",
+              "150%",
+              "#01A79D", // Customize SVG line height
+              "-170px",
+              "50px"
             )}
             {renderStat(
               ecl1,
               ecl2,
               ecl6,
               "Reduce time for auditing & compliance by - 66%",
-              "#000000"
+              "#000000",
+              "110%",
+              "#000000",
+              "-112px",
+              "70px" // Pass your desired marginTop value here
+
+              // Customize SVG line height
             )}
           </div>
         </div>
@@ -88,7 +103,7 @@ const renderFeature = (text) => (
         </div>
         {index !== 4 && (
           <div className="hidden md:block absolute top-1/2 left-full transform -translate-y-1/2 -ml-2">
-            <div className="bg-black w-1 h-1"></div>
+            <div className="bg-black w-1 h-1 font-normal  text-18 font-sans"></div>
           </div>
         )}
       </div>
@@ -96,15 +111,30 @@ const renderFeature = (text) => (
   </div>
 );
 
-const renderStat = (image1, image2, image3, text, backgroundColor) => (
-  <div className="flex items-center relative">
+const renderStat = (
+  image1,
+  image2,
+  image3,
+  text,
+  backgroundColor,
+  svgHeight,
+  strokeColor,
+  image3MarginTop,
+  paragraphMarginTop
+) => (
+  <div
+    className="flex items-center relative mt-6"
+    style={{
+      maxWidth: "2000px",
+    }}
+  >
     <div
-      className="w-24 h-24 bg-black flex justify-center items-center relative rounded"
+      className="w-24 h-24 bg-black flex justify-center items-center relative"
       style={{
         height: "60px",
-        width: "360px",
+        width: "400px",
         backgroundColor: backgroundColor,
-        marginTop: "30%",
+        marginTop: "45%",
       }}
     >
       <img
@@ -115,13 +145,13 @@ const renderStat = (image1, image2, image3, text, backgroundColor) => (
       />
       <img
         src={image2}
-        className="absolute h-12"
+        className="absolute"
         alt="Ellipse 2"
         style={{ left: "50%", transform: "translateX(-50%)" }}
       />
       <svg
         width="100%"
-        height="150%"
+        height={svgHeight}
         style={{ position: "absolute", bottom: 30, left: 0 }}
       >
         <line
@@ -129,7 +159,7 @@ const renderStat = (image1, image2, image3, text, backgroundColor) => (
           y1="0%"
           x2="50%"
           y2="100%"
-          stroke="#340D73"
+          stroke={strokeColor}
           strokeWidth="1"
         />
       </svg>
@@ -137,24 +167,20 @@ const renderStat = (image1, image2, image3, text, backgroundColor) => (
         src={image3}
         className="absolute h-12"
         alt="Ellipse 4"
-        style={{ left: "50%", transform: "translateX(-50%)" }}
-      />
-      <img
-        src={image3}
-        className="absolute h-12"
-        alt="Ellipse 4"
         style={{
           left: "50%",
           transform: "translateX(-50%)",
-          marginTop: "-170px",
+          marginTop: image3MarginTop,
           height: "20px",
           width: "20px",
         }}
       />
     </div>
     <p
-      className="absolute top-0 left-0 right-0 text-xs text-center"
-      style={{ marginTop: "10px" }}
+      className="absolute top-0 left-0 right-0 text-sm text-center font-semibold text-[#555555]"
+      style={{
+        marginTop: paragraphMarginTop,
+      }}
     >
       {text}
     </p>

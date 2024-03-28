@@ -4,9 +4,9 @@ import img1 from "../../../../Assets/Components/ShodaAIPage/AIEthics.png";
 
 const ExplainableAISection = () => {
   return (
-    <div>
+    <div style={{ maxWidth: "2000px" }}>
       <div
-        className="left-0 w-full  z-20 mt-20 md:mb-10 grid grid-cols-1 md:grid-cols-2 gap-6"
+        className="left-0  z-20 mt-20 md:mb-10 grid grid-cols-1 md:grid-cols-2 gap-6"
         style={{
           "@media (min-width: 768px)": {
             marginTop: "600px",

@@ -20,6 +20,7 @@ function InnovationAction() {
       style={{
         backgroundImage: isColumnLayout ? `url(${backgroundImage})` : "none",
         backgroundRepeat: "no-repeat",
+        maxWidth: "2000px",
       }}
     >
       <div className="flex flex-col md:flex-row py-8 ">

@@ -35,7 +35,7 @@ function ShodatDifference() {
                     Redefining possibilities in data analytics
                   </p>
                 </div>
-                <div className="flex justify-end">
+                <div className="flex justify-end mt-5">
                   <GoArrowRight className=" text-white p-2 w-11 h-10" />
                 </div>
               </div>

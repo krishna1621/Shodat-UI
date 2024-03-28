@@ -1,14 +1,13 @@
 import React from "react";
 import backgroundImage from "../../../../Assets/Components/ContactPage/ContactPage.png";
 import ArrowRight from "../../../../Assets/Components/HomePage/01_Slider_Home/arrow-right.png";
-import Navbar from "../../../Navbar1/Navbar";
+
 const Contact1 = () => {
   return (
     <div
       className="w-full h-[790px] bg-cover bg-white bg-center relative "
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <Navbar />
       <div className="absolute ml-4 md:ml-12 mt-10 md:mt-60 ">
         <p className="text-3xl md:text-[56px] font-bold leading-[67.2px] font-sans text-white ">
           Welcome to Shodat,

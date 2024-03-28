@@ -8,8 +8,8 @@ import FooterForAllPagesExceptHome from "../Footer/FooterForAllPagesExceptHome";
 
 function About() {
   return (
-    <div className="flex justify-center items-center w-auto">
-      <div className="container ">
+    <div className="flex justify-center items-center">
+      <div className="container">
         <AboutBanner />
         <AboutInnovate />
         <AboutVision />

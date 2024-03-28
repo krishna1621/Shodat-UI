@@ -5,7 +5,26 @@
   z-index: 1;
   transition: 0.5s;
   margin-top: 30px;
-  margin-right: 190px;
+  justify-content: flex-end;
+  position: fixed; /* Position fixed to cover the entire screen */
+  top: 20; /* Top of the screen */
+  left: 0; /* Left of the screen */
+  right: 0; /* Right of the screen */
+  bottom: 0; /* Bottom of the screen */
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+  padding: 20px; /* Add padding for better readability */
+}
+
+#mobile-icon {
+  position: absolute;
+  right: -25rem;
+  top: 2rem; /* Adjust the left position as needed */
+}
+
+.fa-xmark {
+  position: absolute;
+  margin-left: 5%; /* Adjust the left margin as needed */
+  left: 20rem; /* Adjust the left position as needed */
 }
 .mobile-menu.active {
   left: 0;
@@ -15,6 +34,13 @@
 }
 .mobile-menu ul li:hover ul {
   display: block;
+}
+
+/* Reset default margins and padding */
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 /* Reset default margins and padding */
 body,
@@ -27,5 +53,6 @@ html {
 .container {
   margin: 0 auto; /* Center the container */
   padding: 0;
-  max-width: max-content;
+  width: 100%;
+  max-width: 1600px;
 }

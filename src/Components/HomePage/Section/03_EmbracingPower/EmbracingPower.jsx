@@ -8,12 +8,7 @@ const EmbracingPower = () => {
   };
 
   return (
-    <div
-      className="px-8 py-16 bg-white md:px-20 md:py-0 container flex"
-      style={{
-        maxWidth: "2000px",
-      }}
-    >
+    <div className="px-8 py-16 bg-white md:px-20 lg:pb-14 lg:py-0 ">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
         <div>
           <h1 className="text-4xl md:text-[44px]  leading-[52.8px] ">
