@@ -19,15 +19,15 @@ const SliderHome = () => {
 
   return (
     <div
-      className=" h-[790px]  bg-cover conatiner bg-center relative"
+      className="w-full h-[790px]  bg-cover bg-center relative"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <Navbar />
       <div>
         <div
+          style={{}}
           className={`transition-opacity duration-2000 ${
             isFirstVisible ? "opacity-100" : "opacity-0"
-          } absolute ml-4 md:ml-20 mt-12 md:mt-60`}
+          } absolute mt-60 ml-4 md:ml-20 lg:mt-64   md:mt-48 `}
         >
           <p className="text-3xl md:text-6xl font-semibold font-Poppins text-white">
             Innovating Insights,
@@ -52,7 +52,7 @@ const SliderHome = () => {
         <div
           className={`transition-opacity duration-2000 ${
             isFirstVisible ? "opacity-0" : "opacity-100"
-          } absolute ml-4 md:ml-20 mt-12 md:mt-60`}
+          } absolute mt-60  ml-4 md:ml-20  lg:mt-64  sm:mt-60  md:mt-48`}
         >
           <p className="text-3xl md:text-6xl font-semibold text-white font-Poppins">
             Frictionless AI With Shodat

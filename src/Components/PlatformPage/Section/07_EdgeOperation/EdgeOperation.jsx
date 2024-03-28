@@ -59,7 +59,12 @@ function EdgeOperation() {
   ];
 
   return (
-    <div className=" bg-[#fffbef] py-8 relative">
+    <div
+      className=" bg-[#fffbef] py-8 relative"
+      style={{
+        maxWidth: "2000px",
+      }}
+    >
       <div className="container mx-auto bg-[#fffbef] border-b-2  py-2">
         <div className="font-sans text-4xl font-semibold leading-[54px] mx-4 mb-4   ">
           Enterprise Edge Operations Application -{" "}

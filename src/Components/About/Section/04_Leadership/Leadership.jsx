@@ -2,17 +2,20 @@ import leader from "../../../../Assets/Components/About/leader.png";
 
 function Leadership() {
   return (
-    <div className="flex flex-col md:flex-row md:space-x-8 bg-[170vh]">
-      <div className="sm:ml-[4%]  md:h-[60vh]  md:w-[42%] mt-8 sm:mt-[5%] ">
+    <div
+      className="flex flex-col md:flex-row md:space-x-8  p-14"
+      style={{ maxWidth: "2000px" }}
+    >
+      <div className="md:w-1/2 ">
         <img
           src={leader}
           alt="Innovation at Shodat"
-          className="bg-no-repeat bg-cover bg-center md:h-[56vh] md:w-[92%] md:ml-[4%] p-4 mt-4"
+          className="w-full h-auto"
         />
       </div>
       {/* Content Column */}
       <div className="md:w-3/5  pl-4 md:pl-10 md:pt-3">
-        <div className=" text-[#340D73] md:text-lg font-semibold md:ml-[0.1%] md:mt-[7%] font-sans">
+        <div className=" text-[#340D73] md:text-lg font-semibold md:ml-[0.1%] md:mt-[1%] font-sans">
           <p>LEADERSHIP</p>
         </div>
         <div className=" pt-2 text-2xl font-sans text:2xl md:text-4xl font-semibold">
@@ -22,7 +25,7 @@ function Leadership() {
           </p>
           <p className="  text-[#57647C] font-normal  text-base font-sans">
             enabling companies & organizations to deliver best user experiences
-            to their{" "}
+            to their
           </p>
           <p className=" text-[#57647C] font-normal text-base font-sans">
             customers & employees.
@@ -71,5 +74,4 @@ function Leadership() {
     </div>
   );
 }
-
 export default Leadership;

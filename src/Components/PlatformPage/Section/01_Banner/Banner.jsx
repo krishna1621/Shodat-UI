@@ -1,15 +1,11 @@
 import React from "react";
 import backgroundImage from "../../../../Assets/Components/PlatformPage/platform-banner.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import PlatformNavbar from "../PlatformNavbar";
+
 function Banner() {
   return (
     <div>
-      <div className="z-10 relative">
-        <PlatformNavbar />
-      </div>
-
-      <div className="relative ">
+      <div className="relative mt-32 ">
         {/* Background image */}
         <img
           src={backgroundImage}

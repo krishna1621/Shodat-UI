@@ -2,7 +2,12 @@ import React from "react";
 import AI from "../../../../Assets/Components/PlatformPage/AI.png";
 function EdgeInfrastructure() {
   return (
-    <div className="bg-[#FFFBEF] py-8">
+    <div
+      className="bg-[#FFFBEF] py-8"
+      style={{
+        maxWidth: "2000px",
+      }}
+    >
       {/* First column */}
       <div className="md:w-full flex-row  p-8">
         <h2 className="font-sans text-3xl md:text-[34px] leading-[50px] font-semibold mb-4 md:ml-8">

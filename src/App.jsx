@@ -6,11 +6,14 @@ import PlatformPage from "./Components/PlatformPage/PlatformPage";
 import SolutionAi from "./Components/SolutionAI/SolutionAi";
 import ShodatAI from "./Components/ShodatAI/ShodatAI";
 import About from "./Components/About/About";
+import Navbar from "./Components/Navbar1/Navbar";
 
 function App() {
   return (
     <>
       <Router>
+        {" "}
+        <Navbar />
         <div>
           <Routes>
             <Route path="/" element={<Home />} />

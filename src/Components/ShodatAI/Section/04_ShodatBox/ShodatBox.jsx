@@ -3,7 +3,10 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export const ShodatBox = () => {
   return (
-    <div className=" w-full  bg-[#432071] z-20 flex flex-col md:flex-row items-center">
+    <div
+      className=" w-full  bg-[#432071] z-20 flex flex-col md:flex-row items-center"
+      style={{ maxWidth: "2000px" }}
+    >
       <div className="">
         <div className="md:ml-14">
           <h2 className="text-white text-2xl md:text-4xl font-semibold leading-10 md:leading-14 mb-2">

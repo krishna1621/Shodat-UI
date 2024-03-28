@@ -2,7 +2,12 @@ import React from "react";
 import eOps from "../../../../Assets/Components/PlatformPage/eOps.png";
 function WhyeOps() {
   return (
-    <div className="flex flex-col md:flex-row bg-[#FFFBEF] pt-5">
+    <div
+      className="flex flex-col md:flex-row bg-[#FFFBEF] pt-5"
+      style={{
+        maxWidth: "2000px",
+      }}
+    >
       {/* First column */}
       <div className="md:w-1/4 p-4 ">
         <h2 className="text-2xl font-semibold mb-4 flex justify-center md:justify-start md:ml-12 ">

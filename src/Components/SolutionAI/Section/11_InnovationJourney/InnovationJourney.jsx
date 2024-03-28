@@ -3,7 +3,12 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 function InnovationJourney() {
   return (
-    <div className="w-full px-10 py-10 bg-customBlue">
+    <div
+      className="w-full px-10 py-10 bg-customBlue"
+      style={{
+        maxWidth: "2000px",
+      }}
+    >
       <div className="font-poppins text-[31px] px-5 leading-[46.5px] text-white font-semibold mb-4">
         Ready to embark on your AI innovation journey?
       </div>

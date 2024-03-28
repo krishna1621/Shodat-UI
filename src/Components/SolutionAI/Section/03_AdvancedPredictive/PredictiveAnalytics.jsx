@@ -3,7 +3,12 @@ import predictiveAnalyticsImage from "../../../../Assets/Components/SolutionAI/p
 
 function PredictiveAnalytics() {
   return (
-    <div className="flex flex-col md:flex-row md:space-x-8 bg-[#E6F0F2] p-14">
+    <div
+      className="flex flex-col md:flex-row md:space-x-8 bg-[#E6F0F2] p-14"
+      style={{
+        maxWidth: "2000px",
+      }}
+    >
       {/* Image Column */}
 
       <div className="md:w-1/2 ">

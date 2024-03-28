@@ -8,11 +8,12 @@ import ShodatDifference from "./Section/05_ShodatDifference/ShodatDifference";
 import ProductionReadyAi from "./Section/02_ProductionReadyAI/ProductionReadyAI";
 import FinalFooter from "../Footer/FinalFooter";
 import FooterForAllPagesExceptHome from "../Footer/FooterForAllPagesExceptHome";
+import FooterForAll from "../Footer/FooterForAll";
 
 const Home = () => {
   return (
     <div className="flex justify-center items-center">
-      <div className="container mx-auto my-8">
+      <div className="container">
         <SliderHome />
         <ProductionReadyAi />
         <EmbracingPower />
@@ -20,7 +21,8 @@ const Home = () => {
         <ShodatDifference />
         <TabsContain />
         <MeetingForm />
-        <FooterForAllPagesExceptHome />
+        {/* <FooterForAllPagesExceptHome /> */}
+        <FinalFooter />
       </div>
     </div>
   );

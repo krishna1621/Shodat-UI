@@ -1,13 +1,11 @@
 import backgroundImage from "../../../../Assets/Components/About/about.png";
-import Navbar from "../../../Navbar1/Navbar";
 
 const AboutBanner = () => {
   return (
     <div
-      className="w-full h-[75vh] bg-cover bg-center bg-norepeat relative "
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      className=" w-full h-[490px]  bg-cover bg-center relative "
+      style={{ backgroundImage: `url(${backgroundImage})`, maxWidth: "2000px" }}
     >
-      <Navbar />
       <div className="absolute ml-4 md:ml-20 mt-12 md:mt-60 ">
         <p className="text-6xl md:text-[56px] font-bold leading-[70px] font-sans text-white ">
           About Shodat

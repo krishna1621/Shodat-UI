@@ -1,15 +1,13 @@
 import React from "react";
 import backgroundImage from "../../../../Assets/Components/SolutionAI/hero-bg.png";
 import ArrowRight from "../../../../Assets/Components/HomePage/01_Slider_Home/arrow-right.png";
-import Navbar from "../../../Navbar1/Navbar";
 
 const SolutionBanner = () => {
   return (
     <div
       className="w-full h-[790px] bg-cover bg-center relative "
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${backgroundImage})`, maxWidth: "2000px" }}
     >
-      <Navbar />
       <div className="absolute ml-4 md:ml-16 mt-12 md:mt-60 ">
         <p className="text-3xl md:text-[61px] font-semibold leading-[50px] md:leading-[91.5px] font-poppins text-white ">
           Pioneering AI Innovations
