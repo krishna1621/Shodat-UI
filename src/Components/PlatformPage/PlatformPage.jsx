@@ -7,6 +7,7 @@ import Platform2 from "./Section/02_WhyShodatAI/Platform2";
 import { Platform } from "./Section/08_OperationalChallenges/Platform";
 import EopsFabric from "./Section/06_eOpsFabric/EopsFabric";
 import IntelligentEdge from "./Section/03_IntelligentEdge/IntelligentEdge";
+import FinalFooter from "../Footer/FinalFooter";
 
 const PlatformPage = () => {
   return (
@@ -19,7 +20,7 @@ const PlatformPage = () => {
         <EdgeInfrastructure />
         <EopsFabric />
         <EdgeOperation />
-        <Platform />
+        <Platform /> <FinalFooter />
       </div>
     </div>
   );

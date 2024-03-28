@@ -3,7 +3,7 @@ import ParaGraph from "./Section/02_Para/ParaGraph";
 import Contact1 from "./Section/01_Contact_1/Contact1";
 import MapAddress from "./Section/03_Map/MapAddress";
 import RequestForm from "./Section/04_Request/RequestForm";
-
+import FinalFooter from "../Footer/FinalFooter";
 Contact1;
 const ContactPage = () => {
   return (
@@ -22,6 +22,7 @@ const ContactPage = () => {
             <MapAddress />
           </div>
         </div>
+        <FinalFooter />
       </div>
     </div>
   );

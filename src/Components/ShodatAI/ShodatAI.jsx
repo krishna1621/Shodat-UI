@@ -4,6 +4,7 @@ import IntroSection from "./Section/02_Introsection/Introsection";
 import { Introsection2 } from "./Section/03_Introsection/Introsection2";
 import { ShodatBox } from "./Section/04_ShodatBox/ShodatBox";
 import ExplainableAISection from "./Section/05_Explanation/ExplantionableAISection";
+import FinalFooter from "../Footer/FinalFooter";
 
 const ShodatAI = () => {
   return (
@@ -13,7 +14,7 @@ const ShodatAI = () => {
         <IntroSection />
         <Introsection2 />
         <ShodatBox />
-        <ExplainableAISection />
+        <ExplainableAISection /> <FinalFooter />
       </div>
     </div>
   );
