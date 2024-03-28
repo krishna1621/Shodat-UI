@@ -26,7 +26,6 @@ function App() {
             {/* Add more routes for additional pages */}
           </Routes>
         </div>{" "}
-        <FinalFooter />
       </Router>
     </>
   );
