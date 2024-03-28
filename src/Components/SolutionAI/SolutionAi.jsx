@@ -10,7 +10,6 @@ import EmergingTechnologies from "./Section/07_EmergingTechnologies/EmergingTech
 import InnovationAction from "./Section/09_InnovationAction/InnovationAction";
 import SuccessStories from "./Section/10_SuccessStories/SuccessStories";
 import InnovationJourney from "./Section/11_InnovationJourney/InnovationJourney";
-import FooterForAllPagesExceptHome from "../Footer/FooterForAllPagesExceptHome";
 
 const SolutionAi = () => {
   return (
@@ -27,7 +26,6 @@ const SolutionAi = () => {
         <InnovationAction />
         <SuccessStories />
         <InnovationJourney />
-        <FooterForAllPagesExceptHome />
       </div>
     </div>
   );
