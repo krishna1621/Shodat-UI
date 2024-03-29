@@ -1,10 +1,10 @@
 import React from "react";
-import v1 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v1.png";
-import v2 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v2.png";
-import v3 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v3.png";
-import v4 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v4.png";
-import v5 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v5.png";
-import v6 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v6.png";
+import v1 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v4.svg";
+import v2 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v6.svg";
+import v3 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v5.svg";
+import v4 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v3.svg";
+import v5 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v2.svg";
+import v6 from "../../../../Assets/Components/PlatformPage/03_OperationalChallenges/v1.svg";
 
 export const Platform = () => {
   return (
@@ -12,10 +12,8 @@ export const Platform = () => {
       <div className="grid gap-8">
         <div className="p-8 rounded-xl">
           <h2
-            className="text-purple-800 mb-4 font-bold"
+            className="text-[#340D73] font-sans  text-4xl  font- mb-4    font-semibold  leading-[55px]"
             style={{
-              fontSize: "37px",
-              fontWeight: "600px",
               justifyContent: "center",
             }}
           >
@@ -25,7 +23,7 @@ export const Platform = () => {
             </p>
             <p> solving everyday business & operational challenges</p>
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 pt-6">
             {renderFeature(
               "Scalable Architecture",
               "Built on a scalable architecture to handle diverse datasets.",
@@ -74,12 +72,16 @@ export const Platform = () => {
 const renderFeature = (title, description, image) => (
   <div className="flex items-center">
     <div
-      className="w-24 h-24 bg-contain bg-no-repeat"
+      className="p-10 bg-contain bg-white justify-center flex bg-no-repeat"
       style={{ backgroundImage: `url(${image})` }}
     ></div>
-    <div className="ml-4">
-      <h6 className="text-purple-800 font-bold">{title}</h6>
-      <span className="text-gray-700">{description}</span>
+    <div className="pl-10 ">
+      <h6 className="text-[#340D73]  font-bold  text-xl   pb-6  font-sans">
+        {title}
+      </h6>
+      <span className="text-[#57647C]  text-[16px]    font-sans  leading-6  ">
+        {description}
+      </span>
     </div>
   </div>
 );

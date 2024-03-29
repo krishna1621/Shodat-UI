@@ -1,7 +1,12 @@
 import shome from "../../../../Assets/Components/ShodaAIPage/shodathome.png";
 
 import ArrowRight from "../../../../Assets/Components/HomePage/01_Slider_Home/arrow-right.png";
-const ShodatHome = () => {
+const ShodatHome = ({ scrollToRef }) => {
+  const handleArrowClick = () => {
+    const navbarHeight = parseInt(localStorage.getItem("navbarHeight")) || 0;
+    const scrollToPosition = scrollToRef.current.offsetTop - navbarHeight;
+    window.scrollTo({ top: scrollToPosition, behavior: "smooth" });
+  };
   return (
     <div
       className=" w-full h-[790px] bg-cover relative bg-no-repeat flex items-center "
@@ -27,7 +32,10 @@ const ShodatHome = () => {
           </p>
         </div>
       </div>
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-0">
+      <div
+        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-0 "
+        onClick={handleArrowClick}
+      >
         <div className="h-[100px] w-[100px] bg-[#F3D157]  flex items-center justify-center ">
           <img src={ArrowRight} alt="Arrow Right" />
         </div>

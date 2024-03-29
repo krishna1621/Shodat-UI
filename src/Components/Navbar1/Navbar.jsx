@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import logo from "../../Assets/Components/Navbar/Shodat-logo.png";
 import styled from "styled-components";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -50,6 +50,7 @@ const CustomAnchor1 = styled.a`
     );
   }
 `;
+
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSolutionHovered, setIsSolutionHovered] = useState(false);
@@ -114,6 +115,14 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const navbarRef = useRef(null);
+
+  useEffect(() => {
+    // Set the height of the Navbar component in localStorage
+    if (navbarRef.current) {
+      localStorage.setItem("navbarHeight", navbarRef.current.offsetHeight);
+    }
+  }, []);
   return (
     <nav
       className="fixed container left-0 right-0 z-10 py-8 font-sans text-white bg-transparent"
@@ -132,6 +141,8 @@ function Navbar() {
       }}
     >
       <div
+        ref={navbarRef}
+        id="navbar"
         className="container flex justify-start items-center h-24  lg:-ml-40"
         style={{}}
       >
