@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import PredictiveAnalytics from "./Section/03_AdvancedPredictive/PredictiveAnalytics";
 import CognitiveComputing from "./Section/04_CognitiveComputing/CognitiveComputing";
 import NaturalLanguageProcessing from "./Section/05_NaturalLanguageProcessing/05_NaturalLanguageProcessing";
@@ -13,11 +13,12 @@ import InnovationJourney from "./Section/11_InnovationJourney/InnovationJourney"
 import FinalFooter from "../Footer/FinalFooter";
 
 const SolutionAi = () => {
+  const paragraphRef = useRef(null);
   return (
     <div className="flex justify-center items-center w-auto">
       <div className="container ">
-        <SolutionBanner />
-        <ParaGraph />
+        <SolutionBanner scrollToRef={paragraphRef} />
+        <ParaGraph ref={paragraphRef} />
         <PredictiveAnalytics />
         <CognitiveComputing />
         <NaturalLanguageProcessing />

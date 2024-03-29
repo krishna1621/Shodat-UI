@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import MeetingForm from "./Section/07_Scheduling_Metting/MeetingForm";
 import SliderHome from "./Section/01_Slider_Home/SliderHome";
 import { TabsContain } from "./Section/06_PartnerOfChoice/TabsContain";
@@ -9,11 +9,12 @@ import ProductionReadyAi from "./Section/02_ProductionReadyAI/ProductionReadyAI"
 import FinalFooter from "../Footer/FinalFooter";
 
 const Home = () => {
+  const productionRef = useRef(null);
   return (
     <div className="flex justify-center items-center">
       <div className="container">
-        <SliderHome />
-        <ProductionReadyAi />
+        <SliderHome scrollToRef={productionRef} />
+        <ProductionReadyAi ref={productionRef} />
         <EmbracingPower />
         <CardsComponent />
         <ShodatDifference />

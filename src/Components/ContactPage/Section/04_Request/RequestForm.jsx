@@ -66,12 +66,12 @@ const RequestForm = () => {
           />
         </div>
         <div className="mb-4">
-          <textarea
+          <input
             id="message"
             name="message"
             placeholder="Enter your query in details"
             className="border-b border-gray-300 p-2 w-full focus:outline-none"
-          ></textarea>
+          />
           <div className="mt-10 flex md:justify-normal ml-5 md:ml-0 justify-center">
             <button
               type="submit"

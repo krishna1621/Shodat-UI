@@ -4,6 +4,7 @@ import Manage from "../../../../Assets/Components/HomePage/05_ShodatDifference/M
 import Modernize from "../../../../Assets/Components/HomePage/05_ShodatDifference/Modernize.png";
 import Secure from "../../../../Assets/Components/HomePage/05_ShodatDifference/Secure.png";
 import { GoArrowRight } from "react-icons/go";
+import ArrowRight from "../../../../Assets/Components/HomePage/arrow-right.svg";
 
 function ShodatDifference() {
   return (
@@ -36,7 +37,7 @@ function ShodatDifference() {
                   </p>
                 </div>
                 <div className="flex justify-end mt-5">
-                  <GoArrowRight className=" text-white p-2 w-11 h-10" />
+                  <img src={ArrowRight} />
                 </div>
               </div>
             </div>
@@ -63,7 +64,7 @@ function ShodatDifference() {
                   </p>
                 </div>
                 <div className="flex justify-end">
-                  <GoArrowRight className=" text-white p-2 w-11 h-10" />
+                  <img src={ArrowRight} />
                 </div>
               </div>
             </div>
@@ -88,7 +89,7 @@ function ShodatDifference() {
                   </p>
                 </div>
                 <div className="flex justify-end">
-                  <GoArrowRight className=" text-white p-2 w-11 h-10" />
+                  <img src={ArrowRight} />
                 </div>
               </div>
             </div>
@@ -113,7 +114,9 @@ function ShodatDifference() {
                   </p>
                 </div>
                 <div className="flex justify-end">
-                  <GoArrowRight className=" text-white p-2 w-11 h-10" />
+                  <img src={ArrowRight} />
+
+                  {/* <GoArrowRight className=" text-white p-2 w-11 h-10" /> */}
                 </div>
               </div>
             </div>

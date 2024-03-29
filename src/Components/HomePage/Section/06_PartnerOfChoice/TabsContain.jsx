@@ -19,7 +19,7 @@ export const TabsContain = () => {
             fontWeight: "600",
             lineHeight: "58.5px",
           }}
-          className="text-4xl text-center font-bold mb-10 mt-8 font-Poppins lg:text-left md:text-center lg:ml-48"
+          className="text-4xl font-poppins  font-bold mb-10 mt-8  lg:ml-12  text-start "
         >
           What makes Shodat, your preferred partner of choice
         </h2>
