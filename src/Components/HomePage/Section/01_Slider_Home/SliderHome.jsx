@@ -9,7 +9,9 @@ const SliderHome = ({ scrollToRef }) => {
   const [backgroundImage, setBackgroundImage] = useState(img2);
 
   const handleArrowClick = () => {
-    const navbarHeight = parseInt(localStorage.getItem("navbarHeight")) || 0;
+    const pageIdentifier = "/"; // Define the same unique identifier used in Navbar
+    const navbarHeight =
+      parseInt(localStorage.getItem(`navbarHeight_${pageIdentifier}`)) || 0;
     const scrollToPosition = scrollToRef.current.offsetTop - navbarHeight;
     window.scrollTo({ top: scrollToPosition, behavior: "smooth" });
   };

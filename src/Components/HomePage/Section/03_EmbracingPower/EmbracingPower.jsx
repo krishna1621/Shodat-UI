@@ -8,7 +8,7 @@ const EmbracingPower = () => {
   };
 
   return (
-    <div className="px-8 py-16 bg-white md:px-20 lg:pb-14 lg:py-0 ">
+    <div className="px-8 py-16 bg-white md:px-12 lg:pb-14 lg:py-0 ">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
         <div>
           <h1 className="text-4xl md:text-[44px]  leading-[52.8px] ">
@@ -45,7 +45,7 @@ const EmbracingPower = () => {
               style={{ background: "#ffffff" }}
             />
             <span className="font-medium text-base leading-6 font-poppins text-white">
-              Watch Ai in Action
+              Watch AI in Action
             </span>
           </button>
         </div>

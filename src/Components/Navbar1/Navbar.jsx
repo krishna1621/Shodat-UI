@@ -118,16 +118,20 @@ function Navbar() {
   const navbarRef = useRef(null);
 
   useEffect(() => {
-    // Set the height of the Navbar component in localStorage
+    // Set the height of the Navbar component in localStorage with a unique key
     if (navbarRef.current) {
-      localStorage.setItem("navbarHeight", navbarRef.current.offsetHeight);
+      const pageIdentifier = "/"; // Define a unique identifier for the page
+
+      localStorage.setItem(
+        `navbarHeight_${pageIdentifier}`,
+        navbarRef.current.offsetHeight
+      );
     }
   }, []);
   return (
     <nav
       className="fixed container left-0 right-0 z-10 py-8 font-sans text-white bg-transparent"
       style={{
-        maxWidth: "2000px",
         background:
           location.pathname === "/platform"
             ? scrollPosition > 100
@@ -149,13 +153,13 @@ function Navbar() {
         <a href="/">
           {location.pathname === "/platform" ? (
             <img
-              className="w-[180px] h-11 md:ml-60"
+              className="w-[180px] h-11 md:ml-[218px]"
               src={logo1}
               alt="Platform Logo"
             />
           ) : (
             <img
-              className="w-[180px] h-11 md:ml-60"
+              className="w-[180px] h-11 md:ml-[218px]"
               src={logo}
               alt="Default Logo"
             />

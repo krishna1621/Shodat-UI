@@ -8,7 +8,7 @@ const ScheduleMeetingForm = () => {
         className="relative flex justify-center items-center h-[465px] w-[500px] bg-contain bg-no-repeat"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute top-1/2 left-[230px] transform -translate-x-1/2 -translate-y-1/2">
           <div className=" h-[380px] w-[360px] relative">
             <h2 className="text-center font-openSans text-3xl font-semibold mb-8 text-black">
               Scheduling a Meeting

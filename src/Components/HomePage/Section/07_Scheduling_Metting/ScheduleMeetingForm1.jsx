@@ -2,7 +2,7 @@ import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const ScheduleMeetingForm1 = () => {
   return (
-    <div className="p-4 md:px-8  ">
+    <div className="p-2   ">
       <h2 className="font-sans text-2xl md:text-4xl font-semibold text-white  mb-4 md:mb-6 sm:leading-5 md:leading-[60px]">
         Unlock the untapped potential of your business with the transformative
         capabilities of AI.

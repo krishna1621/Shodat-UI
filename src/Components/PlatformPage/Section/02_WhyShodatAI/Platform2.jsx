@@ -1,15 +1,14 @@
-import React from "react";
-import ecl1 from "../../../../Assets/Components/PlatformPage/02_WhyShodatAI/Ellipse 1569.png";
-import ecl2 from "../../../../Assets/Components/PlatformPage/02_WhyShodatAI/Ellipse 1576.png";
-import ecl4 from "../../../../Assets/Components/PlatformPage/02_WhyShodatAI/Ellipse 1568.png";
-import ecl5 from "../../../../Assets/Components/PlatformPage/02_WhyShodatAI/Ellipse 1572.png";
-import ecl6 from "../../../../Assets/Components/PlatformPage/02_WhyShodatAI/Ellipse 1574.png";
-import ecl7 from "../../../../Assets/Components/PlatformPage/02_WhyShodatAI/Ellipse 1570.png";
+import ecl1 from "../../../../Assets/Components/PlatformPage/e2.svg";
+import ecl2 from "../../../../Assets/Components/PlatformPage/e3.svg";
+import ecl4 from "../../../../Assets/Components/PlatformPage/r4.svg";
+import ecl5 from "../../../../Assets/Components/PlatformPage/r2.svg";
+import ecl6 from "../../../../Assets/Components/PlatformPage/r1.svg";
+import ecl7 from "../../../../Assets/Components/PlatformPage/r3.svg";
 
 const Platform2 = () => {
   return (
-    <div className=" bg-white p-8 rounded-2xl">
-      <div className="grid gap-8">
+    <div className=" bg-white  containerrounded-2xl ">
+      <div className="grid gap-8 container ">
         <div className="bg-white p-8 rounded-xl">
           <p className="text-black text-2xl font-sans font-normal leading-10  mb-4">
             A one-stop cloud-native operations platform that transforms raw
@@ -29,11 +28,14 @@ const Platform2 = () => {
           </div>
         </div>
 
-        <div className="bg-white  rounded-xl " style={{}}>
-          <p className="text-black text-4xl font-sans font-semibold mb-4">
+        <div className="bg-white   container">
+          <p className="text-black text-4xl font-sans font-semibold mb-4 lg:text-left px-8">
             Why Shodat Platform?
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+            style={{}}
+          >
             {renderStat(
               ecl1,
               ecl2,
@@ -53,9 +55,8 @@ const Platform2 = () => {
               "#F9C407",
               "110%",
               "#F9C407",
-              "-112px", // Pass your desired marginTop value here
-              // Customize SVG line height,
-              "80px" // Pass your desired paragraphMarginTop value here // Pass your desired marginTop value here
+              "-112px",
+              "80px"
             )}
             {renderStat(
               ecl1,
@@ -63,10 +64,10 @@ const Platform2 = () => {
               ecl5,
               "Predict time for complex RCA by - 80%",
               "#01A79D",
-              "150%",
-              "#01A79D", // Customize SVG line height
-              "-170px",
-              "50px"
+              "250%",
+              "#01A79D",
+              "-290px",
+              "20px"
             )}
             {renderStat(
               ecl1,
@@ -77,9 +78,7 @@ const Platform2 = () => {
               "110%",
               "#000000",
               "-112px",
-              "70px" // Pass your desired marginTop value here
-
-              // Customize SVG line height
+              "80px"
             )}
           </div>
         </div>
@@ -103,7 +102,7 @@ const renderFeature = (text) => (
         </div>
         {index !== 4 && (
           <div className="hidden md:block absolute top-1/2 left-full transform -translate-y-1/2 -ml-2">
-            <div className="bg-black w-1 h-1 font-normal  text-18 font-sans"></div>
+            <div className="bg-black  h-1 font-normal  text-18 font-sans"></div>
           </div>
         )}
       </div>
@@ -122,14 +121,9 @@ const renderStat = (
   image3MarginTop,
   paragraphMarginTop
 ) => (
-  <div
-    className="flex items-center relative mt-6"
-    style={{
-      maxWidth: "2000px",
-    }}
-  >
+  <div className="flex relative mt-6 lg:max-w-screen-lg">
     <div
-      className="w-24 h-24 bg-black flex justify-center items-center relative"
+      className="w-40 h-24 bg-black flex justify-center items-center relative "
       style={{
         height: "60px",
         width: "400px",
@@ -177,7 +171,7 @@ const renderStat = (
       />
     </div>
     <p
-      className="absolute top-0 left-0 right-0 text-sm text-center font-semibold text-[#555555]"
+      className="absolute top-0 left-0 right-0 text-sm sm:text-base lg:text-sm xl:text-xl  text-center font-semibold text-[#555555]"
       style={{
         marginTop: paragraphMarginTop,
       }}

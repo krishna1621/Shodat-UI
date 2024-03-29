@@ -7,16 +7,11 @@ const ProductionReadyAi = forwardRef((props, ref) => {
   };
   return (
     <div ref={ref}>
-      <div
-        className="container mx-auto"
-        style={{
-          maxWidth: "2000px",
-        }}
-      >
+      <div className="container ">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 py-3 bg-[#e6f0f2]">
           {/* Top Grid (lg 12) */}
           <div className="col-span-12 lg:col-span-full mt-6">
-            <p className="font-sans text-4xl md:text-[44px] md:leading-[52.8px] leading-9 text-left pl-10 pt-10 md:ml-6 text-black">
+            <p className="font-sans text-4xl md:text-[44px] md:leading-[52.8px] leading-9 text-left pl-10 pt-10 md:ml-2 text-black">
               <span className="text-[#340D73] font-bold">
                 Production-ready AI,
               </span>
@@ -27,7 +22,7 @@ const ProductionReadyAi = forwardRef((props, ref) => {
               </span>
             </p>
           </div>
-          <div className="col-span-12 sm:col-span-full md:col-span-full lg:col-span-6 mx-6 md:mx-0 md:ml-6 mt-8 ">
+          <div className="col-span-12 sm:col-span-full md:col-span-full lg:col-span-6 mx-6 md:mx-0 md:ml-3 mt-8 ">
             <p className="bg-[#340D73] text-white font-sans text-xl md:text-[27px] md:leading-[40.5px] leading-7 font-light text-left p-10 rounded-lg ml-8 ">
               Our market ready solutions provide flexible <br /> and scalable
               capabilities that enterprises
