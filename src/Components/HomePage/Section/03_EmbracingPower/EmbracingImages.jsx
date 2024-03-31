@@ -16,6 +16,7 @@ function EmbracingImages() {
                   src={watch}
                   alt="eOps Watch"
                   className="w-full h-40 object-cover rounded-xl"
+                  loading="lazy"
                 />
                 <p className="text-center font-semibold text-base mt-1">
                   eOps Watch
@@ -28,6 +29,7 @@ function EmbracingImages() {
                   src={prosense}
                   alt="eOps Presense"
                   className="w-full h-52  object-cover rounded-xl"
+                  loading="lazy"
                 />
                 <p className="text-center font-semibold text-base mt-1">
                   eOps Prosense
@@ -44,6 +46,7 @@ function EmbracingImages() {
                   src={trace}
                   alt="eOps Trace"
                   className="w-full h-40 object-cover rounded-xl"
+                  loading="lazy"
                 />
                 <p className="text-center font-semibold text-base mt-1">
                   eOps Trace
@@ -56,6 +59,7 @@ function EmbracingImages() {
                   src={insights}
                   alt="eOps Insights"
                   className="w-full h-52 object-cover rounded-xl"
+                  loading="lazy"
                 />
                 <p className="text-center font-semibold text-base mt-1">
                   eOps Insights

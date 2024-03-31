@@ -3,7 +3,6 @@ import Innovate from "../../../../Assets/Components/HomePage/05_ShodatDifference
 import Manage from "../../../../Assets/Components/HomePage/05_ShodatDifference/Manage.png";
 import Modernize from "../../../../Assets/Components/HomePage/05_ShodatDifference/Modernize.png";
 import Secure from "../../../../Assets/Components/HomePage/05_ShodatDifference/Secure.png";
-import { GoArrowRight } from "react-icons/go";
 import ArrowRight from "../../../../Assets/Components/HomePage/arrow-right.svg";
 
 function ShodatDifference() {
@@ -23,6 +22,7 @@ function ShodatDifference() {
                 src={Innovate}
                 alt="Innovate"
                 className="w-full h-64 object-cover "
+                loading="lazy"
               />
               <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
                 <div>
@@ -37,7 +37,7 @@ function ShodatDifference() {
                   </p>
                 </div>
                 <div className="flex justify-end mt-5">
-                  <img src={ArrowRight} />
+                  <img src={ArrowRight} alt="Arrow Right" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -49,6 +49,7 @@ function ShodatDifference() {
                 src={Manage}
                 alt="Manage"
                 className="w-full h-64 object-cover"
+                loading="lazy"
               />
               <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
                 <div>
@@ -64,7 +65,7 @@ function ShodatDifference() {
                   </p>
                 </div>
                 <div className="flex justify-end">
-                  <img src={ArrowRight} />
+                  <img src={ArrowRight} alt="Arrow Right" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -75,6 +76,7 @@ function ShodatDifference() {
                 src={Modernize}
                 alt="Modernize"
                 className="w-full h-64 object-cover"
+                loading="lazy"
               />
               <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
                 <div>
@@ -89,7 +91,7 @@ function ShodatDifference() {
                   </p>
                 </div>
                 <div className="flex justify-end">
-                  <img src={ArrowRight} />
+                  <img src={ArrowRight} alt="Arrow Right" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -100,6 +102,7 @@ function ShodatDifference() {
                 src={Secure}
                 alt="Secure"
                 className="w-full h-64 object-cover"
+                loading="lazy"
               />
               <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
                 <div>
@@ -114,7 +117,7 @@ function ShodatDifference() {
                   </p>
                 </div>
                 <div className="flex justify-end">
-                  <img src={ArrowRight} />
+                  <img src={ArrowRight} alt="Arrow Right" loading="lazy" />
 
                   {/* <GoArrowRight className=" text-white p-2 w-11 h-10" /> */}
                 </div>

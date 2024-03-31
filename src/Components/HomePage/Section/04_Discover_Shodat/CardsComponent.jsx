@@ -6,8 +6,6 @@ import Analytics from "../../../../Assets/Components/HomePage/04_Discover_Shodat
 import Enterprise from "../../../../Assets/Components/HomePage/04_Discover_Shodat/Inteligent Enterprise.png";
 import ERP from "../../../../Assets/Components/HomePage/04_Discover_Shodat/ERP System.png";
 import Cloud from "../../../../Assets/Components/HomePage/04_Discover_Shodat/Cloud Transformation.png";
-import { GoArrowRight } from "react-icons/go";
-import { MdArrowForward } from "react-icons/md";
 
 const cards = [
   {
@@ -90,9 +88,9 @@ const CardsComponent = () => {
       <div className=" h-16 w-full bg-[#E6F0F2]"></div>
       <div
         className="container"
-        style={{
-          maxWidth: "2000px",
-        }}
+        // style={{
+        //   maxWidth: "2000px",
+        // }}
       >
         <div className="flex justify-center  bg-[#F8F4FF] items-center m-8.0 py-14 px-10 ">
           <div className="grid grid-cols-12 gap-8 md:px-4">
@@ -144,7 +142,6 @@ const CardsComponent = () => {
                             color: hovered[index] ? "#E6C458" : "black",
                             fontFamily: "Sans,",
                             fontSize: "20px",
-
                             fontWeight: 600,
                             lineHeight: "30px",
                             letterSpacing: "0em",
@@ -178,14 +175,14 @@ const CardsComponent = () => {
                           right: hovered[index] ? "8px" : "70px",
                           transition: "right 0.3s, opacity 0.3s",
                           opacity: hovered[index] ? 1 : 0,
-
                           zIndex: 3,
                           fontSize: "14px",
                           lineHeight: "21px",
                         }}
                       >
-                        <button className="h-8 w-10">
-                          <GoArrowRight className="h-full w-full" />
+                        <button className="mt-4">
+                          {/* <GoArrowRight className="h-full w-full" /> */}
+                          <span style={{ fontSize: "28px" }}> &#129122;</span>
                         </button>
                       </div>
                       <div
@@ -199,6 +196,7 @@ const CardsComponent = () => {
                           alt={card.title}
                           style={{ width: "220px", height: "auto" }}
                           onClick={handleImageClick}
+                          loading="lazy"
                         />
                       </div>
                     </>

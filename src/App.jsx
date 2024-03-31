@@ -13,7 +13,9 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar id="navbar" />
+        <div className="md:flex md:justify-center">
+          <Navbar id="navbar" />
+        </div>
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -24,7 +26,7 @@ function App() {
             <Route path="/about" element={<About />} />
             {/* Add more routes for additional pages */}
           </Routes>
-        </div>{" "}
+        </div>
       </Router>
     </>
   );

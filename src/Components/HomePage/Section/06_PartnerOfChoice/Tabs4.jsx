@@ -11,7 +11,7 @@ const Tabs4 = () => {
           display: "flex",
         }}
       >
-        <img src={Ai} alt="AI" />
+        <img src={Ai} alt="AI" loading="lazy" />
       </div>
       <div>
         <div className="p-4">

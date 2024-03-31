@@ -1,5 +1,5 @@
 import React from "react";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import LeftArrow from "../../../../Assets/Components/HomePage/01_Slider_Home/Vector2.svg";
 function SuccessStories() {
   return (
     <div className="w-full flex flex-col px-10 py-10">
@@ -16,9 +16,14 @@ function SuccessStories() {
           className="flex items-center justify-center w-40 h-11 mt-8 text-white font-normal rounded-3xl"
           style={{ background: "#016C7B" }}
         >
-          <MdOutlineKeyboardArrowRight
-            className="w-6 h-6  mr-2 rounded-full text-black"
-            style={{ background: "#FFFFFF" }}
+          <img
+            src={LeftArrow}
+            className="w-11 h-11 mr-2 rounded-full  "
+            style={{
+              background: "#ffffff",
+              width: "24px",
+              height: "24px",
+            }}
           />
           <span>Get Started</span>
         </button>

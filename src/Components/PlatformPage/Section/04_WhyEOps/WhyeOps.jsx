@@ -2,18 +2,12 @@ import React from "react";
 import eOps from "../../../../Assets/Components/PlatformPage/eOps.png";
 function WhyeOps() {
   return (
-    <div
-      className="flex flex-col md:flex-row bg-[#FFFBEF] pt-5"
-      style={{
-        maxWidth: "2000px",
-      }}
-    >
-      {/* First column */}
+    <div className="flex flex-col md:flex-row bg-[#FFFBEF] pt-5">
       <div className="md:w-1/4 p-4 ">
-        <h2 className="text-2xl font-semibold mb-4 flex justify-center md:justify-start md:ml-12 ">
+        <h4 className="text-[34px] font-sans leading-[40.8px] font-semibold mb-4 flex justify-center md:justify-start md:ml-12 ">
           Why eOps?
-        </h2>
-        <div className="flex justify-center md:justify-start md:ml-8">
+        </h4>
+        <div className="flex justify-center md:justify-start md:ml-6">
           <img
             src={eOps}
             alt="eOps"
@@ -22,7 +16,6 @@ function WhyeOps() {
         </div>
       </div>
 
-      {/* Second column */}
       <div className="md:w-1/3 p-4 ">
         <p className="text-base font-normal mb-6">
           &#10003; &nbsp;Turnkey enterprise platform for all data integration &
@@ -36,10 +29,8 @@ function WhyeOps() {
         </p>
       </div>
 
-      {/* Third column */}
       <div className="md:w-1/3 p-4">
         <p className="text-base font-normal mb-6">
-          {" "}
           &#10003; &nbsp;Industry-proven ML models.
         </p>
         <p className="text-base font-normal mb-6">

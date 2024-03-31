@@ -4,10 +4,11 @@ import tab2 from "../../../../Assets/Components/HomePage/06_PartnerOfChoice/tabi
 const Tabs2 = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
-      <div className="flex justify-center lg:justify-center" style={{}}>
+      <div className="flex justify-center lg:justify-center">
         <img
           src={tab2}
           alt="AI"
+          loading="lazy"
           style={{
             mixBlendMode: "multiply",
             justifyContent: "center",

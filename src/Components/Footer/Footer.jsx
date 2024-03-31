@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../Assets/Components/Footer/Shodat Logo.png";
-import { FiMail } from "react-icons/fi";
-import { BiPhoneCall } from "react-icons/bi";
+import mail from "../../Assets/Components/Footer/mail.svg";
+import mobile from "../../Assets/Components/Footer/mobile.svg";
 const Footer = () => {
   return (
     <footer className="bg-black text-white text-center md:text-left pt-4 ">
@@ -25,14 +25,14 @@ const Footer = () => {
                 <br /> Growth
               </div>
               <div className="mb-4 flex items-center md:text-left  justify-center md:justify-normal leading-5">
-                <BiPhoneCall className="h-7 w-14 text-center mb-1 md:text-left" />
-                <div className="font-sans text-sm font-normal mb-1 ">
+                <img src={mobile} />
+                <div className="font-sans text-sm font-normal mb-1 ml-3 ">
                   +123 (000) 88 99
                 </div>
               </div>
               <div className="flex items-center text-center md:text-left  justify-center  md:justify-normal leading-5">
-                <FiMail className="h-7 w-14  mb-1 " />
-                <div className="font-sans text-sm font-normal mb-1">
+                <img src={mail} />
+                <div className="font-sans text-sm font-normal mb-1 ml-3">
                   contact@shodat.com
                 </div>
               </div>

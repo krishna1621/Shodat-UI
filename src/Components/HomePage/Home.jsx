@@ -19,7 +19,8 @@ const Home = () => {
         <CardsComponent />
         <ShodatDifference />
         <TabsContain />
-        <MeetingForm /> <FinalFooter />
+        <MeetingForm />
+        <FinalFooter />
       </div>
     </div>
   );

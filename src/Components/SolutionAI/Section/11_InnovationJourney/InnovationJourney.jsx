@@ -1,5 +1,5 @@
 import React from "react";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import LeftArrow from "../../../../Assets/Components/HomePage/01_Slider_Home/Vector.svg";
 
 function InnovationJourney() {
   return (
@@ -22,10 +22,16 @@ function InnovationJourney() {
             className="flex items-center justify-center w-full md:w-40 h-11 text-black font-normal rounded-3xl"
             style={{ background: "#F3D157" }}
           >
-            <MdOutlineKeyboardArrowRight
-              className="w-6 h-6 mr-2 rounded-full text-black"
-              style={{ background: "#FFFFFF" }}
+            <img
+              src={LeftArrow}
+              className="w-11 h-11 mr-2 rounded-full "
+              style={{
+                background: "#ffffff",
+                width: "24px",
+                height: "24px",
+              }}
             />
+
             <span>Get Started</span>
           </button>
         </div>
