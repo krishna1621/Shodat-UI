@@ -2,13 +2,7 @@ import React from "react";
 import AI from "../../../../Assets/Components/PlatformPage/AI.png";
 function EdgeInfrastructure() {
   return (
-    <div
-      className="bg-[#FFFBEF] py-8"
-      style={{
-        maxWidth: "2000px",
-      }}
-    >
-      {/* First column */}
+    <div className="bg-[#FFFBEF] py-8">
       <div className="md:w-full flex-row  p-8">
         <h2 className="font-sans text-3xl md:text-[34px] leading-[50px] font-semibold mb-4 md:ml-8">
           Edge Infrastructure
@@ -23,7 +17,6 @@ function EdgeInfrastructure() {
         </p>
       </div>
       <div className="flex flex-col md:flex-row  mb-5 gap-x-3.5 lg:ml-4 ">
-        {/* Second column */}
         <div className="w-full lg:w-[770px] bg-[#F9C407] rounded-lg p-8 mt-5 lg:mx-10">
           <h2 className="font-sans text-3xl font-semibold leading-10 mb-4">
             eOps Fabric Platform
@@ -36,7 +29,6 @@ function EdgeInfrastructure() {
           </p>
         </div>
 
-        {/* Third column */}
         <div className="w-full lg:w-[488px] mt-5  lg:mx-2">
           <img src={AI} alt="Image" className="rounded-lg" />
         </div>

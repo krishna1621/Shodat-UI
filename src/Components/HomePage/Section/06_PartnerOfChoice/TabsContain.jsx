@@ -9,7 +9,7 @@ export const TabsContain = () => {
         className="flex flex-col w-full font-Poppins md:mt-0 p-18 rounded-md shadow-md lg:h-100"
         style={{
           backgroundColor: "#DBECF9",
-          maxWidth: "2000px",
+          // maxWidth: "2000px",
           justifyContent: "center",
         }}
       >

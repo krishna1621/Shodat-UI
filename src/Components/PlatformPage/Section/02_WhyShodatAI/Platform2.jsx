@@ -7,28 +7,60 @@ import ecl7 from "../../../../Assets/Components/PlatformPage/r3.svg";
 
 const Platform2 = () => {
   return (
-    <div className=" bg-white  containerrounded-2xl ">
+    <div className=" bg-white   rounded-2xl ">
       <div className="grid gap-8 container ">
-        <div className="bg-white p-8 rounded-xl">
-          <p className="text-black text-2xl font-sans font-normal leading-10  mb-4">
+        <div className=" md:mx-auto  mx-4 p-8 rounded-xl ">
+          <h5 className="text-black md:text-[27px] text-xl  font-sans font-normal leading-[40.5px]  mb-4">
             A one-stop cloud-native operations platform that transforms raw
             operational data into business values and discovers potential
             operational inefficiencies, risks & security threats faster by
             providing
-          </p>
-          <div
-            className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-5 gap-6 "
-            style={{}}
-          >
-            {renderFeature("Easy asset onboarding & tracking")}
-            {renderFeature("Vision & telemetry powered ops visibility")}
-            {renderFeature("Predictive maintenance")}
-            {renderFeature("Edge-enabled cognitive models")}
-            {renderFeature("Adaptive BI")}
-          </div>
-        </div>
+          </h5>
 
-        <div className="bg-white   container">
+          <div className="flex flex-wrap justify-around  font-sans font-normal text-lg leading-[27px]  items-start mt-20 mb-20">
+            <div
+              className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
+              style={{ width: "240px", height: "100px" }}
+            >
+              <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
+                Easy asset onboarding & tracking
+              </p>
+            </div>
+            <div
+              className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
+              style={{ width: "240px", height: "100px" }}
+            >
+              <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
+                Vision & telemetry powered ops visibility
+              </p>
+            </div>
+            <div
+              className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
+              style={{ width: "240px", height: "100px" }}
+            >
+              <p className="text-white font-semibold font-sans text-base leading-6">
+                Predictive maintenance
+              </p>
+            </div>
+            <div
+              className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
+              style={{ width: "240px", height: "100px" }}
+            >
+              <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
+                Edge-enabled cognitive models
+              </p>
+            </div>
+            <div
+              className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
+              style={{ width: "240px", height: "100px" }}
+            >
+              <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
+                Adaptive BI
+              </p>
+            </div>
+          </div>
+        </div>{" "}
+        <div className="bg-white container">
           <p className="text-black text-4xl font-sans font-semibold mb-4 lg:text-left px-8">
             Why Shodat Platform?
           </p>

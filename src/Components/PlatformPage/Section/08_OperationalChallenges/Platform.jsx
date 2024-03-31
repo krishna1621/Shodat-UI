@@ -8,8 +8,8 @@ import v6 from "../../../../Assets/Components/PlatformPage/03_OperationalChallen
 
 export const Platform = () => {
   return (
-    <div className="bg-purple-50 p-8 rounded-2xl">
-      <div className="grid gap-8">
+    <div className="bg-purple-50 p-8 rounded-2xl ">
+      <div className="grid gap-8 ">
         <div className="p-8 rounded-xl">
           <h2
             className="text-[#340D73] font-sans  text-4xl  font- mb-4    font-semibold  leading-[55px]"

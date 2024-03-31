@@ -4,12 +4,12 @@ const AboutBanner = () => {
   return (
     <div
       className=" w-full h-[490px]  bg-cover bg-center relative "
-      style={{ backgroundImage: `url(${backgroundImage})`, maxWidth: "2000px" }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="absolute ml-4 md:ml-20 mt-60 md:mt-60 ">
-        <p className="text-6xl md:text-[56px] font-bold leading-[70px] font-sans text-white ">
+      <div className="absolute ml-16 md:ml-14 mt-60 md:mt-60 ">
+        <h1 className="text-3xl md:text-[56px] font-bold leading-[70px] font-sans text-white ">
           About Shodat
-        </p>
+        </h1>
       </div>
     </div>
   );

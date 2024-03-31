@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import img2 from "../../../../Assets/Components/HomePage/01_Slider_Home/slide-1.png";
 import img3 from "../../../../Assets/Components/HomePage/01_Slider_Home/slide-2.png";
 import ArrowRight from "../../../../Assets/Components/HomePage/01_Slider_Home/arrow-right.png";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import Navbar from "../../../Navbar1/Navbar";
+import LeftArrow from "../../../../Assets/Components/HomePage/01_Slider_Home/Vector.svg";
+
 const SliderHome = ({ scrollToRef }) => {
   const [isFirstVisible, setIsFirstVisible] = useState(true);
   const [backgroundImage, setBackgroundImage] = useState(img2);
@@ -28,10 +28,10 @@ const SliderHome = ({ scrollToRef }) => {
     <div
       className="w-full h-[790px]  bg-cover bg-center relative"
       style={{ backgroundImage: `url(${backgroundImage})` }}
+      loading="lazy"
     >
       <div>
         <div
-          style={{}}
           className={`transition-opacity duration-2000 ${
             isFirstVisible ? "opacity-100" : "opacity-0"
           } absolute mt-60 ml-4 md:ml-20 lg:mt-64   md:mt-48 `}
@@ -49,10 +49,14 @@ const SliderHome = ({ scrollToRef }) => {
             className="flex items-center justify-center w-40 h-11 mt-10 text-white font-bold rounded-3xl"
             style={{ background: "#016C7B" }}
           >
-            <MdOutlineKeyboardArrowRight
-              className="w-6 h-6 mr-2 rounded-full text-black"
-              style={{ background: "#ffffff" }}
+            <img
+              src={LeftArrow}
+              className="w-11 h-11 mr-2 rounded-full "
+              style={{ background: "#ffffff", width: "24px", height: "24px" }}
+              alt="Left Arrow"
+              loading="lazy"
             />
+
             <span>Get Started</span>
           </button>
         </div>
@@ -74,10 +78,13 @@ const SliderHome = ({ scrollToRef }) => {
             className="flex items-center justify-center w-40 h-11 mt-10 text-white font-bold rounded-3xl"
             style={{ background: "#016C7B" }}
           >
-            <MdOutlineKeyboardArrowRight
-              className="w-6 h-6  mr-2 rounded-full text-black"
-              style={{ background: "#ffffff" }}
+            <img
+              src={LeftArrow}
+              className="w-11 h-11 mr-2 rounded-full "
+              style={{ background: "#ffffff", width: "24px", height: "24px" }}
+              loading="lazy"
             />
+
             <span>Get Started</span>
           </button>
         </div>

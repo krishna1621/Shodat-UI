@@ -8,6 +8,7 @@ const Proven = () => {
         <img
           src={Ai}
           alt="AI"
+          loading="lazy"
           style={{
             justifyContent: "center",
             display: "flex",

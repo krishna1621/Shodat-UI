@@ -3,10 +3,10 @@ import leader from "../../../../Assets/Components/About/leader.png";
 function Leadership() {
   return (
     <div
-      className="flex flex-col md:flex-row md:space-x-8  p-14"
-      style={{ maxWidth: "2000px" }}
+      className="flex flex-col md:flex-row md:space-x-8    p-14"
+      // style={{ maxWidth: "2000px" }}
     >
-      <div className="md:w-1/2 ">
+      <div className="md:w-1/2 mb-4 md:mb-0">
         <img
           src={leader}
           alt="Innovation at Shodat"
@@ -15,56 +15,51 @@ function Leadership() {
       </div>
       {/* Content Column */}
       <div className="md:w-3/5  pl-4 md:pl-10 md:pt-3">
-        <div className=" text-[#340D73] md:text-lg font-semibold md:ml-[0.1%] md:mt-[1%] font-sans">
+        <div className=" text-[#340D73] md:text-lg leading-[27px] font-semibold md:ml-[0.1%] md:mt-[1%] font-sans">
           <p>LEADERSHIP</p>
         </div>
-        <div className=" pt-2 text-2xl font-sans text:2xl md:text-4xl font-semibold">
-          <p className=" text-[#57647C] font-normal  text-base font-sans mt-2">
+        <div className=" pt-2 text-[#57647C] leading-6 text-base font-sans font-normal">
+          <p className="  mt-2">
             We offer an extensive set of digital solutions that power
             applications & services
           </p>
-          <p className="  text-[#57647C] font-normal  text-base font-sans">
+          <p>
             enabling companies & organizations to deliver best user experiences
             to their
           </p>
-          <p className=" text-[#57647C] font-normal text-base font-sans">
-            customers & employees.
-          </p>
+          <p>customers & employees.</p>
         </div>
-        <div className="font-sans md:text-[#57647C] text-base  md:leading-6 font-base  pt-4">
-          <p className=" text-[#57647C] font-normal  text-basefont-sans mt-6">
+        <div className=" pt-4 text-[#57647C] leading-6 text-base font-sans font-normal">
+          <p className="  mt-6">
             We are a company of seasoned experts with proven industry experience
             in building
           </p>
-          <p className="  text-[#57647C] font-normal  text-basefont-sans ">
+          <p>
             {" "}
             data analytics & AI applications using cloud-based compute, network,
             and storage
           </p>
-          <p className=" text-[#57647C] font-normal  text-basefont-sans ">
+          <p>
             platforms for Silicon Valley giants like Paypal, Google, Cisco,
             Yahoo!, Symantec, and{" "}
           </p>
-          <p className=" text-[#57647C] font-normal  text-basefont-sans ">
+          <p>
             also Japanese conglomerates that include manufacturing, automotive,
             trading, and{" "}
           </p>
-          <p className=" text-[#57647C] font-normal  text-basefont-sans ">
-            {" "}
-            banking multinationals.
-          </p>
+          <p>banking multinationals.</p>
         </div>
-        <div className="font-sans text-base md:text-[#57647C] md:leading-6 md:text-base  pt-4">
-          <p className="text-[#57647C] font-normal text-base font-sans mt-6">
+        <div className=" pt-4 text-[#57647C] leading-6 text-base font-sans font-normal">
+          <p className=" mt-6">
             Headquartered in Sunnyvale, California USA and with center of
             excellence centers in{" "}
           </p>
-          <p className="  text-[#57647C] font-normal text-base font-sans ">
+          <p>
             {" "}
             India, our partnerships with technology solution providers across
             US, UK, and Japan{" "}
           </p>
-          <p className=" text-[#57647C] font-normal text-base font-sans ">
+          <p>
             {" "}
             help us deliver quick and robust solutions for clients across the
             globe.

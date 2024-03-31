@@ -1,41 +1,45 @@
 function AboutVision() {
   return (
     <div
-      className="bg-[#F0F5FF]  flex flex-col md:flex-row md:space-x-8 p-14"
-      style={{ maxWidth: "2000px" }}
+      className="bg-[#F0F5FF]  flex flex-col md:flex-row md:space-x-8 px-14 py-8"
+      // style={{ maxWidth: "2000px" }}
     >
       <div className="bg-[#340D73] p-8 md:w-3/5 rounded-lg font-sans ">
-        <p className="text-white font-semibold text-lg sm:text-xl ml-4 md:ml-9  ">
+        <h4 className="text-white font-semibold text-2xl md:text-[27px] leading-8 font-sans sm:text-xl  md:ml-9  ">
           Vision
-        </p>
-        <p className="ml-4 md:ml-9 text-white mt-2 pt-2 text-sm md:text-base">
+        </h4>
+        <p className=" md:ml-9 text-white mt-2 pt-2 font-sans  text-base leading-6">
           Our vision is to illuminate the path to a smarter and more data-driven
           world. We aspire to be
         </p>
-        <p className="ml-4 md:ml-9 text-white">
+        <p className=" md:ml-9 text-white font-sans  text-base leading-6">
           the guiding light in the realm of AI and Data Analytics, leading
           businesses and individuals
         </p>
-        <p className="ml-4 md:ml-9 text-white">
+        <p className=" md:ml-9 text-white font-sans  text-base leading-6">
           towards a future where data is more than just information it's a
           strategic asset that fuels
         </p>
-        <p className="ml-4 md:ml-9 text-white ">
+        <p className=" md:ml-9 text-white font-sans  text-base leading-6">
           innovation, informs decisions, and transforms the way we operate.
         </p>
       </div>
-      <div className=" bg-[#F4BE00] ml-4 mt-10 md:mt-0 md:w-1/3  p-8 rounded-lg ">
-        <p className="text-black font-semibold text-lg md:text-xl  ">Mission</p>
-        <p className="  text-black mt-2 pt-2 text-sm sm:text-base">
+      <div className=" bg-[#F4BE00] md:ml-4 mt-10 md:mt-0 md:w-2/5  p-8 rounded-lg ">
+        <h4 className="text-blackfont-semibold text-2xl md:text-[27px] leading-8 font-sans sm:text-xl  ">
+          Mission
+        </h4>
+        <p className="  text-[#57647c] font-sans  text-base leading-6 mt-2 pt-2">
           To leverage the transformative power of AI and
         </p>
-        <p className=" text-black">
+        <p className=" text-[#57647c] font-sans  text-base leading-6">
           data analytics contributing to a smarter, more
         </p>
-        <p className=" text-black">
+        <p className=" text-[#57647c] font-sans  text-base leading-6">
           insightful, and more connected world for our
         </p>
-        <p className=" text-black">clients and society.</p>
+        <p className=" text-[#57647c] font-sans  text-base leading-6">
+          clients and society.
+        </p>
       </div>
     </div>
   );

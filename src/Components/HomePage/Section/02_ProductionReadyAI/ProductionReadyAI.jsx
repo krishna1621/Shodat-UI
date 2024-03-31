@@ -1,6 +1,5 @@
 import React, { forwardRef } from "react";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-
+import LeftArrow from "../../../../Assets/Components/HomePage/01_Slider_Home/Vector.svg";
 const ProductionReadyAi = forwardRef((props, ref) => {
   const handleClick = () => {
     console.log("Button clicked!");
@@ -53,10 +52,16 @@ const ProductionReadyAi = forwardRef((props, ref) => {
                     "linear-gradient(110.53deg, #00C4CC -8.24%, #3E4499 32.83%, #5E027F 82.38%, #F4BE00 106.38%)",
                 }}
               >
-                <MdOutlineKeyboardArrowRight
-                  className="w-6 h-6 mr-2 rounded-full"
-                  style={{ background: "#ffffff" }}
+                <img
+                  src={LeftArrow}
+                  className="w-11 h-11 mr-2 rounded-full "
+                  style={{
+                    background: "#ffffff",
+                    width: "24px",
+                    height: "24px",
+                  }}
                 />
+
                 <span className="text-white">Let’s Talk AI</span>
               </button>
             </div>

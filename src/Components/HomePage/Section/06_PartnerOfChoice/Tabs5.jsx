@@ -14,6 +14,7 @@ const Tabs5 = () => {
         <img
           src={AI}
           alt="AI"
+          loading="lazy"
           style={{
             justifyContent: "center",
             alignItems: "center",

@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../../Assets/Components/Footer/arrow-down-left.svg";
+
 const Footer1 = () => {
   return (
     <footer className="bg-black text-white pt-10 ">

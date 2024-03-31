@@ -1,11 +1,11 @@
 import React from "react";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import LeftArrow from "../../../../Assets/Components/HomePage/01_Slider_Home/Vector.svg";
 
 export const ShodatBox = () => {
   return (
     <div
-      className=" w-full  bg-[#432071] z-20 flex flex-col md:flex-row items-center"
-      style={{ maxWidth: "2000px" }}
+      className=" w-full  bg-[#432071] z-20 flex flex-col md:flex-row items-center py-10"
+      // style={{ maxWidth: "2000px" }}
     >
       <div className="">
         <div className="md:ml-14">
@@ -50,9 +50,21 @@ export const ShodatBox = () => {
             Responsible AI
           </p>
           <div className="md:w-100"></div> {/* Gap of 100px */}
-          <button className="text-black font-openSans text-base font-normal py-2 px-4 h-11 w-40 rounded-full flex items-center justify-center bg-yellow-500">
-            <MdOutlineKeyboardArrowRight className="w-6 h-6 mr-2 rounded-full" />
-            <span>Let’s Talk AI</span>
+          <button
+            className="flex items-center justify-center w-full md:w-40 h-11 text-black font-normal rounded-3xl"
+            style={{ background: "#F3D157" }}
+          >
+            <img
+              src={LeftArrow}
+              className="w-11 h-11 mr-2 rounded-full "
+              style={{
+                background: "#ffffff",
+                width: "24px",
+                height: "24px",
+              }}
+            />
+
+            <span>Get Started</span>
           </button>
         </div>
       </div>
