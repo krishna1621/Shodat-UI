@@ -152,7 +152,7 @@ function Navbar() {
 
   return (
     <nav
-      className="fixed px-4 py-4  flex justify-between items-center font-sans z-40 text-white bg-transparent w-[100%]  xs:w-[100%] sm:w-[100%] md:w-[100%] xl:w-[100%]   lg:w-[100%]"
+      className="fixed px-4 py-4 container h-[64px] flex justify-between items-center font-sans z-40 text-white bg-transparent w-[100%]  xs:w-[100%] sm:w-[100%] md:w-[100%] xl:w-[100%]   lg:w-[100%]"
       style={{
         background:
           location.pathname === "/platform"
