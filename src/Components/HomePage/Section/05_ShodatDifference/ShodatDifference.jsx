@@ -10,10 +10,10 @@ function ShodatDifference() {
     <div className=" py-8 bg-white">
       <div className=" md:mx-10 px-10 md:px-0">
         <div className="text-left mb-8">
-          <h1 className=" font-sans leading-[66px] text-[44px] ">
+          <h2 className=" font-sans text-3xl  md:leading-[66px] md:text-[44px] ">
             <span className="font-bold">Discover</span>
             <span className="font-light">&nbsp; the Shodat difference</span>
-          </h1>
+          </h2>
         </div>
         <div className="flex flex-wrap ">
           <div className="w-full sm:w-1/2 md:w-1/4  mb-4 relative">
@@ -24,9 +24,9 @@ function ShodatDifference() {
                 className="w-full h-64 object-cover "
                 loading="lazy"
               />
-              <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
+              <div className="absolute inset-0 flex flex-col mt-20  md:mt-10 lg:mt-24 justify-between p-4">
                 <div>
-                  <h2 className="font-sans text-xl leading-[30px] text-white font-bold mb-2">
+                  <h2 className="font-sans text-lg md:text-xl leading-[30px] text-white font-bold mb-2">
                     Innovate
                   </h2>
                   <p className="text-sm font-sans text-white font-bold leading-5">
@@ -42,7 +42,6 @@ function ShodatDifference() {
               </div>
             </div>
           </div>
-          {/* Repeat the same structure for other images */}
           <div className="w-full sm:w-1/2 md:w-1/4  mb-4 relative">
             <div className=" shadow-lg  overflow-hidden">
               <img
@@ -51,9 +50,9 @@ function ShodatDifference() {
                 className="w-full h-64 object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
+              <div className="absolute inset-0 flex flex-col mt-20  md:mt-10 lg:mt-24 justify-between p-4">
                 <div>
-                  <h2 className="font-sans text-xl leading-[30px] text-white font-bold mb-2">
+                  <h2 className="font-sans text-lg md:text-xl leading-[30px] text-white font-bold mb-2">
                     Manage
                   </h2>
                   <p className="text-sm font-sans text-white font-bold leading-5">
@@ -78,9 +77,9 @@ function ShodatDifference() {
                 className="w-full h-64 object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
+              <div className="absolute inset-0 flex flex-col mt-20  md:mt-10 lg:mt-24 justify-between p-4">
                 <div>
-                  <h2 className="font-sans text-xl leading-[30px] text-white font-bold mb-2">
+                  <h2 className="font-sans text-lg md:text-xl leading-[30px] text-white font-bold mb-2">
                     Modernize
                   </h2>
                   <p className="text-sm font-sans text-white font-bold leading-5">
@@ -104,22 +103,20 @@ function ShodatDifference() {
                 className="w-full h-64 object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 flex flex-col mt-24 justify-between p-4">
+              <div className="absolute inset-0 flex flex-col mt-20  md:mt-10 lg:mt-24 justify-between p-4">
                 <div>
-                  <h2 className="font-sans text-xl leading-[30px] text-white font-bold mb-2">
+                  <h2 className="font-sans text-lg md:text-xl leading-[30px] text-white font-bold mb-2">
                     Secure
                   </h2>
                   <p className="text-sm font-sans text-white font-bold leading-5">
                     Securing your data{" "}
-                  </p>{" "}
+                  </p>
                   <p className="text-sm font-sans text-white font-normal leading-5">
                     Ensuring compliance with Cybersecurity <br /> solutions
                   </p>
                 </div>
                 <div className="flex justify-end">
                   <img src={ArrowRight} alt="Arrow Right" loading="lazy" />
-
-                  {/* <GoArrowRight className=" text-white p-2 w-11 h-10" /> */}
                 </div>
               </div>
             </div>

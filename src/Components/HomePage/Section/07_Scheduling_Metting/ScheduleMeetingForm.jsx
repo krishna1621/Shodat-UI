@@ -5,7 +5,7 @@ const ScheduleMeetingForm = () => {
   return (
     <>
       <div
-        className="relative flex justify-center items-center h-[385px] w-[300px] md:h-[465px] md:w-[500px] mt-4 lg:mt-0  bg-contain bg-no-repeat"
+        className="relative flex justify-center items-center h-[385px] w-[300px] md:h-[465px] md:w-[500px] mt-14 lg:mt-0  bg-contain bg-no-repeat"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="absolute top-[150px] left-[150px] md:top-1/2 md:left-[230px] transform -translate-x-1/2 -translate-y-1/2">

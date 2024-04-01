@@ -11,22 +11,14 @@ const EmbracingPower = () => {
     <div className="px-8 py-16 bg-white md:px-12 lg:pb-14 lg:py-0 ">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
         <div>
-          <h1 className="text-4xl md:text-[44px]  leading-[52.8px] ">
+          <h1 className="text-[26px] font-sans md:text-[44px]  md:leading-[52.8px] ">
             <span className="font-bold  text-[#340D73]">Embracing</span>
 
             <span className="text-black font-light">
               &nbsp; power of data and advanced AI for the automotive industry
             </span>
           </h1>
-          <p
-            className="mt-4  text-gray-700 font-normal text-base leading-7 font-Poppins"
-            style={{
-              color: "#57647C",
-              fontSize: "18px",
-              lineHeight: "27px",
-              fontWeight: 400,
-            }}
-          >
+          <p className="mt-4  text-[#57647C] font-normal text-base md:leading-7 font-Poppins">
             How a subsidiary of the Japanese automotive manufacturer producing
             commercial vehicles and diesel engines achieved 30% reduction in
             year on year IT spend with improved infrastructure efficiency and
@@ -39,6 +31,7 @@ const EmbracingPower = () => {
               background:
                 "linear-gradient(110.53deg, #00C4CC -8.24%, #3E4499 32.83%, #5E027F 82.38%, #F4BE00 106.38%)",
             }}
+            onClick={{ handleClick }}
           >
             <img
               src={LeftArrow}

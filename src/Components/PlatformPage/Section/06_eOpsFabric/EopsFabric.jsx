@@ -2,18 +2,13 @@ import React from "react";
 
 const EopsFabric = () => {
   return (
-    <div
-      className="bg-black px-4 sm:px-6 py-2 sm:py-4 "
-      style={{
-        maxWidth: "2000px",
-      }}
-    >
+    <div className="bg-black px-4 sm:px-6 py-2 sm:py-4 ">
       <div className="max-w-7xl py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
           <div className="col-span-1 md:col-span-2 lg:col-span-4   ml-10    ">
             <div className="flex flex-col lg:flex-row ">
               <div className="lg:w-full md:w-1/2 lg:pr-4 md:pr-60 ">
-                <h2 className="font-semibold text-white text-xl md:text-2xl lg:text-3xl mb-4">
+                <h2 className="font-semibold text-white text-[23px] leading-[40.8px] md:text-[34px] mb-4">
                   What is eOps fabric?
                 </h2>
                 <h4
