@@ -60,7 +60,7 @@ const Platform2 = () => {
             </div>
           </div>
         </div>{" "}
-        <div className="bg-white container">
+        <div className="bg-white   container">
           <p className="text-black text-4xl font-sans font-semibold mb-4 lg:text-left px-8">
             Why Shodat Platform?
           </p>
@@ -77,7 +77,7 @@ const Platform2 = () => {
               "130%",
               "#340D73",
               "-170px",
-              "50px"
+              "10%"
             )}
             {renderStat(
               ecl1,
@@ -88,7 +88,7 @@ const Platform2 = () => {
               "110%",
               "#F9C407",
               "-112px",
-              "80px"
+              "20%"
             )}
             {renderStat(
               ecl1,
@@ -96,10 +96,10 @@ const Platform2 = () => {
               ecl5,
               "Predict time for complex RCA by - 80%",
               "#01A79D",
-              "250%",
+              "140%",
               "#01A79D",
-              "-290px",
-              "20px"
+              "-170px",
+              "7%"
             )}
             {renderStat(
               ecl1,
@@ -110,7 +110,7 @@ const Platform2 = () => {
               "110%",
               "#000000",
               "-112px",
-              "80px"
+              "18%"
             )}
           </div>
         </div>
@@ -153,7 +153,7 @@ const renderStat = (
   image3MarginTop,
   paragraphMarginTop
 ) => (
-  <div className="flex relative mt-6 lg:max-w-screen-lg">
+  <div className="flex relative  mt-6 lg:max-w-screen-lg">
     <div
       className="w-40 h-24 bg-black flex justify-center items-center relative "
       style={{
@@ -206,6 +206,8 @@ const renderStat = (
       className="absolute top-0 left-0 right-0 text-sm sm:text-base lg:text-sm xl:text-xl  text-center font-semibold text-[#555555]"
       style={{
         marginTop: paragraphMarginTop,
+
+        textAlign: "center",
       }}
     >
       {text}

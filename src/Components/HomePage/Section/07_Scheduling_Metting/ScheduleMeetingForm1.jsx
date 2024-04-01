@@ -2,12 +2,12 @@ import React from "react";
 import LeftArrow from "../../../../Assets/Components/HomePage/01_Slider_Home/Vector.svg";
 const ScheduleMeetingForm1 = () => {
   return (
-    <div className="  ">
-      <h2 className="font-sans text-2xl md:text-4xl font-semibold text-white  mb-4 md:mb-6 sm:leading-5 md:leading-[60px]">
+    <div>
+      <h2 className="font-sans text-[26px] md:text-[40px] font-semibold text-white  mb-4 md:mb-6  md:leading-[60px]">
         Unlock the untapped potential of your business with the transformative
         capabilities of AI.
       </h2>
-      <p className="font-openSans text-base md:text-lg  font-light text-white  mb-4 md:mb-6 md:leading-[33px] sm:leading-5">
+      <p className="font-openSans text-base md:text-[22px]  font-light text-white  mb-4 md:mb-6 md:leading-[30px] ">
         From automating repetitive tasks to optimizing decision-making through{" "}
         advanced analytics, artificial intelligence is the key to scalability
         and innovation.

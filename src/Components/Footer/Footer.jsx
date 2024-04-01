@@ -2,50 +2,56 @@ import React from "react";
 import logo from "../../Assets/Components/Footer/Shodat Logo.png";
 import mail from "../../Assets/Components/Footer/mail.svg";
 import mobile from "../../Assets/Components/Footer/mobile.svg";
+
 const Footer = () => {
   return (
-    <footer className="bg-black text-white text-center md:text-left pt-4 ">
-      <div className="mx-12  text-center md:text-left  ">
+    <footer className="bg-black text-white text-center md:text-left pt-2">
+      <div className="mx-12 text-center md:text-left">
         <div className="border-b-[0.1px]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5  md:ml-0">
+          <div className="flex flex-wrap justify-center md:justify-between ">
             {/* 1st column */}
-            <div className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 2xl:col-span-1  ">
-              <div className="mb-4 flex items-center text-center md:text-left justify-center md:justify-normal md:mt-8 ">
+            <div
+              className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1"
+              style={{ width: "300px" }}
+            >
+              <div className="  flex items-center justify-center md:justify-start mb-4 md:mt-8">
                 <img
                   src={logo}
                   alt="Company Logo"
-                  className="h-7 w-14 mr-2 text-center md:text-left"
+                  className="h-7 w-14 mr-2 pr-2"
                 />
-                <div className="font-Poppins text-3xl font-medium text-left md:text-left">
+                <div className="font-Poppins text-xl md:text-[26px] md:leading-[39px] font-medium">
                   Shodat
                 </div>
               </div>
-              <div className="font-sans text-sm font-normal  mb-4 text-center md:text-left  justify-center leading-5">
-                Innovating Insights , Accelerating
-                <br /> Growth
+              <div className="font-sans text-sm font-normal mb-4 leading-5">
+                Innovating Insights, Accelerating Growth
               </div>
-              <div className="mb-4 flex items-center md:text-left  justify-center md:justify-normal leading-5">
-                <img src={mobile} />
-                <div className="font-sans text-sm font-normal mb-1 ml-3 ">
+              <div className="flex items-center justify-center md:justify-start leading-5">
+                <img src={mobile} alt="Mobile Icon" />
+                <div className="font-sans text-lg font-normal mb-2 mt-2 ml-3">
                   +123 (000) 88 99
                 </div>
               </div>
-              <div className="flex items-center text-center md:text-left  justify-center  md:justify-normal leading-5">
-                <img src={mail} />
-                <div className="font-sans text-sm font-normal mb-1 ml-3">
+              <div className="flex items-center justify-center md:justify-start leading-5">
+                <img src={mail} alt="Mail Icon" />
+                <div className="font-sans text-lg font-normal mb-2 mt-2 ml-3">
                   contact@shodat.com
                 </div>
               </div>
             </div>
             {/* 2nd column */}
-            <div className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 2xl:col-span-1">
-              <div className="mb-4 font-openSans text-xl font-normal text-center md:text-left md:mt-8">
+            <div
+              className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1 mt-5 md:mt-0 py-2 md-py-0"
+              style={{ width: "200px" }}
+            >
+              <div className="mb-1  md:mb-5 font-openSans text-xl font-normal md:mt-8">
                 Solutions
               </div>
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   Data Engineering
                 </a>
@@ -53,7 +59,7 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   Vision AI
                 </a>
@@ -61,7 +67,7 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   ERP Systems
                 </a>
@@ -69,7 +75,7 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   Edge Analytics
                 </a>
@@ -77,7 +83,7 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   Intelligent Enterprise
                 </a>
@@ -85,21 +91,24 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-8 md:mb-6 leading-5"
                 >
                   Cloud Transformation
                 </a>
               </div>
             </div>
             {/* 3rd column */}
-            <div className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 2xl:col-span-1">
-              <div className="mb-4 font-openSans text-xl font-normal text-center md:text-left md:mt-8">
+            <div
+              className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1 py-2 md-py-0"
+              style={{ width: "200px" }}
+            >
+              <div className="mb-1  md:mb-5 font-openSans text-xl font-normal md:mt-8">
                 Services
               </div>
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   Innovate
                 </a>
@@ -107,7 +116,7 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   Manage
                 </a>
@@ -115,7 +124,7 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   Modernize
                 </a>
@@ -123,7 +132,7 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   Secure
                 </a>
@@ -131,21 +140,24 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-8 md:mb-6 leading-5"
                 >
                   SAP HANA CoE
                 </a>
               </div>
             </div>
             {/* 4th column */}
-            <div className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 2xl:col-span-1">
-              <div className="mb-4 font-openSans text-xl font-normal text-center md:text-left md:mt-8">
+            <div
+              className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1 py-2 md-py-0"
+              style={{ width: "200px" }}
+            >
+              <div className="mb-1  md:mb-5 font-openSans text-xl font-normal md:mt-8">
                 Shodat AI
               </div>
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   AI Innovation
                 </a>
@@ -153,7 +165,7 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   Frictionless AI
                 </a>
@@ -161,21 +173,24 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-8 md:mb-6 leading-5"
                 >
                   Pillars of AI
                 </a>
               </div>
             </div>
             {/* 5th column */}
-            <div className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 2xl:col-span-1">
-              <div className="mb-4 font-openSans text-xl font-normal text-center md:text-left  md:mt-8">
+            <div
+              className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1 py-2 md-py-0"
+              style={{ width: "250px" }}
+            >
+              <div className="mb-1  md:mb-5 font-openSans text-xl font-normal md:mt-8">
                 eOps Platform
               </div>
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   eOps Watch
                 </a>
@@ -183,7 +198,7 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   eOps Trace
                 </a>
@@ -191,7 +206,7 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   eOps Prosense
                 </a>
@@ -199,15 +214,15 @@ const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 text-center md:text-left leading-5"
+                  className="font-sans text-sm font-normal mb-6 leading-5"
                 >
                   eOps Insights
                 </a>
               </div>
-              <div className="font-sans text-sm font-normal mb-4 mt-10 text-center md:text-left leading-5">
+              <div className="font-sans text-sm font-normal mb-6 mt-10 leading-5">
                 <a
                   href="#"
-                  className="font-sans text-sm font-normal mb-4 mt-10 text-center md:text-left"
+                  className="font-sans text-sm font-normal mb-6 mt-10"
                 >
                   © 2024 Shodat Inc. All rights reserved
                 </a>

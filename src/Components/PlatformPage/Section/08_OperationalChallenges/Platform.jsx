@@ -12,7 +12,7 @@ export const Platform = () => {
       <div className="grid gap-8 ">
         <div className="p-8 rounded-xl">
           <h2
-            className="text-[#340D73] font-sans  text-4xl  font- mb-4    font-semibold  leading-[55px]"
+            className="text-[#340D73] font-sans text-[26px] md:text-[37px]  mb-4 font-semibold  leading-[55px]"
             style={{
               justifyContent: "center",
             }}
