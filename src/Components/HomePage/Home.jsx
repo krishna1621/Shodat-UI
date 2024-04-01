@@ -18,7 +18,7 @@ const Home = () => {
         <EmbracingPower />
         <CardsComponent />
         <ShodatDifference />
-        <TabsContain />
+        {/* <TabsContain /> */}
         <MeetingForm />
         <FinalFooter />
       </div>
