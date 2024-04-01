@@ -73,10 +73,6 @@ function Navbar() {
   const [isSolutionClicked, setIsSolutionClicked] = useState(false);
   const location = useLocation();
 
-  useEffect(() => {
-    // Check if the current path is "/solutionAI"
-    setIsSolutionClicked(location.pathname === "/solutionAI");
-  }, [location.pathname]);
   const handleSolutionHoverOut = () => {
     setIsSolutionHovered(false);
   };
@@ -112,16 +108,6 @@ function Navbar() {
     setMenuOpen(false);
   };
 
-  // Effect to set initial mobile menu state based on screen width
-  useEffect(() => {
-    const screenWidth = window.innerWidth;
-    if (screenWidth <= 1100) {
-      setMenuOpen(true); // Set isMobileMenuOpen to true for screens <= 1100px
-    } else {
-      setMenuOpen(false);
-    }
-  }, []);
-
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -137,18 +123,6 @@ function Navbar() {
     };
   }, []);
   const navbarRef = useRef(null);
-
-  useEffect(() => {
-    // Set the height of the Navbar component in localStorage with a unique key
-    if (navbarRef.current) {
-      const pageIdentifier = "/"; // Define a unique identifier for the page
-
-      localStorage.setItem(
-        `navbarHeight_${pageIdentifier}`,
-        navbarRef.current.offsetHeight
-      );
-    }
-  }, []);
 
   return (
     <nav
@@ -213,13 +187,13 @@ function Navbar() {
           <a href="/">
             {location.pathname === "/platform" ? (
               <img
-                className="h-[50px] max-w-full sm:justify-center flex"
+                className="h-[50px] w-auto max-w-full sm:justify-center flex"
                 src={logo1}
                 alt="Platform Logo"
               />
             ) : (
               <img
-                className="h-[50px] max-w-full flex sm:justify-center align-middle justify-items-center "
+                className="h-[50px] w-auto max-w-full flex sm:justify-center align-middle justify-items-center "
                 src={logo}
                 alt="Platform Logo"
               />
@@ -230,7 +204,7 @@ function Navbar() {
 
       <ul
         className={`xl:flex lg:items-center lg:w-auto px-7 justify-items-center justify-center lg:space-x-6 ${
-          menuOpen ? "" : "hidden"
+          menuOpen ? "hidden" : "hidden"
         }`}
       >
         <li className="">
@@ -278,12 +252,12 @@ function Navbar() {
 
           <ul
             style={{ background: "#340D73" }}
-            className="absolute border-t-4 border-yellow-300 p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
+            className="absolute border-t-4 border-[#f3d157]  p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
           >
             <li className="text-sm leading-8">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 font-Sans"
+                className="text-white hover:text-[#f3d157]  font-Sans"
               >
                 Data Engineering
               </a>
@@ -291,7 +265,7 @@ function Navbar() {
             <li className="text-sm leading-8">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 Open-Sans"
+                className="text-white hover:text-[#f3d157]  Open-Sans"
               >
                 AI Innovation
               </a>
@@ -299,7 +273,7 @@ function Navbar() {
             <li className="text-sm leading-8">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 Open-Sans"
+                className="text-white hover:text-[#f3d157]  Open-Sans"
               >
                 ERP System & Analytics
               </a>
@@ -307,7 +281,7 @@ function Navbar() {
             <li className="text-sm leading-8">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 Open-Sans"
+                className="text-white hover:text-[#f3d157]  Open-Sans"
               >
                 Vision AI
               </a>
@@ -315,7 +289,7 @@ function Navbar() {
             <li className="text-sm leading-8">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 Open-Sans"
+                className="text-white hover:text-[#f3d157]  Open-Sans"
               >
                 Edge Analytics
               </a>
@@ -323,7 +297,7 @@ function Navbar() {
             <li className="text-sm leading-8">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 Open-Sans"
+                className="text-white hover:text-[#f3d157]  Open-Sans"
               >
                 Intelligent Enterprise
               </a>
@@ -331,7 +305,7 @@ function Navbar() {
             <li className="text-sm leading-8">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 Open-Sans"
+                className="text-white hover:text-[#f3d157]  Open-Sans"
               >
                 Cloud Transformation
               </a>
@@ -373,12 +347,12 @@ function Navbar() {
 
           <ul
             style={{ background: "#340D73" }}
-            className="absolute border-t-4 border-yellow-300 p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
+            className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
           >
             <li className="text-sm leading-8 text-left">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 font-sans"
+                className="text-white hover:text-[#f3d157]  font-sans"
               >
                 Innovate
               </a>
@@ -386,7 +360,7 @@ function Navbar() {
             <li className="text-sm leading-8 text-left">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 font-sans"
+                className="text-white hover:text-[#f3d157]  font-sans"
               >
                 Manage
               </a>
@@ -394,7 +368,7 @@ function Navbar() {
             <li className="text-sm leading-8 text-left">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 font-sans"
+                className="text-white hover:text-[#f3d157]  font-sans"
               >
                 Modernize
               </a>
@@ -402,7 +376,7 @@ function Navbar() {
             <li className="text-sm leading-8 text-left">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 font-sans"
+                className="text-white hover:text-[#f3d157]  font-sans"
               >
                 Security
               </a>
@@ -444,12 +418,12 @@ function Navbar() {
           </Link>
           <ul
             style={{ background: "#340D73" }}
-            className="absolute border-t-4 border-yellow-300 p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
+            className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
           >
             <li className="text-sm leading-8 text-left">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 font-sans"
+                className="text-white hover:text-[#f3d157]  font-sans"
               >
                 Automotive
               </a>
@@ -457,7 +431,7 @@ function Navbar() {
             <li className="text-sm leading-8 text-left">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 font-sans"
+                className="text-white hover:text-[#f3d157]  font-sans"
               >
                 Manufacturing
               </a>
@@ -465,7 +439,7 @@ function Navbar() {
             <li className="text-sm leading-8 text-left">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 font-sans"
+                className="text-white hover:text-[#f3d157]  font-sans"
               >
                 Oil & Gas
               </a>
@@ -473,7 +447,7 @@ function Navbar() {
             <li className="text-sm leading-8 text-left">
               <a
                 href="#"
-                className="text-white hover:text-yellow-500 Open-sans"
+                className="text-white hover:text-[#f3d157]  Open-sans"
               >
                 Transportation
               </a>
@@ -487,7 +461,7 @@ function Navbar() {
               location.pathname === "/platform" ? "text-black" : "white"
             } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
           >
-            CustomerSuccess
+            Customer Success
           </Link>
         </li>
         <li>
@@ -514,14 +488,18 @@ function Navbar() {
 
       <div className="hidden  sm:flex md:flex lg:inline-block  text-sm text-white font-bold rounded-xl transition duration-200">
         {location.pathname === "/solutionAI" ? (
-          <AlternativeButton>RequestDemo</AlternativeButton>
+          <AlternativeButton className="font-sans font-normal ">
+            Request Demo
+          </AlternativeButton>
         ) : (
-          <CustomButton>RequsetDemo</CustomButton>
+          <CustomButton className=" font-sans font-normal">
+            Requset Demo
+          </CustomButton>
         )}
       </div>
 
       <div
-        className={`navbar-menu fixed  inset-0 bg-gray-800  ${
+        className={`navbar-menu fixed  inset-0 bg-transparent  ${
           menuOpen ? "block" : "hidden"
         }`}
       >
@@ -532,7 +510,6 @@ function Navbar() {
             justifyContent: "flex-start",
           }}
         >
-          {/* Mobile menu content */}
           <div className="flex items-center   mb-8">
             <a className="mr-auto text-3xl font-bold leading-none" href="#">
               <a class=" text-6xl font-bold leading-none" href="#">
@@ -563,7 +540,7 @@ function Navbar() {
             </button>
           </div>
           <ul className="">
-            <li className=" text-center ">
+            <li className=" text-start ">
               <Link
                 to="/platform"
                 onClick={closeMenu} // Close mobile menu when link is clicked
@@ -583,7 +560,7 @@ function Navbar() {
                 <Link
                   onClick={closeMenu} // Close mobile menu when link is clicked
                   to="/solutionAI"
-                  className={`inline-flex w-full justify-center ${
+                  className={`inline-flex w-full justify-start ${
                     location.pathname === "/platform" ? "text-white" : "white"
                   } hover:text-black hover:bg-[#f3d157] ${
                     isSolutionHovered ? "bg-[#f3d157] text-black" : ""
@@ -613,14 +590,14 @@ function Navbar() {
               {isSolutionHovered && (
                 <ul
                   style={{ background: "#340D73" }}
-                  className="absolute border-t-4 border-yellow-300 p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
+                  className="absolute border-t-4 border-[#f3d157]  p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
                   onMouseEnter={handleSolutionHover}
                   onMouseLeave={handleSolutionHoverOut}
                 >
                   <li className="text-sm leading-8">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 font-Sans"
+                      className="text-white hover:text-[#f3d157]  font-Sans"
                     >
                       Data Ingineering
                     </a>
@@ -628,7 +605,7 @@ function Navbar() {
                   <li className="text-sm leading-8">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 font-Sans"
+                      className="text-white hover:text-[#f3d157]  font-Sans"
                     >
                       AI Innovation
                     </a>
@@ -636,7 +613,7 @@ function Navbar() {
                   <li className="text-sm leading-8">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 Open-Sans"
+                      className="text-white hover:text-[#f3d157]  Open-Sans"
                     >
                       ERP System & Analytics
                     </a>
@@ -644,7 +621,7 @@ function Navbar() {
                   <li className="text-sm leading-8">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 Open-Sans"
+                      className="text-white hover:text-[#f3d157]  Open-Sans"
                     >
                       Vision AI
                     </a>
@@ -652,7 +629,7 @@ function Navbar() {
                   <li className="text-sm leading-8">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 Open-Sans"
+                      className="text-white hover:text-[#f3d157]  Open-Sans"
                     >
                       Edge Analytics
                     </a>
@@ -660,7 +637,7 @@ function Navbar() {
                   <li className="text-sm leading-8">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 Open-Sans"
+                      className="text-white hover:text-[#f3d157]  Open-Sans"
                     >
                       Intelligent Enterprise
                     </a>
@@ -668,7 +645,7 @@ function Navbar() {
                   <li className="text-sm leading-8">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 Open-Sans"
+                      className="text-white hover:text-[#f3d157]  Open-Sans"
                     >
                       Cloud Transformation
                     </a>
@@ -686,7 +663,7 @@ function Navbar() {
                 <Link
                   onClick={closeMenu} // Close mobile menu when link is clicked
                   to="#"
-                  className={`inline-flex w-full justify-center ${
+                  className={`inline-flex w-full justify-start ${
                     location.pathname === "/platform" ? "text-white " : "white"
                   } ${
                     isServicesHovered ? "bg-[#f3d157] text-black" : ""
@@ -716,14 +693,14 @@ function Navbar() {
               {isServicesHovered && (
                 <ul
                   style={{ background: "#340D73" }}
-                  className="absolute border-t-4 border-yellow-300 p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
+                  className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
                   onMouseEnter={handleServicesHover}
                   onMouseLeave={handleServicesHoverOut}
                 >
                   <li className="text-sm leading-8 text-left">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 font-sans"
+                      className="text-white hover:text-[#f3d157]  font-sans"
                     >
                       Innovate
                     </a>
@@ -731,7 +708,7 @@ function Navbar() {
                   <li className="text-sm leading-8 text-left">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 font-sans"
+                      className="text-white hover:text-[#f3d157]  font-sans"
                     >
                       Manage
                     </a>
@@ -739,7 +716,7 @@ function Navbar() {
                   <li className="text-sm leading-8 text-left">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 font-sans"
+                      className="text-white hover:text-[#f3d157] font-sans"
                     >
                       Modernize
                     </a>
@@ -747,7 +724,7 @@ function Navbar() {
                   <li className="text-sm leading-8 text-left">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 font-sans"
+                      className="text-white hover:text-[#f3d157]  font-sans"
                     >
                       Security
                     </a>
@@ -764,7 +741,7 @@ function Navbar() {
                 <Link
                   onClick={closeMenu} // Close mobile menu when link is clicked
                   to="#"
-                  className={`inline-flex  w-full justify-center ${"white"}   ${
+                  className={`inline-flex  w-full justify-start ${"white"}   ${
                     isIndustriesHovered ? "bg-[#f3d157] text-black" : ""
                   } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
                 >
@@ -792,14 +769,14 @@ function Navbar() {
               {isIndustriesHovered && (
                 <ul
                   style={{ background: "#340D73" }}
-                  className="absolute border-t-4 border-yellow-300 p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
+                  className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
                   onMouseEnter={handleIndustriesHover}
                   onMouseLeave={handleIndustriesHoverOut}
                 >
                   <li className="text-sm leading-8 text-left">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 font-sans"
+                      className="text-white hover:text-[#f3d157]  font-sans"
                     >
                       Automotive
                     </a>
@@ -807,7 +784,7 @@ function Navbar() {
                   <li className="text-sm leading-8 text-left">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 font-sans"
+                      className="text-white hover:text-[#f3d157]  font-sans"
                     >
                       Manufacturing
                     </a>
@@ -815,7 +792,7 @@ function Navbar() {
                   <li className="text-sm leading-8 text-left">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 font-sans"
+                      className="text-white hover:text-[#f3d157]  font-sans"
                     >
                       Oil & Gas
                     </a>
@@ -823,7 +800,7 @@ function Navbar() {
                   <li className="text-sm leading-8 text-left">
                     <a
                       href="#"
-                      className="text-white hover:text-yellow-500 Open-sans"
+                      className="text-white hover:text-[#f3d157]  Open-sans"
                     >
                       Transportation
                     </a>
@@ -834,20 +811,20 @@ function Navbar() {
 
             <li>
               <Link
-                onClick={closeMenu} // Close mobile menu when link is clicked
+                onClick={closeMenu}
                 to="/contact"
-                className={`inline-flex w-full justify-center ${
+                className={`inline-flex w-full justify-start ${
                   location.pathname === "/platform" ? "text-white" : "white"
                 } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
               >
-                CustomerSuccess
+                Customer Success
               </Link>
             </li>
             <li>
               <Link
                 onClick={closeMenu} // Close mobile menu when link is clicked
                 to="/shodatAI"
-                className={`inline-flex w-full justify-center ${
+                className={`inline-flex w-full justify-start ${
                   location.pathname === "/platform" ? "text-white" : "white"
                 } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
               >
@@ -858,14 +835,16 @@ function Navbar() {
               <Link
                 onClick={closeMenu} // Close mobile menu when link is clicked
                 to="/about"
-                className={`inline-flex w-full justify-center ${
+                className={`inline-flex w-full justify-start ${
                   location.pathname === "/platform" ? "text-white" : "white"
                 } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
               >
                 About
               </Link>
             </li>
-            <CustomButton className="mt-5">RequsetDemo</CustomButton>
+            <CustomButton className="mt-5  font-sans font-normal ">
+              Requset Demo
+            </CustomButton>
           </ul>
         </nav>
       </div>
