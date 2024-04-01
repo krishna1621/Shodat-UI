@@ -16,7 +16,6 @@ const Platform2 = () => {
             operational inefficiencies, risks & security threats faster by
             providing
           </h5>
-
           <div className="flex flex-wrap justify-around  font-sans font-normal text-lg leading-[27px]  items-start mt-20 mb-20">
             <div
               className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
@@ -118,7 +117,6 @@ const Platform2 = () => {
     </div>
   );
 };
-
 const renderFeature = (text) => (
   <div className="flex items-center">
     {[...Array(1)].map((_, index) => (
@@ -141,7 +139,6 @@ const renderFeature = (text) => (
     ))}
   </div>
 );
-
 const renderStat = (
   image1,
   image2,
@@ -155,10 +152,9 @@ const renderStat = (
 ) => (
   <div className="flex relative  mt-6 lg:max-w-screen-lg">
     <div
-      className="w-40 h-24 bg-black flex justify-center items-center relative "
+      className="w-full  h-24 bg-black flex justify-center items-center relative "
       style={{
         height: "60px",
-        width: "400px",
         backgroundColor: backgroundColor,
         marginTop: "45%",
       }}
@@ -206,7 +202,6 @@ const renderStat = (
       className="absolute top-0 left-0 right-0 text-sm sm:text-base lg:text-sm xl:text-xl  text-center font-semibold text-[#555555]"
       style={{
         marginTop: paragraphMarginTop,
-
         textAlign: "center",
       }}
     >
@@ -214,5 +209,4 @@ const renderStat = (
     </p>
   </div>
 );
-
 export default Platform2;

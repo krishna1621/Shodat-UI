@@ -29,7 +29,7 @@ function EdgeInfrastructure() {
           </p>
         </div>
 
-        <div className="w-full lg:w-[488px] mt-5  lg:mx-2">
+        <div className="w-full lg:w-[488px] mt-5   lg:mx-2">
           <img src={AI} alt="Image" className="rounded-lg" />
         </div>
       </div>

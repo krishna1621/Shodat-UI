@@ -30,7 +30,7 @@ const Footer = () => {
               <div className="flex items-center justify-center md:justify-start leading-5">
                 <img src={mobile} alt="Mobile Icon" />
                 <div className="font-sans text-lg font-normal mb-2 mt-2 ml-3">
-                  +123 (000) 88 99
+                  +1 (123) 456- 7890
                 </div>
               </div>
               <div className="flex items-center justify-center md:justify-start leading-5">

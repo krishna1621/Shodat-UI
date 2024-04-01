@@ -17,39 +17,26 @@ export const ShodatBox = () => {
           </h2>
         </div>
       </div>
-
-      {/* Horizontal line for mobile screens */}
       <div className="md:hidden w-full h-2 bg-[#F3D157] mt-4 mb-4"></div>
-
       {/* Vertical line for larger screens */}
       <div className="hidden md:block h-32 w-2 ml-9 bg-[#F3D157] mr-6 md:mr-10"></div>
-
       <div className="flex flex-col md:justify-between mt-4 md:mt-0">
-        {/* Display list items in a row on mobile screens */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-4 md:mb-0 flex-wrap md:flex-nowrap">
-          <div className="flex flex-col">
-            <li className="text-[#FFFFFF] text-[18] font-sans font-normal leading-7 mb-2 md:ml-20">
-              AI powered Enterprises
-            </li>
-          </div>
-          <div className="flex flex-col">
-            <li className="text-[#FFFFFF] text-[18] font-sans font-normal leading-7 mb-2 md:ml-20">
-              AI Powered Customers
-            </li>
-          </div>
-          <div className="flex flex-col">
-            <li className="text-[#FFFFFF] text-[18] font-sans font-normal leading-7 mb-2 md:ml-20">
-              AI enabled Platform
-            </li>
-          </div>
+        <div className="flex flex-col md:flex-row md:justify-between items-center">
+          <li className="text-[#FFFFFF] text-[18] font-sans font-normal leading-7">
+            AI powered Enterprises
+          </li>
+          <li className="text-[#FFFFFF] text-[18] font-sans font-normal leading-7 xl:ml-48">
+            AI Powered Customers
+          </li>
+          <li className="text-[#FFFFFF] text-[18] font-sans font-normal leading-7  xl:ml-48">
+            AI enabled Platform
+          </li>
         </div>
-
-        {/* Display the remaining items in a row on mobile screens */}
-        <div className="flex flex-row justify-between items-center">
-          <li className="text-[#FFFFFF] text-[18] font-sans font-normal leading-7 mb-2 md:ml-20">
+        <div className="flex flex-col md:flex-row md:justify-between items-center">
+          <li className="text-[#FFFFFF] text-[18] font-sans font-normal leading-7   mb-2 md:mb-0  ">
             AI for Good
           </li>
-          <li className="text-[#FFFFFF] text-[18] font-sans font-normal leading-7 mb-2 md:ml-24">
+          <li className="text-[#FFFFFF] text-[18] font-sans font-normal leading-7 mb-2 md:mb-0  xl:ml-36">
             Responsible AI
           </li>
           <div className="md:w-100"></div> {/* Gap of 100px */}
@@ -74,5 +61,4 @@ export const ShodatBox = () => {
     </div>
   );
 };
-
 export default ShodatBox;

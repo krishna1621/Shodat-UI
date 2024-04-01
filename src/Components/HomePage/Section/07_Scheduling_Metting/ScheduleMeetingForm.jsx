@@ -13,51 +13,51 @@ const ScheduleMeetingForm = () => {
             <h2 className="text-center font-openSans text-lg md:text-3xl font-semibold mb-4 md:mb-8 mt-4 lg:mt-0 text-black">
               Scheduling a Meeting
             </h2>
-            <form>
-              <div className="mb-4">
+            <form className="font-poppins font-light text-sm leading-[21px] text-[#666666]">
+              <div className="mb-4 md:mb-6 ">
                 <input
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Name"
-                  className="border-b border-gray-300 w-full focus:outline-none bg-transparent text-black"
+                  className="border-b border-gray-300 w-full focus:outline-none bg-transparent"
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-4  md:mb-6">
                 <input
                   type="text"
                   id="mobile"
                   name="mobile"
                   placeholder="Mobile"
-                  className="border-b border-gray-300 w-full focus:outline-none bg-transparent text-black"
+                  className="border-b border-gray-300 w-full focus:outline-none bg-transparent"
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-4  md:mb-6">
                 <input
                   type="email"
                   id="email"
                   name="email"
                   placeholder="Email Address"
-                  className="border-b border-gray-300 w-full focus:outline-none bg-transparent text-black"
+                  className="border-b border-gray-300 w-full focus:outline-none bg-transparent"
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-4  md:mb-6">
                 <input
                   type="text"
                   id="company"
                   name="company"
                   placeholder="Company"
-                  className="border-b border-gray-300 w-full focus:outline-none bg-transparent text-black"
+                  className="border-b border-gray-300 w-full focus:outline-none bg-transparent"
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-4  md:mb-6">
                 <input
                   id="message"
                   name="message"
                   placeholder="Message"
-                  className="border-b border-gray-300 w-full focus:outline-none bg-transparent text-black"
+                  className="border-b border-gray-300 w-full focus:outline-none bg-transparent"
                 />
-                <div className="mt-4">
+                <div className="mt-4 md:mt-20">
                   <button
                     type="submit"
                     className="bg-black text-white font-poppins text-base leading-6 font-medium md:py-2 md:px-4 rounded-full w-full"
