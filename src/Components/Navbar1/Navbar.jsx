@@ -179,23 +179,6 @@ function Navbar() {
       </div>
 
       <div className="xl:hidden flex    sm: justify-items-start    ">
-        <button
-          className="navbar-burger flex justify-start  p-3 "
-          onClick={toggleMenu}
-          style={{
-            color: location.pathname === "/platform" ? "black" : "white", // Set color based on pathname
-          }}
-        >
-          <svg
-            className="block h-4 w-4 fill-current"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Mobile menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </button>
-
         <div
           ref={navbarRef}
           id="navbar"
@@ -218,7 +201,24 @@ function Navbar() {
           </a>
         </div>
       </div>
-
+      <div className="xl:hidden flex ">
+        <button
+          className="navbar-burger flex justify-start  p-3 "
+          onClick={toggleMenu}
+          style={{
+            color: location.pathname === "/platform" ? "black" : "white", // Set color based on pathname
+          }}
+        >
+          <svg
+            className="block h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
       <ul
         className={`xl:flex lg:items-center lg:w-auto px-7 justify-items-center justify-center lg:space-x-6 ${
           menuOpen ? "hidden" : "hidden"
@@ -505,7 +505,7 @@ function Navbar() {
 
       <div className="hidden  sm:flex md:flex lg:inline-block  text-sm text-white font-bold rounded-xl transition duration-200">
         {location.pathname === "/solutionAI" ? (
-          <AlternativeButton className="font-sans font-normal ">
+          <AlternativeButton className="font-sans font-normal   ">
             Request Demo
           </AlternativeButton>
         ) : (
