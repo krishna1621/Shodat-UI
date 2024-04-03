@@ -11,18 +11,20 @@ import FinalFooter from "../Footer/FinalFooter";
 const Home = () => {
   const productionRef = useRef(null);
   return (
-    <div className="flex justify-center items-center">
-      <div className="container">
-        <SliderHome scrollToRef={productionRef} />
-        <ProductionReadyAi ref={productionRef} />
-        <EmbracingPower />
-        <CardsComponent />
-        <ShodatDifference />
-        <TabsContain />
-        <MeetingForm />
-        <FinalFooter />
+    <>
+      <div className="flex justify-center items-center">
+        <div className="container">
+          <SliderHome scrollToRef={productionRef} />
+          <ProductionReadyAi ref={productionRef} />
+          <EmbracingPower />
+          <CardsComponent />
+          <ShodatDifference />
+          <TabsContain />
+          <MeetingForm />
+          <FinalFooter />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

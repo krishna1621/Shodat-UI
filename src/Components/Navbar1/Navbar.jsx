@@ -142,713 +142,717 @@ function Navbar() {
   const navbarRef = useRef(null);
 
   return (
-    <nav
-      className="fixed px-4 py-4 h-20  container flex justify-between items-center font-sans z-40 text-white bg-transparent w-[100%]  xs:w-[100%] sm:w-[100%] md:w-[100%] xl:w-[100%]   lg:w-[100%]"
-      style={{
-        background:
-          location.pathname === "/platform"
-            ? scrollPosition > 100
-              ? "white"
-              : "white"
-            : scrollPosition > 100
-            ? "black"
-            : "",
-        justifyContent: "flex-start",
-        marginTop: scrollPosition > 100 ? "0" : "20px",
-      }}
-    >
-      <div ref={navbarRef} id="navbar">
-        <a
-          className="hidden  xl:flex   ml-12     w-auto  items-center  text-6xl font-bold leading-none"
-          href="/"
-        >
-          {location.pathname === "/platform" ? (
-            <img
-              className="w-auto    xl:ml-0  lg:w-auto h-11"
-              src={logo1}
-              alt="Platform Logo"
-            />
-          ) : (
-            <img
-              className="w-auto  lg:ml-0  lg:w-auto h-11"
-              src={logo}
-              alt="Default Logo"
-            />
-          )}
-        </a>
-      </div>
-
-      <div className="xl:hidden flex    sm: justify-items-start    ">
-        <div
-          ref={navbarRef}
-          id="navbar"
-          className="  mx-20  w-auto  sm:px-9  md:ml-72 flex"
-        >
-          <a href="/">
+    <>
+      <nav
+        className="fixed px-4 py-4 h-20  container flex justify-between items-center font-sans z-40 text-white bg-transparent w-[100%]  xs:w-[100%] sm:w-[100%] md:w-[100%] xl:w-[100%]   lg:w-[100%]"
+        style={{
+          background:
+            location.pathname === "/platform"
+              ? scrollPosition > 100
+                ? "white"
+                : "white"
+              : scrollPosition > 100
+              ? "black"
+              : "",
+          justifyContent: "flex-start",
+          marginTop: scrollPosition > 100 ? "0" : "20px",
+        }}
+      >
+        <div ref={navbarRef} id="navbar">
+          <a
+            className="hidden  xl:flex   ml-12     w-auto  items-center  text-6xl font-bold leading-none"
+            href="/"
+          >
             {location.pathname === "/platform" ? (
               <img
-                className="h-[50px] w-auto max-w-full sm:justify-center flex"
+                className="w-auto    xl:ml-0  lg:w-auto h-11"
                 src={logo1}
                 alt="Platform Logo"
               />
             ) : (
               <img
-                className="h-[50px] w-auto max-w-full flex sm:justify-center align-middle justify-items-center "
+                className="w-auto  lg:ml-0  lg:w-auto h-11"
                 src={logo}
-                alt="Platform Logo"
+                alt="Default Logo"
               />
             )}
           </a>
         </div>
-      </div>
-      <div className="xl:hidden flex ">
-        <button
-          className="navbar-burger flex justify-start  p-3 "
-          onClick={toggleMenu}
-          style={{
-            color: location.pathname === "/platform" ? "black" : "white", // Set color based on pathname
-          }}
-        >
-          <svg
-            className="block h-4 w-4 fill-current"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Mobile menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </button>
-      </div>
-      <ul
-        className={`xl:flex lg:items-center lg:w-auto px-7 justify-items-center justify-center lg:space-x-6 ${
-          menuOpen ? "hidden" : "hidden"
-        }`}
-      >
-        <li className="">
-          <Link
-            to="/platform"
-            className={`text-${
-              location.pathname === "/platform" ? "black" : "white"
-            }  hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-1 lg:px-2 py-2 font-Open-Sans font-normal text-base leading-6`}
-          >
-            Platform
-          </Link>
-        </li>
-        <li
-          className="flex relative group "
-          onMouseEnter={handleSolutionHover}
-          onMouseLeave={handleSolutionHoverOut}
-        >
-          <Link
-            to="/solutionAI"
-            className={`inline-flex w-full justify-center ${
-              location.pathname === "/platform" ? "text-black" : "white"
-            } hover:text-black hover:bg-[#f3d157] ${
-              isSolutionHovered ? "bg-[#f3d157] text-black" : ""
-            } active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6 `}
-          >
-            Solutions
-            <svg
-              className={`h-6 ml-1.5 ${
-                isSolutionHovered
-                  ? "text-black rotate-180"
-                  : location.pathname === "/platform"
-                  ? "text-black"
-                  : "text-white"
-              }`}
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                fill="evenodd"
-                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-              />
-            </svg>
-          </Link>
 
-          <ul
-            style={{ background: "#340D73" }}
-            className="absolute border-t-4 border-[#f3d157]  p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
+        <div className="xl:hidden flex    sm: justify-items-start    ">
+          <div
+            ref={navbarRef}
+            id="navbar"
+            className="  mx-20  w-auto  sm:px-9  md:ml-72 flex"
           >
-            <li className="text-sm leading-8">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  font-Sans"
-              >
-                Data Engineering
-              </a>
-            </li>
-            <li className="text-sm leading-8">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  Open-Sans"
-              >
-                AI Innovation
-              </a>
-            </li>
-            <li className="text-sm leading-8">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  Open-Sans"
-              >
-                ERP System & Analytics
-              </a>
-            </li>
-            <li className="text-sm leading-8">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  Open-Sans"
-              >
-                Vision AI
-              </a>
-            </li>
-            <li className="text-sm leading-8">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  Open-Sans"
-              >
-                Edge Analytics
-              </a>
-            </li>
-            <li className="text-sm leading-8">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  Open-Sans"
-              >
-                Intelligent Enterprise
-              </a>
-            </li>
-            <li className="text-sm leading-8">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  Open-Sans"
-              >
-                Cloud Transformation
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li
-          className="flex relative group"
-          onMouseEnter={handleServicesHover}
-          onMouseLeave={handleServicesHoverOut}
-        >
-          <Link
-            to="#"
-            className={`inline-flex w-full justify-center ${
-              location.pathname === "/platform" ? "text-black " : "white"
-            } ${
-              isServicesHovered ? "bg-[#f3d157] text-black" : ""
-            } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
-          >
-            Services
-            <svg
-              className={`h-6 ml-1.5 ${
-                isServicesHovered
-                  ? "text-black rotate-180"
-                  : location.pathname === "/platform"
-                  ? "text-black"
-                  : "text-white"
-              }`}
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                fill="evenodd"
-                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-              />
-            </svg>
-          </Link>
-
-          <ul
-            style={{ background: "#340D73" }}
-            className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
-          >
-            <li className="text-sm leading-8 text-left">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  font-sans"
-              >
-                Innovate
-              </a>
-            </li>
-            <li className="text-sm leading-8 text-left">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  font-sans"
-              >
-                Manage
-              </a>
-            </li>
-            <li className="text-sm leading-8 text-left">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  font-sans"
-              >
-                Modernize
-              </a>
-            </li>
-            <li className="text-sm leading-8 text-left">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  font-sans"
-              >
-                Security
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li
-          className="flex relative group"
-          onMouseEnter={handleIndustriesHover}
-          onMouseLeave={handleIndustriesHoverOut}
-        >
-          {" "}
-          <Link
-            to="#"
-            className={`inline-flex w-full justify-center ${
-              location.pathname === "/platform" ? "text-black " : "white"
-            } ${
-              isIndustriesHovered ? "bg-[#f3d157] text-black" : ""
-            } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
-          >
-            Industries
-            <svg
-              className={`h-6 ml-1.5 ${
-                isIndustriesHovered
-                  ? "text-black rotate-180"
-                  : location.pathname === "/platform"
-                  ? "text-black"
-                  : "text-white"
-              }`}
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                fill="evenodd"
-                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-              />
-            </svg>
-          </Link>
-          <ul
-            style={{ background: "#340D73" }}
-            className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
-          >
-            <li className="text-sm leading-8 text-left">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  font-sans"
-              >
-                Automotive
-              </a>
-            </li>
-            <li className="text-sm leading-8 text-left">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  font-sans"
-              >
-                Manufacturing
-              </a>
-            </li>
-            <li className="text-sm leading-8 text-left">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  font-sans"
-              >
-                Oil & Gas
-              </a>
-            </li>
-            <li className="text-sm leading-8 text-left">
-              <a
-                href="#"
-                className="text-white hover:text-[#f3d157]  Open-sans"
-              >
-                Transportation
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <Link
-            to="/contact"
-            className={`inline-flex w-full justify-center ${
-              location.pathname === "/platform" ? "text-black" : "white"
-            } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
-          >
-            Customer Success
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/shodatAI"
-            className={`inline-flex w-full justify-center ${
-              location.pathname === "/platform" ? "text-black" : "white"
-            } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
-          >
-            ShodatAI
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/about"
-            className={`inline-flex w-full justify-center ${
-              location.pathname === "/platform" ? "text-black " : "white"
-            } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
-          >
-            About
-          </Link>
-        </li>
-      </ul>
-
-      <div className="hidden  sm:flex md:flex lg:inline-block  text-sm text-white font-bold rounded-xl transition duration-200">
-        {location.pathname === "/solutionAI" ? (
-          <AlternativeButton className="font-sans font-normal   ">
-            Request Demo
-          </AlternativeButton>
-        ) : (
-          <CustomButton className=" font-sans font-normal">
-            Requset Demo
-          </CustomButton>
-        )}
-      </div>
-
-      <div
-        className={`navbar-menu fixed  inset-0 bg-transparent  ${
-          menuOpen ? "block" : "hidden"
-        }`}
-      >
-        <nav
-          className="relative top-0 left-0      w-52  bottom-0  flex flex-col   max-w-sm py-6   h-[100%]   px-7 bg-black border-r overflow-y-auto"
-          style={{
-            color: location.pathname === "/platform" ? "white" : "white",
-            justifyContent: "flex-start",
-          }}
-        >
-          <div className="flex items-center   mb-8">
-            <a className="mr-auto text-3xl font-bold leading-none" href="#">
-              <a class=" text-6xl font-bold leading-none" href="#">
-                <img src={logo} className=" lg:w-auto  "></img>
-              </a>
+            <a href="/">
+              {location.pathname === "/platform" ? (
+                <img
+                  className="h-[50px] w-auto max-w-full sm:justify-center flex"
+                  src={logo1}
+                  alt="Platform Logo"
+                />
+              ) : (
+                <img
+                  className="h-[50px] w-auto max-w-full flex sm:justify-center align-middle justify-items-center "
+                  src={logo}
+                  alt="Platform Logo"
+                />
+              )}
             </a>
-            <button
-              className="navbar-close"
-              onClick={closeMenu}
-              style={{
-                color: location.pathname === "/platform" ? "black" : "red",
-              }}
+          </div>
+        </div>
+        <div className="xl:hidden flex ">
+          <button
+            className="navbar-burger flex justify-start  p-3 "
+            onClick={toggleMenu}
+            style={{
+              color: location.pathname === "/platform" ? "black" : "white", // Set color based on pathname
+            }}
+          >
+            <svg
+              className="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          className={`xl:flex lg:items-center lg:w-auto px-7 justify-items-center justify-center lg:space-x-6 ${
+            menuOpen ? "hidden" : "hidden"
+          }`}
+        >
+          <li className="">
+            <Link
+              to="/platform"
+              className={`text-${
+                location.pathname === "/platform" ? "black" : "white"
+              }  hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-1 lg:px-2 py-2 font-Open-Sans font-normal text-base leading-6`}
+            >
+              Platform
+            </Link>
+          </li>
+          <li
+            className="flex relative group "
+            onMouseEnter={handleSolutionHover}
+            onMouseLeave={handleSolutionHoverOut}
+          >
+            <Link
+              to="/solutionAI"
+              className={`inline-flex w-full justify-center ${
+                location.pathname === "/platform" ? "text-black" : "white"
+              } hover:text-black hover:bg-[#f3d157] ${
+                isSolutionHovered ? "bg-[#f3d157] text-black" : ""
+              } active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6 `}
+            >
+              Solutions
               <svg
-                className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                className={`h-6 ml-1.5 ${
+                  isSolutionHovered
+                    ? "text-black rotate-180"
+                    : location.pathname === "/platform"
+                    ? "text-black"
+                    : "text-white"
+                }`}
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
+                  fill="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                />
               </svg>
-            </button>
-          </div>
-          <ul className="">
-            <li className=" text-start ">
-              <Link
-                to="/platform"
-                onClick={closeMenu} // Close mobile menu when link is clicked
-                className={`text-${
-                  location.pathname === "/platform" ? "white" : "white"
-                }  hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-1 lg:px-2 py-2 font-Open-Sans font-normal text-base leading-6`}
+            </Link>
+
+            <ul
+              style={{ background: "#340D73" }}
+              className="absolute border-t-4 border-[#f3d157]  p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
+            >
+              <li className="text-sm leading-8">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  font-Sans"
+                >
+                  Data Engineering
+                </a>
+              </li>
+              <li className="text-sm leading-8">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  Open-Sans"
+                >
+                  AI Innovation
+                </a>
+              </li>
+              <li className="text-sm leading-8">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  Open-Sans"
+                >
+                  ERP System & Analytics
+                </a>
+              </li>
+              <li className="text-sm leading-8">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  Open-Sans"
+                >
+                  Vision AI
+                </a>
+              </li>
+              <li className="text-sm leading-8">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  Open-Sans"
+                >
+                  Edge Analytics
+                </a>
+              </li>
+              <li className="text-sm leading-8">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  Open-Sans"
+                >
+                  Intelligent Enterprise
+                </a>
+              </li>
+              <li className="text-sm leading-8">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  Open-Sans"
+                >
+                  Cloud Transformation
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            className="flex relative group"
+            onMouseEnter={handleServicesHover}
+            onMouseLeave={handleServicesHoverOut}
+          >
+            <Link
+              to="#"
+              className={`inline-flex w-full justify-center ${
+                location.pathname === "/platform" ? "text-black " : "white"
+              } ${
+                isServicesHovered ? "bg-[#f3d157] text-black" : ""
+              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+            >
+              Services
+              <svg
+                className={`h-6 ml-1.5 ${
+                  isServicesHovered
+                    ? "text-black rotate-180"
+                    : location.pathname === "/platform"
+                    ? "text-black"
+                    : "text-white"
+                }`}
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
               >
-                Platform
-              </Link>
-            </li>
-            <li className="mb-1 relative z-20">
-              <a href="/SolutionAI" onClick={handleSolutionClick}>
-                <Link
-                  to="/solutionAI"
-                  className={`inline-flex w-full justify-start ${
-                    location.pathname === "/platform" ? "text-white" : "white"
-                  } hover:text-black hover:bg-[#f3d157] ${
-                    isSolutionOpen ? "bg-[#f3d157] text-black" : ""
-                  } active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6 `}
+                <path
+                  fill="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                />
+              </svg>
+            </Link>
+
+            <ul
+              style={{ background: "#340D73" }}
+              className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
+            >
+              <li className="text-sm leading-8 text-left">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  font-sans"
                 >
-                  Solutions
-                  <svg
-                    className={`h-6 ml-1.5 ${
-                      isSolutionOpen
-                        ? "text-black rotate-180"
-                        : location.pathname === "/platform"
-                        ? "text-black"
-                        : "text-white"
-                    }`}
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                    />
-                  </svg>
-                </Link>
+                  Innovate
+                </a>
+              </li>
+              <li className="text-sm leading-8 text-left">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  font-sans"
+                >
+                  Manage
+                </a>
+              </li>
+              <li className="text-sm leading-8 text-left">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  font-sans"
+                >
+                  Modernize
+                </a>
+              </li>
+              <li className="text-sm leading-8 text-left">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  font-sans"
+                >
+                  Security
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            className="flex relative group"
+            onMouseEnter={handleIndustriesHover}
+            onMouseLeave={handleIndustriesHoverOut}
+          >
+            {" "}
+            <Link
+              to="#"
+              className={`inline-flex w-full justify-center ${
+                location.pathname === "/platform" ? "text-black " : "white"
+              } ${
+                isIndustriesHovered ? "bg-[#f3d157] text-black" : ""
+              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+            >
+              Industries
+              <svg
+                className={`h-6 ml-1.5 ${
+                  isIndustriesHovered
+                    ? "text-black rotate-180"
+                    : location.pathname === "/platform"
+                    ? "text-black"
+                    : "text-white"
+                }`}
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                />
+              </svg>
+            </Link>
+            <ul
+              style={{ background: "#340D73" }}
+              className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
+            >
+              <li className="text-sm leading-8 text-left">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  font-sans"
+                >
+                  Automotive
+                </a>
+              </li>
+              <li className="text-sm leading-8 text-left">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  font-sans"
+                >
+                  Manufacturing
+                </a>
+              </li>
+              <li className="text-sm leading-8 text-left">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  font-sans"
+                >
+                  Oil & Gas
+                </a>
+              </li>
+              <li className="text-sm leading-8 text-left">
+                <a
+                  href="#"
+                  className="text-white hover:text-[#f3d157]  Open-sans"
+                >
+                  Transportation
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className={`inline-flex w-full justify-center ${
+                location.pathname === "/platform" ? "text-black" : "white"
+              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+            >
+              Customer Success
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/shodatAI"
+              className={`inline-flex w-full justify-center ${
+                location.pathname === "/platform" ? "text-black" : "white"
+              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+            >
+              ShodatAI
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className={`inline-flex w-full justify-center ${
+                location.pathname === "/platform" ? "text-black " : "white"
+              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+            >
+              About
+            </Link>
+          </li>
+        </ul>
+
+        <div className="hidden  sm:flex md:flex lg:inline-block  text-sm text-white font-bold rounded-xl transition duration-200">
+          {location.pathname === "/solutionAI" ? (
+            <AlternativeButton className="font-sans font-normal   ">
+              Request Demo
+            </AlternativeButton>
+          ) : (
+            <CustomButton className=" font-sans font-normal">
+              Requset Demo
+            </CustomButton>
+          )}
+        </div>
+
+        <div
+          className={`navbar-menu fixed  inset-0 bg-transparent  ${
+            menuOpen ? "block" : "hidden"
+          }`}
+        >
+          <nav
+            className="relative top-0 left-0      w-52  bottom-0  flex flex-col   max-w-sm py-6   h-[100%]   px-7 bg-black border-r overflow-y-auto"
+            style={{
+              color: location.pathname === "/platform" ? "white" : "white",
+              justifyContent: "flex-start",
+            }}
+          >
+            <div className="flex items-center   mb-8">
+              <a className="mr-auto text-3xl font-bold leading-none" href="#">
+                <a class=" text-6xl font-bold leading-none" href="#">
+                  <img src={logo} alt="logo" className=" lg:w-auto  "></img>
+                </a>
               </a>
-
-              {isSolutionOpen && (
-                <ul
-                  style={{ background: "#340D73" }}
-                  className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
-                  onClick={handleSolutionClick}
-                >
-                  <li className="text-sm leading-8">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157] font-Sans"
-                    >
-                      Data Engineering
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157] font-Sans"
-                    >
-                      AI Innovation
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157] Open-Sans"
-                    >
-                      ERP System & Analytics
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157] Open-Sans"
-                    >
-                      Vision AI
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157] Open-Sans"
-                    >
-                      Edge Analytics
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157] Open-Sans"
-                    >
-                      Intelligent Enterprise
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157] Open-Sans"
-                    >
-                      Cloud Transformation
-                    </a>
-                  </li>
-                </ul>
-              )}
-            </li>
-
-            <li className="mb-1 relative z-10">
-              <a href="#" onClick={handleServicesClick}>
-                <Link
-                  to="#"
-                  className={`inline-flex w-full justify-start ${
-                    location.pathname === "/platform" ? "text-white " : "white"
-                  } ${
-                    isServicesOpen ? "bg-[#f3d157] text-black" : ""
-                  } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
-                >
-                  Services
-                  <svg
-                    className={`h-6 ml-1.5 ${
-                      isServicesOpen ? "text-black rotate-180" : "text-white"
-                    }`}
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                    />
-                  </svg>
-                </Link>
-              </a>
-
-              {isServicesOpen && (
-                <ul
-                  style={{ background: "#340D73" }}
-                  className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
-                  onClick={handleServicesClick}
-                >
-                  <li className="text-sm leading-8 text-left">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157] font-sans"
-                    >
-                      Innovate
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8 text-left">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157] font-sans"
-                    >
-                      Manage
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8 text-left">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157] font-sans"
-                    >
-                      Modernize
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8 text-left">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157] font-sans"
-                    >
-                      Security
-                    </a>
-                  </li>
-                </ul>
-              )}
-            </li>
-            <li className="mb-1 relative">
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleIndustriesClick();
+              <button
+                className="navbar-close"
+                onClick={closeMenu}
+                style={{
+                  color: location.pathname === "/platform" ? "black" : "red",
                 }}
               >
+                <svg
+                  className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <ul className="">
+              <li className=" text-start ">
                 <Link
-                  to="#"
-                  className={`inline-flex  w-full justify-start ${"white"}   ${
-                    isIndustriesOpen ? "bg-[#f3d157] text-black" : ""
+                  to="/platform"
+                  onClick={closeMenu} // Close mobile menu when link is clicked
+                  className={`text-${
+                    location.pathname === "/platform" ? "white" : "white"
+                  }  hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-1 lg:px-2 py-2 font-Open-Sans font-normal text-base leading-6`}
+                >
+                  Platform
+                </Link>
+              </li>
+              <li className="mb-1 relative z-20">
+                <a href="/SolutionAI" onClick={handleSolutionClick}>
+                  <Link
+                    to="/solutionAI"
+                    className={`inline-flex w-full justify-start ${
+                      location.pathname === "/platform" ? "text-white" : "white"
+                    } hover:text-black hover:bg-[#f3d157] ${
+                      isSolutionOpen ? "bg-[#f3d157] text-black" : ""
+                    } active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6 `}
+                  >
+                    Solutions
+                    <svg
+                      className={`h-6 ml-1.5 ${
+                        isSolutionOpen
+                          ? "text-black rotate-180"
+                          : location.pathname === "/platform"
+                          ? "text-black"
+                          : "text-white"
+                      }`}
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      />
+                    </svg>
+                  </Link>
+                </a>
+
+                {isSolutionOpen && (
+                  <ul
+                    style={{ background: "#340D73" }}
+                    className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
+                    onClick={handleSolutionClick}
+                  >
+                    <li className="text-sm leading-8">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157] font-Sans"
+                      >
+                        Data Engineering
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157] font-Sans"
+                      >
+                        AI Innovation
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157] Open-Sans"
+                      >
+                        ERP System & Analytics
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157] Open-Sans"
+                      >
+                        Vision AI
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157] Open-Sans"
+                      >
+                        Edge Analytics
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157] Open-Sans"
+                      >
+                        Intelligent Enterprise
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157] Open-Sans"
+                      >
+                        Cloud Transformation
+                      </a>
+                    </li>
+                  </ul>
+                )}
+              </li>
+
+              <li className="mb-1 relative z-10">
+                <a href="#" onClick={handleServicesClick}>
+                  <Link
+                    to="#"
+                    className={`inline-flex w-full justify-start ${
+                      location.pathname === "/platform"
+                        ? "text-white "
+                        : "white"
+                    } ${
+                      isServicesOpen ? "bg-[#f3d157] text-black" : ""
+                    } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+                  >
+                    Services
+                    <svg
+                      className={`h-6 ml-1.5 ${
+                        isServicesOpen ? "text-black rotate-180" : "text-white"
+                      }`}
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      />
+                    </svg>
+                  </Link>
+                </a>
+
+                {isServicesOpen && (
+                  <ul
+                    style={{ background: "#340D73" }}
+                    className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
+                    onClick={handleServicesClick}
+                  >
+                    <li className="text-sm leading-8 text-left">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157] font-sans"
+                      >
+                        Innovate
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8 text-left">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157] font-sans"
+                      >
+                        Manage
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8 text-left">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157] font-sans"
+                      >
+                        Modernize
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8 text-left">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157] font-sans"
+                      >
+                        Security
+                      </a>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li className="mb-1 relative">
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleIndustriesClick();
+                  }}
+                >
+                  <Link
+                    to="#"
+                    className={`inline-flex  w-full justify-start ${"white"}   ${
+                      isIndustriesOpen ? "bg-[#f3d157] text-black" : ""
+                    } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+                  >
+                    Industries
+                    <svg
+                      className={`h-6 ml-1.5 ${
+                        isIndustriesOpen
+                          ? "text-black rotate-180"
+                          : location.pathname === "/platform"
+                          ? "text-white"
+                          : "text-white"
+                      }`}
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      />
+                    </svg>
+                  </Link>
+                </a>
+
+                {isIndustriesOpen && (
+                  <ul
+                    style={{ background: "#340D73" }}
+                    className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
+                  >
+                    <li className="text-sm leading-8 text-left">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157]  font-sans"
+                      >
+                        Automotive
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8 text-left">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157]  font-sans"
+                      >
+                        Manufacturing
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8 text-left">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157]  font-sans"
+                      >
+                        Oil & Gas
+                      </a>
+                    </li>
+                    <li className="text-sm leading-8 text-left">
+                      <a
+                        href="#"
+                        className="text-white hover:text-[#f3d157]  Open-sans"
+                      >
+                        Transportation
+                      </a>
+                    </li>
+                  </ul>
+                )}
+              </li>
+
+              <li>
+                <Link
+                  onClick={closeMenu}
+                  to="/contact"
+                  className={`inline-flex w-full justify-start ${
+                    location.pathname === "/platform" ? "text-white" : "white"
                   } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
                 >
-                  Industries
-                  <svg
-                    className={`h-6 ml-1.5 ${
-                      isIndustriesOpen
-                        ? "text-black rotate-180"
-                        : location.pathname === "/platform"
-                        ? "text-white"
-                        : "text-white"
-                    }`}
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                    />
-                  </svg>
+                  Customer Success
                 </Link>
-              </a>
-
-              {isIndustriesOpen && (
-                <ul
-                  style={{ background: "#340D73" }}
-                  className="absolute border-t-4 border-[#f3d157] p-3 w-52 top-9 left-0 transform scale-100 transition duration-150 ease-in-out origin-top shadow-lg text-left"
+              </li>
+              <li>
+                <Link
+                  onClick={closeMenu} // Close mobile menu when link is clicked
+                  to="/shodatAI"
+                  className={`inline-flex w-full justify-start ${
+                    location.pathname === "/platform" ? "text-white" : "white"
+                  } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
                 >
-                  <li className="text-sm leading-8 text-left">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157]  font-sans"
-                    >
-                      Automotive
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8 text-left">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157]  font-sans"
-                    >
-                      Manufacturing
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8 text-left">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157]  font-sans"
-                    >
-                      Oil & Gas
-                    </a>
-                  </li>
-                  <li className="text-sm leading-8 text-left">
-                    <a
-                      href="#"
-                      className="text-white hover:text-[#f3d157]  Open-sans"
-                    >
-                      Transportation
-                    </a>
-                  </li>
-                </ul>
-              )}
-            </li>
-
-            <li>
-              <Link
-                onClick={closeMenu}
-                to="/contact"
-                className={`inline-flex w-full justify-start ${
-                  location.pathname === "/platform" ? "text-white" : "white"
-                } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
-              >
-                CustomerSuccess
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={closeMenu} // Close mobile menu when link is clicked
-                to="/shodatAI"
-                className={`inline-flex w-full justify-start ${
-                  location.pathname === "/platform" ? "text-white" : "white"
-                } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
-              >
-                ShodatAI
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={closeMenu} // Close mobile menu when link is clicked
-                to="/about"
-                className={`inline-flex w-full justify-start ${
-                  location.pathname === "/platform" ? "text-white" : "white"
-                } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
-              >
-                About
-              </Link>
-            </li>
-            <CustomButton className="mt-5  font-sans font-normal ">
-              RequsetDemo
-            </CustomButton>
-          </ul>
-        </nav>
-      </div>
-    </nav>
+                  Shodat AI
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={closeMenu} // Close mobile menu when link is clicked
+                  to="/about"
+                  className={`inline-flex w-full justify-start ${
+                    location.pathname === "/platform" ? "text-white" : "white"
+                  } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+                >
+                  About
+                </Link>
+              </li>
+              <CustomButton className="mt-5  font-sans font-normal ">
+                Requset Demo
+              </CustomButton>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </>
   );
 }
 

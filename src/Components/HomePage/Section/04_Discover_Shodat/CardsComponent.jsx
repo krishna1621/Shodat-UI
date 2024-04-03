@@ -86,12 +86,7 @@ const CardsComponent = () => {
     <>
       {" "}
       <div className=" h-16 w-full bg-[#E6F0F2]"></div>
-      <div
-        className="container"
-        // style={{
-        //   maxWidth: "2000px",
-        // }}
-      >
+      <div className="container">
         <div className="flex justify-center  bg-[#F8F4FF] items-center m-8.0 py-14 px-10 ">
           <div className="grid grid-cols-12 gap-8 md:px-4">
             {cards.map((card, index) => (
@@ -104,7 +99,7 @@ const CardsComponent = () => {
                   onMouseLeave={() => handleMouseLeave(index)}
                 >
                   {index === 0 ? (
-                    <div className=" bg-[#F8F4FF] font-sans md:text-[44px] text-3xl h-64 leading-6 md:leading-[55px] ">
+                    <h1 className=" bg-[#F8F4FF] font-sans md:text-[44px] text-3xl h-64 leading-6 md:leading-[55px] ">
                       <span
                         className={`font-bold ${card.fontSize} text-indigo-900 text-xl  md:text-[44px]`}
                       >
@@ -114,14 +109,13 @@ const CardsComponent = () => {
                         &nbsp;how Shodat can elevate your business with our
                         bespoke data analytics solutions
                       </span>
-                    </div>
+                    </h1>
                   ) : (
                     <>
                       <div
                         style={{
                           position: "relative",
                           zIndex: 2,
-
                           backgroundColor:
                             index !== 0 && hovered[index]
                               ? "rgba(67, 32, 113, 0.9)"
@@ -133,11 +127,9 @@ const CardsComponent = () => {
                         }}
                         className="h-250"
                       >
-                        <h6
-                          variant="h6"
+                        <h2
                           align="left"
                           mt={12}
-                          gutterBottom
                           style={{
                             color: hovered[index] ? "#E6C458" : "black",
                             fontFamily: "Sans,",
@@ -153,8 +145,8 @@ const CardsComponent = () => {
                           }`}
                         >
                           {card.title}
-                        </h6>
-                        <h4
+                        </h2>
+                        <h3
                           style={{
                             marginTop: "5px",
                           }}
@@ -163,7 +155,7 @@ const CardsComponent = () => {
                           }`}
                         >
                           {card.content}
-                        </h4>
+                        </h3>
                       </div>
                       <div
                         className={`${
@@ -181,7 +173,6 @@ const CardsComponent = () => {
                         }}
                       >
                         <button className="mt-4">
-                          {/* <GoArrowRight className="h-full w-full" /> */}
                           <span style={{ fontSize: "28px" }}> &#129122;</span>
                         </button>
                       </div>
@@ -206,7 +197,7 @@ const CardsComponent = () => {
             ))}
           </div>
         </div>
-      </div>{" "}
+      </div>
       <div className=" h-16 w-full bg-[#E6F0F2]"></div>
     </>
   );
