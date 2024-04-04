@@ -50,7 +50,7 @@ const ScheduleMeetingForm = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/schedule-meeting",
+        "http://localhost:8000/api/schedule-meeting",
         {
           method: "POST",
           headers: {
