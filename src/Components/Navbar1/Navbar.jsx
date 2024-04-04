@@ -27,6 +27,7 @@ const CustomButton = styled.button`
       rgb(94, 2, 127) 82.38%,
       rgb(244, 190, 0) 106.38%
     );
+    border-radius: 10px; /* Adding border radius */
   }
 `;
 const AlternativeButton = styled.button`
@@ -44,6 +45,7 @@ const AlternativeButton = styled.button`
       rgb(94, 2, 127) 82.38%,
       rgb(244, 190, 0) 106.38%
     );
+    border-radius: 10px; /* Adding border radius */
   }
 
   /* Rest of your button styles */
@@ -504,14 +506,14 @@ function Navbar() {
           </li>
         </ul>
 
-        <div className="hidden  sm:flex md:flex lg:inline-block  text-sm text-white font-bold rounded-xl transition duration-200">
+        <div className="hidden sm:hidden md:hidden lg:hidden xl:inline-block text-sm text-white font-bold rounded-xl transition duration-200">
           {location.pathname === "/solutionAI" ? (
-            <AlternativeButton className="font-sans font-normal   ">
+            <AlternativeButton className="font-sans font-normal">
               Request Demo
             </AlternativeButton>
           ) : (
-            <CustomButton className=" font-sans font-normal">
-              Requset Demo
+            <CustomButton className="font-sans font-normal">
+              Request Demo
             </CustomButton>
           )}
         </div>
