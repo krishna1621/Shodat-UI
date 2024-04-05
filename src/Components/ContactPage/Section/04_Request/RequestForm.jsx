@@ -55,7 +55,7 @@ const RequestForm = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/api/message", {
+      const response = await fetch("/api/message", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

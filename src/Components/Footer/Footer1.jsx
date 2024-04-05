@@ -36,7 +36,7 @@ const Footer1 = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/api/business_email", {
+      const response = await fetch("/api/business_email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
