@@ -161,9 +161,9 @@ function Navbar() {
         }}
       >
         <div ref={navbarRef} id="navbar">
-          <a
+          <Link
             className="hidden  xl:flex   ml-12     w-auto  items-center  text-6xl font-bold leading-none"
-            href="/"
+            to="/"
           >
             {location.pathname === "/platform" ? (
               <img
@@ -178,7 +178,7 @@ function Navbar() {
                 alt="Default Logo"
               />
             )}
-          </a>
+          </Link>
         </div>
 
         <div className="xl:hidden flex    sm: justify-items-start    ">
@@ -187,7 +187,7 @@ function Navbar() {
             id="navbar"
             className="  mx-20  w-auto  sm:px-9  md:ml-72 flex"
           >
-            <a href="/">
+            <Link to="/">
               {location.pathname === "/platform" ? (
                 <img
                   className="h-[50px] w-auto max-w-full sm:justify-center flex"
@@ -201,7 +201,7 @@ function Navbar() {
                   alt="Platform Logo"
                 />
               )}
-            </a>
+            </Link>
           </div>
         </div>
         <div className="xl:hidden flex ">
@@ -531,11 +531,11 @@ function Navbar() {
             }}
           >
             <div className="flex items-center   mb-8">
-              <a className="mr-auto text-3xl font-bold leading-none" href="#">
-                <a class=" text-6xl font-bold leading-none" href="#">
+              <div className="mr-auto text-3xl font-bold leading-none" to="#">
+                <Link className=" text-6xl font-bold leading-none" to="#">
                   <img src={logo} alt="logo" className=" lg:w-auto  "></img>
-                </a>
-              </a>
+                </Link>
+              </div>
               <button
                 className="navbar-close"
                 onClick={closeMenu}
@@ -551,11 +551,11 @@ function Navbar() {
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
                     d="M6 18L18 6M6 6l12 12"
-                  ></path>
+                  />
                 </svg>
               </button>
             </div>
@@ -572,35 +572,34 @@ function Navbar() {
                 </Link>
               </li>
               <li className="mb-1 relative z-20">
-                <a href="/SolutionAI" onClick={handleSolutionClick}>
-                  <Link
-                    to="/solutionAI"
-                    className={`inline-flex w-full justify-start ${
-                      location.pathname === "/platform" ? "text-white" : "white"
-                    } hover:text-black hover:bg-[#f3d157] ${
-                      isSolutionOpen ? "bg-[#f3d157] text-black" : ""
-                    } active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6 `}
+                <Link
+                  to="/solutionAI"
+                  onClick={handleSolutionClick}
+                  className={`inline-flex w-full justify-start ${
+                    location.pathname === "/platform" ? "text-white" : "white"
+                  } hover:text-black hover:bg-[#f3d157] ${
+                    isSolutionOpen ? "bg-[#f3d157] text-black" : ""
+                  } active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6 `}
+                >
+                  Solutions
+                  <svg
+                    className={`h-6 ml-1.5 ${
+                      isSolutionOpen
+                        ? "text-black rotate-180"
+                        : location.pathname === "/platform"
+                        ? "text-black"
+                        : "text-white"
+                    }`}
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
                   >
-                    Solutions
-                    <svg
-                      className={`h-6 ml-1.5 ${
-                        isSolutionOpen
-                          ? "text-black rotate-180"
-                          : location.pathname === "/platform"
-                          ? "text-black"
-                          : "text-white"
-                      }`}
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill="evenodd"
-                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                      />
-                    </svg>
-                  </Link>
-                </a>
+                    <path
+                      fill="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    />
+                  </svg>
+                </Link>
 
                 {isSolutionOpen && (
                   <ul
@@ -669,33 +668,30 @@ function Navbar() {
               </li>
 
               <li className="mb-1 relative z-10">
-                <a href="#" onClick={handleServicesClick}>
-                  <Link
-                    to="#"
-                    className={`inline-flex w-full justify-start ${
-                      location.pathname === "/platform"
-                        ? "text-white "
-                        : "white"
-                    } ${
-                      isServicesOpen ? "bg-[#f3d157] text-black" : ""
-                    } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+                <Link
+                  to="#"
+                  onClick={handleServicesClick}
+                  className={`inline-flex w-full justify-start ${
+                    location.pathname === "/platform" ? "text-white " : "white"
+                  } ${
+                    isServicesOpen ? "bg-[#f3d157] text-black" : ""
+                  } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+                >
+                  Services
+                  <svg
+                    className={`h-6 ml-1.5 ${
+                      isServicesOpen ? "text-black rotate-180" : "text-white"
+                    }`}
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
                   >
-                    Services
-                    <svg
-                      className={`h-6 ml-1.5 ${
-                        isServicesOpen ? "text-black rotate-180" : "text-white"
-                      }`}
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill="evenodd"
-                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                      />
-                    </svg>
-                  </Link>
-                </a>
+                    <path
+                      fill="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    />
+                  </svg>
+                </Link>
 
                 {isServicesOpen && (
                   <ul
@@ -739,39 +735,35 @@ function Navbar() {
                 )}
               </li>
               <li className="mb-1 relative">
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   onClick={(e) => {
                     e.preventDefault();
                     handleIndustriesClick();
                   }}
+                  className={`inline-flex  w-full justify-start ${"white"}   ${
+                    isIndustriesOpen ? "bg-[#f3d157] text-black" : ""
+                  } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
                 >
-                  <Link
-                    to="#"
-                    className={`inline-flex  w-full justify-start ${"white"}   ${
-                      isIndustriesOpen ? "bg-[#f3d157] text-black" : ""
-                    } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+                  Industries
+                  <svg
+                    className={`h-6 ml-1.5 ${
+                      isIndustriesOpen
+                        ? "text-black rotate-180"
+                        : location.pathname === "/platform"
+                        ? "text-white"
+                        : "text-white"
+                    }`}
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
                   >
-                    Industries
-                    <svg
-                      className={`h-6 ml-1.5 ${
-                        isIndustriesOpen
-                          ? "text-black rotate-180"
-                          : location.pathname === "/platform"
-                          ? "text-white"
-                          : "text-white"
-                      }`}
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill="evenodd"
-                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                      />
-                    </svg>
-                  </Link>
-                </a>
+                    <path
+                      fill="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    />
+                  </svg>
+                </Link>
 
                 {isIndustriesOpen && (
                   <ul
