@@ -36,16 +36,13 @@ const Footer1 = () => {
     }
 
     try {
-      const response = await fetch(
-        "http://192.168.86.49:9090/api/business_email",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch("http://localhost:8000/api/business_email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
         const data = await response.json();
