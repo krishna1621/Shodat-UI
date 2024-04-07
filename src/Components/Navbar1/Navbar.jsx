@@ -561,11 +561,11 @@ function Navbar() {
               </button>
             </div>
             <ul className="">
-              <li className=" text-start ">
+              <li className=" mb-1 relative z-20 ">
                 <Link
                   to="/platform"
                   onClick={closeMenu}
-                  className={`text-${
+                  className={`inline-flex w-full justify-start -${
                     location.pathname === "/platform" ? "white" : "white"
                   }  hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-1 lg:px-2 py-2 font-Open-Sans font-normal text-base leading-6`}
                 >
