@@ -8,7 +8,7 @@ import ArrowRight from "../../../../Assets/Components/HomePage/arrow-right.svg";
 function ShodatDifference() {
   return (
     <>
-      <div className=" py-8 bg-white">
+      <div className=" py-8 md:mt-4 bg-white">
         <div className=" md:mx-10 px-10 md:px-0">
           <div className="text-left mb-8">
             <h2 className=" font-sans text-3xl  md:leading-[66px] md:text-[44px] ">

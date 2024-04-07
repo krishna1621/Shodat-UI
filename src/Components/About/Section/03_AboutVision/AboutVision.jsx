@@ -1,7 +1,7 @@
 function AboutVision() {
   return (
     <>
-      <div className="bg-[#F0F5FF]  flex flex-col md:flex-row md:space-x-8 px-14 py-8">
+      <div className="bg-[#F0F5FF]  flex flex-col md:flex-row md:space-x-8 px-14 pb-8">
         <div className="bg-[#340D73] p-8 md:w-3/5 rounded-lg font-sans ">
           <h1 className="text-white font-semibold text-2xl md:text-[27px] leading-8 font-sans sm:text-xl  md:ml-9  ">
             Vision

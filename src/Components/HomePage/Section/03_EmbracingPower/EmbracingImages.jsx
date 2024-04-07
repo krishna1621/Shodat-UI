@@ -8,7 +8,7 @@ function EmbracingImages() {
   return (
     <>
       <div className="container flex ">
-        <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 bg-white lg:gap-20 lg:w-full mx-auto lg:mt-[80px] lg:h-[500px] xl:ml-10 lg:py-0">
+        <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 bg-white lg:gap-20 lg:w-full mx-auto  lg:h-[500px] xl:ml-10 lg:py-0">
           <div className="mt-[40px]  ">
             <div className="grid grid-cols-1 gap-4">
               <div className="lg:ml-10 ">
