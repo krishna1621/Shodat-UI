@@ -9,7 +9,7 @@ const SliderHome = ({ scrollToRef }) => {
   const [backgroundImage, setBackgroundImage] = useState(img2);
 
   const handleArrowClick = () => {
-    const pageIdentifier = "/"; // Define the same unique identifier used in Navbar
+    const pageIdentifier = "/";
     const navbarHeight =
       parseInt(localStorage.getItem(`navbarHeight_${pageIdentifier}`)) || 0;
     const scrollToPosition = scrollToRef.current.offsetTop - navbarHeight;
@@ -36,7 +36,7 @@ const SliderHome = ({ scrollToRef }) => {
           <div
             className={`transition-opacity duration-2000 ${
               isFirstVisible ? "opacity-100" : "opacity-0"
-            } absolute mt-60 ml-4 md:ml-20 lg:mt-64   md:mt-48 `}
+            } absolute mt-60 ml-4 md:ml-16 lg:mt-64   md:mt-48 `}
           >
             <p className="text-3xl md:text-6xl font-semibold font-Poppins text-white">
               Innovating Insights,
@@ -65,7 +65,7 @@ const SliderHome = ({ scrollToRef }) => {
           <div
             className={`transition-opacity duration-2000 ${
               isFirstVisible ? "opacity-0" : "opacity-100"
-            } absolute mt-60  ml-4 md:ml-20  lg:mt-64  sm:mt-60  md:mt-48`}
+            } absolute mt-60  ml-4 md:ml-16  lg:mt-64  sm:mt-60  md:mt-48`}
           >
             <p className="text-3xl md:text-6xl font-semibold text-white font-Poppins">
               Frictionless AI With Shodat

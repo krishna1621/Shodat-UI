@@ -7,9 +7,9 @@ export const ShodatBox = () => {
       <div className="bg-[#432071] px-4 sm:px-1 py-2 sm:py-4 ">
         <div className="max-w-7xl py-2">
           <div className="grid grid-cols-1  md:grid-cols-1 lg:grid-cols-4 ">
-            <div className="col-span-1 md:col-span-2 lg:col-span-4   lg: ml-10    ">
+            <div className="col-span-1 md:col-span-2 lg:col-span-4   lg: ml-20    ">
               <div className="flex flex-col  lg:flex-row   ">
-                <div className=" lg:w-80 md:w-1/2 mt-6 lg:mt-0  md:ml-60  lg:ml-0">
+                <div className=" lg:w-80 md:w-1/2 mt-6 lg:mt-0  md:ml-80  lg:ml-0">
                   <h2 className="text-white text-2xl font-sans font-bold leading-10 px-14 lg:px-0 md:text-2xl lg:text-3xl mb-4 hidden lg:block">
                     Our Pillars
                   </h2>
@@ -17,11 +17,11 @@ export const ShodatBox = () => {
                     of AI
                   </h2>
                   <h2 className="text-white text-2xl font-sans font-bold leading-10 px-14 lg:px-0  md:text-2xl lg:text-3xl mb-4  lg:hidden ">
-                    Our Pillars of Ai
+                    Our Pillars of AI
                   </h2>
                 </div>
-                <div className="w-full  mt-6 lg:mt-0">
-                  <div className=" lg:border-l-4 border-yellow-400 pl-20 md:-ml-8 pt-4 lg:pt-0 md:border-t-4   border-t-4 lg:border-t-0">
+                <div className="w-[80%] lg:w-full  mt-6 lg:mt-0 ">
+                  <div className=" lg:border-l-4 border-yellow-400 pl-20 md:-ml-8  lg:pt-0 md:border-t-4 md:pt-0 pt-0 border-t-4 lg:border-t-0">
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2">
                       <div>
                         <ul className="text-[#FFFFFF] text-[18] font-sans font-normal leading-7 list-disc">

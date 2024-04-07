@@ -12,9 +12,10 @@ const EopsFabric = () => {
                     What is eOps fabric?
                   </h2>
                   <h4 className="text-white text-base md:text-lg lg:text-xl mb-4">
-                    A tenant-based edge operations platform to manage edge{" "}
-                    <br className="hidden lg:inline" /> assets & subscribe to
-                    eOps™ applications
+                    A tenant-based edge operations <br />
+                    platform to manage edge assets
+                    <br /> & subscribe to eOps™ <br />
+                    applications
                   </h4>
                 </div>
                 <div className="lg:w-full md:w-full mt-6 lg:mt-0">

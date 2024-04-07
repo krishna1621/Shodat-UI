@@ -87,7 +87,7 @@ const CardsComponent = () => {
       {" "}
       <div className=" h-16 w-full bg-[#E6F0F2]"></div>
       <div className="container">
-        <div className="flex justify-center  bg-[#F8F4FF] items-center m-8.0 py-14 px-10 ">
+        <div className="flex justify-center  bg-[#F8F4FF] items-center m-8.0 py-14 md:py-8 px-10 ">
           <div className="grid grid-cols-12 gap-4 md:gap-8 px-0 md:px-4 ">
             {cards.map((card, index) => (
               <div key={index} className={`col-span-12 ${card.lg}`}>

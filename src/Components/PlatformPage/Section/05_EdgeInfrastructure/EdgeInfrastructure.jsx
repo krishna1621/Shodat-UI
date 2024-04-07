@@ -5,14 +5,14 @@ function EdgeInfrastructure() {
     <>
       <div className="bg-[#FFFBEF] py-8">
         <div className="md:w-full flex-row  p-8">
-          <h2 className="font-sans text-3xl md:text-[34px] leading-[50px] font-semibold mb-4 md:ml-8">
+          <h2 className="font-sans text-3xl md:text-[34px] leading-[50px] font-semibold mb-4 md:ml-6">
             Edge Infrastructure
           </h2>
-          <p className="md:text-[27px] text-2xl leading-10 font-sans font-normal text-[#57647C] md:ml-8">
+          <p className="md:text-[27px] text-2xl leading-10 font-sans font-normal text-[#57647C] md:ml-6">
             Data integration fabric deployable at global scale for bespoke
             customer needs. Compute and storage{" "}
           </p>
-          <p className="md:text-[27px] text-2xl leading-10 font-sans font-normal text-[#57647C] md:ml-8">
+          <p className="md:text-[27px] text-2xl leading-10 font-sans font-normal text-[#57647C] md:ml-6">
             designed for the Edge to enable fast and secure data aggregation and
             harmonization.
           </p>

@@ -4,7 +4,7 @@ const IntelligentEdge = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row md:items-center justify-envenly bg-[#FFFBEF]  ">
-        <div className="font-sans text-3xl md:text-[44px] leading-[66px] px-6 font-bold  mb-4 md:mb-0 md:ml-8">
+        <div className="font-sans text-3xl md:text-[44px] leading-[66px] px-6 font-bold  mb-4 md:mb-0 md:ml-6">
           <h2>Smarter Operations with Intelligent Edge</h2>
         </div>
 

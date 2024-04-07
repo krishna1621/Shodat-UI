@@ -159,7 +159,7 @@ function EdgeOperation() {
     <>
       <div className="bg-[#fffbef] py-8 px-9">
         <div className="container mx-auto bg-[#fffbef] border-b-2 py-2">
-          <div className="font-sans text-4xl font-semibold leading-[54px] mx-4 mb-4">
+          <div className="font-sans text-4xl font-semibold leading-[54px] mx-6 mb-4">
             Enterprise Edge Operations Application -{" "}
             <span className="font-light">(SaaS)</span>
           </div>

@@ -53,7 +53,6 @@ const AlternativeButton = styled.button`
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSolutionHovered, setIsSolutionHovered] = useState(false);
   const [isServicesHovered, setIsServicesHovered] = useState(false);
@@ -143,7 +142,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className="fixed px-4 py-4 h-20  container flex justify-between items-center font-sans z-40 text-white bg-transparent w-[100%]  xs:w-[100%] sm:w-[100%] md:w-[100%] xl:w-[100%]   lg:w-[100%]"
+        className="fixed h-20 container flex justify-center  items-center font-sans z-40 text-white bg-transparent w-[100%]  xs:w-[100%] sm:w-[100%] md:w-[100%] xl:w-[100%]   lg:w-[100%]"
         style={{
           background:
             location.pathname === "/platform"
@@ -157,13 +156,13 @@ function Navbar() {
               : scrollPosition > 100
               ? "black"
               : "",
-          justifyContent: "flex-start",
+
           marginTop: scrollPosition > 100 ? "0" : "20px",
         }}
       >
         <div ref={navbarRef} id="navbar">
           <Link
-            className="hidden  xl:flex   ml-12     w-auto  items-center  text-6xl font-bold leading-none"
+            className="hidden  xl:flex     w-auto  items-center  text-6xl font-bold leading-none"
             to="/"
           >
             {location.pathname === "/platform" ? (
@@ -182,11 +181,11 @@ function Navbar() {
           </Link>
         </div>
 
-        <div className="xl:hidden flex    sm: justify-items-start    ">
+        <div className="xl:hidden flex  absolute   sm:justify-items-start   justify-center   ">
           <div
             ref={navbarRef}
             id="navbar"
-            className="  mx-20  w-auto  sm:px-9  md:ml-72 flex"
+            className="    w-auto  sm:px-9  md:justify-center flex "
           >
             <Link to="/">
               {location.pathname === "/platform" ? (
@@ -205,26 +204,9 @@ function Navbar() {
             </Link>
           </div>
         </div>
-        <div className="xl:hidden flex ">
-          <button
-            className="navbar-burger flex justify-start  p-3 "
-            onClick={toggleMenu}
-            style={{
-              color: location.pathname === "/platform" ? "black" : "white", // Set color based on pathname
-            }}
-          >
-            <svg
-              className="block h-4 w-4 fill-current"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Mobile menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </button>
-        </div>
+
         <ul
-          className={`xl:flex lg:items-center lg:w-auto px-7 justify-items-center justify-center lg:space-x-6 ${
+          className={`xl:flex lg:items-center lg:w-auto  justify-items-center justify-center   ${
             menuOpen ? "hidden" : "hidden"
           }`}
         >
@@ -233,7 +215,7 @@ function Navbar() {
               to="/platform"
               className={`text-${
                 location.pathname === "/platform" ? "black" : "white"
-              }  hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-1 lg:px-2 py-2 font-Open-Sans font-normal text-base leading-6`}
+              }  hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-1 lg:px-8 lg:ml-2 py-2 font-Open-Sans font-normal text-base leading-6`}
             >
               Platform
             </Link>
@@ -249,7 +231,7 @@ function Navbar() {
                 location.pathname === "/platform" ? "text-black" : "white"
               } hover:text-black hover:bg-[#f3d157] ${
                 isSolutionHovered ? "bg-[#f3d157] text-black" : ""
-              } active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6 `}
+              } active:bg-[#f3d157] rounded px-2 lg:px-8 py-2 font-sans font-normal text-base leading-6 `}
             >
               Solutions
               <svg
@@ -344,7 +326,7 @@ function Navbar() {
                 location.pathname === "/platform" ? "text-black " : "white"
               } ${
                 isServicesHovered ? "bg-[#f3d157] text-black" : ""
-              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-8 py-2 font-sans font-normal text-base leading-6`}
             >
               Services
               <svg
@@ -416,7 +398,7 @@ function Navbar() {
                 location.pathname === "/platform" ? "text-black " : "white"
               } ${
                 isIndustriesHovered ? "bg-[#f3d157] text-black" : ""
-              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-8 py-2 font-sans font-normal text-base leading-6`}
             >
               Industries
               <svg
@@ -480,7 +462,7 @@ function Navbar() {
               to="/contact"
               className={`inline-flex w-full justify-center ${
                 location.pathname === "/platform" ? "text-black" : "white"
-              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-8 py-2 font-sans font-normal text-base leading-6`}
             >
               Customer Success
             </Link>
@@ -490,7 +472,7 @@ function Navbar() {
               to="/shodatAI"
               className={`inline-flex w-full justify-center ${
                 location.pathname === "/platform" ? "text-black" : "white"
-              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-8 py-2 font-sans font-normal text-base leading-6`}
             >
               ShodatAI
             </Link>
@@ -500,14 +482,14 @@ function Navbar() {
               to="/about"
               className={`inline-flex w-full justify-center ${
                 location.pathname === "/platform" ? "text-black " : "white"
-              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-4 py-2 font-sans font-normal text-base leading-6`}
+              } hover:text-black hover:bg-[#f3d157] active:bg-[#f3d157] rounded px-2 lg:px-8 py-2 font-sans font-normal text-base leading-6`}
             >
               About
             </Link>
           </li>
         </ul>
 
-        <div className="hidden sm:hidden md:hidden lg:hidden xl:inline-block text-sm text-white font-bold rounded-xl transition duration-200">
+        <div className="hidden sm:hidden md:hidden lg:hidden xl:inline-block text-sm text-white font-bold rounded-xl transition duration-200 lg:ml-2">
           {location.pathname === "/solutionAI" ? (
             <AlternativeButton className="font-sans font-normal">
               Request Demo
@@ -517,6 +499,24 @@ function Navbar() {
               Request Demo
             </CustomButton>
           )}
+        </div>
+        <div className=" justify-end xl:hidden flex ml-auto ">
+          <button
+            className="navbar-burger flex justify-end p-3  float-end"
+            onClick={toggleMenu}
+            style={{
+              color: location.pathname === "/platform" ? "black" : "white",
+            }}
+          >
+            <svg
+              className="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
         </div>
 
         <div

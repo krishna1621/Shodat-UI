@@ -5,7 +5,7 @@ function WhyeOps() {
     <>
       <div className="flex flex-col md:flex-row bg-[#FFFBEF] pt-5">
         <div className="md:w-1/4 p-4 ">
-          <h1 className="text-[34px] font-sans leading-[40.8px] font-semibold mb-4 flex justify-center md:justify-start md:ml-12 ">
+          <h1 className="text-[34px] font-sans leading-[40.8px] font-semibold mb-4 flex justify-center md:justify-start md:ml-8 ">
             Why eOps?
           </h1>
           <div className="flex justify-center md:justify-start md:ml-6">
