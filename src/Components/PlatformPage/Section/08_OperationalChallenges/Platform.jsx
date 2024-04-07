@@ -9,7 +9,7 @@ import v6 from "../../../../Assets/Components/PlatformPage/03_OperationalChallen
 export const Platform = () => {
   return (
     <>
-      <div className="bg-purple-50 p-8 rounded-2xl ">
+      <div className="bg-purple-50 md:p-8 rounded-2xl ">
         <div className="grid gap-8 ">
           <div className="p-8 rounded-xl">
             <h2

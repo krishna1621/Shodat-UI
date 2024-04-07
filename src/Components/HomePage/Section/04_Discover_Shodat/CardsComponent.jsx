@@ -118,12 +118,8 @@ const CardsComponent = () => {
                             index !== 0 && hovered[index]
                               ? "rgba(67, 32, 113, 0.9)"
                               : "transparent",
-                          //padding: "60px",
-                          //paddingTop: "130px",
-                          //borderRadius: "8px",
-                          //height: "100%",
                         }}
-                        className="md:h-250  h-full   p-10 pt-32"
+                        className="md:h-250  h-full   p-10 pt-16 md:pt-32"
                       >
                         <h2
                           align="left"
