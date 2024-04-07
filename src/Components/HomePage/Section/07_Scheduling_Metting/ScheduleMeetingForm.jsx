@@ -160,7 +160,11 @@ const ScheduleMeetingForm = () => {
                   onChange={handleChange}
                   className="border-b border-gray-300 w-full focus:outline-none bg-transparent"
                 />
-                {error && <p className="text-red-500 absolute mt-4">{error}</p>}
+                {error && (
+                  <p className="text-red-500 absolute mt-12 ml-3 md:ml-0 md:mt-4">
+                    {error}
+                  </p>
+                )}
                 {successMessage && (
                   <p className="text-green-500 absolute mt-4">
                     {successMessage}

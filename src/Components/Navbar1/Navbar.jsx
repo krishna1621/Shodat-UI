@@ -150,6 +150,10 @@ function Navbar() {
               ? scrollPosition > 100
                 ? "white"
                 : "white"
+              : location.pathname === "/solutionAI"
+              ? scrollPosition > 100
+                ? "#016C7B"
+                : ""
               : scrollPosition > 100
               ? "black"
               : "",
