@@ -58,7 +58,7 @@ function Navbar() {
   const [isSolutionHovered, setIsSolutionHovered] = useState(false);
   const [isServicesHovered, setIsServicesHovered] = useState(false);
   const [isIndustriesHovered, setIsIndustriesHovered] = useState(false);
-  const [isServicesOpen, setServicesOpen] = useState(false); // New state variable
+  const [isServicesOpen, setServicesOpen] = useState(false);
   const [isSolutionOpen, setSolutionOpen] = useState(false);
   const [isIndustriesOpen, setIndustriesOpen] = useState(false);
 
@@ -81,8 +81,6 @@ function Navbar() {
     setIsSolutionHovered(true);
   };
   const [isActive, setIsActive] = useState(false);
-
-  // Function to handle click event and toggle isActive state
   const handleClick = () => {
     setIsActive(!isActive);
   };
@@ -109,7 +107,6 @@ function Navbar() {
     setIsIndustriesHovered(false);
   };
 
-  // Function to toggle mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -563,7 +560,7 @@ function Navbar() {
               <li className=" text-start ">
                 <Link
                   to="/platform"
-                  onClick={closeMenu} // Close mobile menu when link is clicked
+                  onClick={closeMenu}
                   className={`text-${
                     location.pathname === "/platform" ? "white" : "white"
                   }  hover:text-black hover:bg-[#f3d157] rounded active:bg-[#f3d157] inline-block px-1 lg:px-2 py-2 font-Open-Sans font-normal text-base leading-6`}
@@ -600,7 +597,6 @@ function Navbar() {
                     />
                   </svg>
                 </Link>
-
                 {isSolutionOpen && (
                   <ul
                     style={{ background: "#340D73" }}
@@ -666,7 +662,6 @@ function Navbar() {
                   </ul>
                 )}
               </li>
-
               <li className="mb-1 relative z-10">
                 <Link
                   to="#"
@@ -819,7 +814,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  onClick={closeMenu} // Close mobile menu when link is clicked
+                  onClick={closeMenu}
                   to="/shodatAI"
                   className={`inline-flex w-full justify-start ${
                     location.pathname === "/platform" ? "text-white" : "white"
@@ -830,7 +825,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  onClick={closeMenu} // Close mobile menu when link is clicked
+                  onClick={closeMenu}
                   to="/about"
                   className={`inline-flex w-full justify-start ${
                     location.pathname === "/platform" ? "text-white" : "white"

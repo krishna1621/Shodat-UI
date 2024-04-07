@@ -34,8 +34,8 @@ const Proven = () => {
                 fontWeight: "400px",
               }}
             >
-              <li class="mb-2 text-base font-normal leading-7 font-Sans">
-                <span class="checkmark" style={{ marginRight: "20px" }}>
+              <li className="mb-2 text-base font-normal leading-7 font-Sans">
+                <span className="checkmark" style={{ marginRight: "20px" }}>
                   &#10003;
                 </span>
                 Turnkey enterprise platform for all data integration & analytics
@@ -43,28 +43,28 @@ const Proven = () => {
               </li>
               <li className="mb-2 text-base font-normal leading-7 font-open-sans">
                 {" "}
-                <span class="checkmark" style={{ marginRight: "20px" }}>
+                <span className="checkmark" style={{ marginRight: "20px" }}>
                   &#10003;
                 </span>{" "}
                 No implementation delays with minimal customizations
               </li>
               <li className="mb-2 text-base font-normal leading-7 font-open-sans">
                 {" "}
-                <span class="checkmark" style={{ marginRight: "20px" }}>
+                <span className="checkmark" style={{ marginRight: "20px" }}>
                   &#10003;
                 </span>{" "}
                 Seamless deployment & build for global scale
               </li>
               <li className="mb-2 text-base font-normal leading-7 font-open-sans">
                 {" "}
-                <span class="checkmark" style={{ marginRight: "20px" }}>
+                <span className="checkmark" style={{ marginRight: "20px" }}>
                   &#10003;
                 </span>{" "}
                 Low/No code data ingestion, harmonization & ML features
               </li>
               <li className="mb-2 text-base font-normal leading-7 font-open-sans">
                 {" "}
-                <span class="checkmark" style={{ marginRight: "20px" }}>
+                <span className="checkmark" style={{ marginRight: "20px" }}>
                   &#10003;
                 </span>{" "}
                 Industry-proven ML Models

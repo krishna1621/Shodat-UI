@@ -6,25 +6,25 @@
   transition: 0.5s;
   margin-top: 30px;
   justify-content: flex-end;
-  position: fixed; /* Position fixed to cover the entire screen */
-  top: 20; /* Top of the screen */
-  left: 0; /* Left of the screen */
-  right: 0; /* Right of the screen */
-  bottom: 0; /* Bottom of the screen */
-  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
-  padding: 20px; /* Add padding for better readability */
+  position: fixed;
+  top: 20;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
 }
 
 #mobile-icon {
   position: absolute;
   right: -25rem;
-  top: 2rem; /* Adjust the left position as needed */
+  top: 2rem;
 }
 
 .fa-xmark {
   position: absolute;
-  margin-left: 5%; /* Adjust the left margin as needed */
-  left: 20rem; /* Adjust the left position as needed */
+  margin-left: 5%;
+  left: 20rem;
 }
 .mobile-menu.active {
   left: 0;
@@ -42,9 +42,8 @@ html {
   padding: 0;
 }
 
-/* Override default margins and padding for specific containers if needed */
 .container {
-  margin: 0 auto; /* Center the container */
+  margin: 0 auto;
   padding: 0;
   width: 100%;
   max-width: 1600px;

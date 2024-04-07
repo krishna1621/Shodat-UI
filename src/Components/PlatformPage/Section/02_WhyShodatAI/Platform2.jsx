@@ -7,114 +7,116 @@ import ecl7 from "../../../../Assets/Components/PlatformPage/r3.svg";
 
 const Platform2 = () => {
   return (
-    <div className=" bg-white   rounded-2xl ">
-      <div className="grid gap-8 container ">
-        <div className=" md:mx-auto  mx-4 p-8 rounded-xl ">
-          <h5 className="text-black md:text-[27px] text-xl  font-sans font-normal leading-[40.5px]  mb-4">
-            A one-stop cloud-native operations platform that transforms raw
-            operational data into business values and discovers potential
-            operational inefficiencies, risks & security threats faster by
-            providing
-          </h5>
-          <div className="flex flex-wrap justify-around  font-sans font-normal text-lg leading-[27px]  items-start mt-20 mb-20">
-            <div
-              className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
-              style={{ width: "240px", height: "100px" }}
-            >
-              <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
-                Easy asset onboarding & tracking
-              </p>
+    <>
+      <div className=" bg-white   rounded-2xl ">
+        <div className="grid gap-8 container ">
+          <div className=" md:mx-auto  mx-4 p-8 rounded-xl ">
+            <h1 className="text-black md:text-[27px] text-xl  font-sans font-normal leading-[40.5px]  mb-4">
+              A one-stop cloud-native operations platform that transforms raw
+              operational data into business values and discovers potential
+              operational inefficiencies, risks & security threats faster by
+              providing
+            </h1>
+            <div className="flex flex-wrap justify-around  font-sans font-normal text-lg leading-[27px]  items-start mt-20 mb-20">
+              <div
+                className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
+                style={{ width: "240px", height: "100px" }}
+              >
+                <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
+                  Easy asset onboarding & tracking
+                </p>
+              </div>
+              <div
+                className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
+                style={{ width: "240px", height: "100px" }}
+              >
+                <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
+                  Vision & telemetry powered ops visibility
+                </p>
+              </div>
+              <div
+                className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
+                style={{ width: "240px", height: "100px" }}
+              >
+                <p className="text-white font-semibold font-sans text-base leading-6">
+                  Predictive maintenance
+                </p>
+              </div>
+              <div
+                className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
+                style={{ width: "240px", height: "100px" }}
+              >
+                <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
+                  Edge-enabled cognitive models
+                </p>
+              </div>
+              <div
+                className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
+                style={{ width: "240px", height: "100px" }}
+              >
+                <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
+                  Adaptive BI
+                </p>
+              </div>
             </div>
+          </div>{" "}
+          <div className="bg-white   container">
+            <p className="text-black text-4xl font-sans font-semibold mb-4 lg:text-left px-8">
+              Why Shodat Platform?
+            </p>
             <div
-              className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
-              style={{ width: "240px", height: "100px" }}
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+              style={{}}
             >
-              <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
-                Vision & telemetry powered ops visibility
-              </p>
+              {renderStat(
+                ecl1,
+                ecl2,
+                ecl4,
+                "Reduce cost to adopt PDM & BI strategies by - 40%",
+                "#340D73",
+                "130%",
+                "#340D73",
+                "-170px",
+                "10%"
+              )}
+              {renderStat(
+                ecl1,
+                ecl2,
+                ecl7,
+                "Predict & reduce operational failures by - 35%",
+                "#F9C407",
+                "110%",
+                "#F9C407",
+                "-112px",
+                "20%"
+              )}
+              {renderStat(
+                ecl1,
+                ecl2,
+                ecl5,
+                "Predict time for complex RCA by - 80%",
+                "#01A79D",
+                "140%",
+                "#01A79D",
+                "-170px",
+                "7%"
+              )}
+              {renderStat(
+                ecl1,
+                ecl2,
+                ecl6,
+                "Reduce time for auditing & compliance by - 66%",
+                "#000000",
+                "110%",
+                "#000000",
+                "-112px",
+                "18%"
+              )}
             </div>
-            <div
-              className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
-              style={{ width: "240px", height: "100px" }}
-            >
-              <p className="text-white font-semibold font-sans text-base leading-6">
-                Predictive maintenance
-              </p>
-            </div>
-            <div
-              className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
-              style={{ width: "240px", height: "100px" }}
-            >
-              <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
-                Edge-enabled cognitive models
-              </p>
-            </div>
-            <div
-              className="flex justify-center items-center bg-black rounded-lg p-4 mt-4"
-              style={{ width: "240px", height: "100px" }}
-            >
-              <p className="text-white font-semibold font-sans text-base leading-6 sm:text-lg">
-                Adaptive BI
-              </p>
-            </div>
-          </div>
-        </div>{" "}
-        <div className="bg-white   container">
-          <p className="text-black text-4xl font-sans font-semibold mb-4 lg:text-left px-8">
-            Why Shodat Platform?
-          </p>
-          <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
-            style={{}}
-          >
-            {renderStat(
-              ecl1,
-              ecl2,
-              ecl4,
-              "Reduce cost to adopt PDM & BI strategies by - 40%",
-              "#340D73",
-              "130%",
-              "#340D73",
-              "-170px",
-              "10%"
-            )}
-            {renderStat(
-              ecl1,
-              ecl2,
-              ecl7,
-              "Predict & reduce operational failures by - 35%",
-              "#F9C407",
-              "110%",
-              "#F9C407",
-              "-112px",
-              "20%"
-            )}
-            {renderStat(
-              ecl1,
-              ecl2,
-              ecl5,
-              "Predict time for complex RCA by - 80%",
-              "#01A79D",
-              "140%",
-              "#01A79D",
-              "-170px",
-              "7%"
-            )}
-            {renderStat(
-              ecl1,
-              ecl2,
-              ecl6,
-              "Reduce time for auditing & compliance by - 66%",
-              "#000000",
-              "110%",
-              "#000000",
-              "-112px",
-              "18%"
-            )}
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 const renderFeature = (text) => (

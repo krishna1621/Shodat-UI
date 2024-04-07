@@ -32,7 +32,7 @@ const EmbracingPower = () => {
                 background:
                   "linear-gradient(110.53deg, #00C4CC -8.24%, #3E4499 32.83%, #5E027F 82.38%, #F4BE00 106.38%)",
               }}
-              onClick={{ handleClick }}
+              onClick={handleClick}
             >
               <img
                 src={LeftArrow}

@@ -15,22 +15,24 @@ import FinalFooter from "../Footer/FinalFooter";
 const SolutionAi = () => {
   const paragraphRef = useRef(null);
   return (
-    <div className="flex justify-center items-center w-auto">
-      <div className="container ">
-        <SolutionBanner scrollToRef={paragraphRef} />
-        <ParaGraph ref={paragraphRef} />
-        <PredictiveAnalytics />
-        <CognitiveComputing />
-        <NaturalLanguageProcessing />
-        <ComputerVision />
-        <EmergingTechnologies />
-        <ContinuousInnovation />
-        <InnovationAction />
-        <SuccessStories />
-        <InnovationJourney />
-        <FinalFooter />
+    <>
+      <div className="flex justify-center items-center w-auto">
+        <div className="container ">
+          <SolutionBanner scrollToRef={paragraphRef} />
+          <ParaGraph ref={paragraphRef} />
+          <PredictiveAnalytics />
+          <CognitiveComputing />
+          <NaturalLanguageProcessing />
+          <ComputerVision />
+          <EmergingTechnologies />
+          <ContinuousInnovation />
+          <InnovationAction />
+          <SuccessStories />
+          <InnovationJourney />
+          <FinalFooter />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

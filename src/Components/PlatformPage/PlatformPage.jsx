@@ -11,18 +11,20 @@ import FinalFooter from "../Footer/FinalFooter";
 
 const PlatformPage = () => {
   return (
-    <div className="flex justify-center items-center w-auto">
-      <div className="container">
-        <Banner />
-        <Platform2 />
-        <WhyeOps />
-        <IntelligentEdge />
-        <EdgeInfrastructure />
-        <EopsFabric />
-        <EdgeOperation />
-        <Platform /> <FinalFooter />
+    <>
+      <div className="flex justify-center items-center w-auto">
+        <div className="container">
+          <Banner />
+          <Platform2 />
+          <WhyeOps />
+          <IntelligentEdge />
+          <EdgeInfrastructure />
+          <EopsFabric />
+          <EdgeOperation />
+          <Platform /> <FinalFooter />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

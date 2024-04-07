@@ -10,13 +10,13 @@ const Footer = () => {
         <div className="mx-12 text-center md:text-left">
           <div className="border-b-[0.1px]">
             <div className="flex flex-wrap justify-center md:justify-between ">
-              {/* 1st column */}
               <div
                 className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1"
                 style={{ width: "300px" }}
               >
                 <div className="  flex items-center justify-center md:justify-start mb-4 md:mt-8">
                   <img
+                    style={{ width: "65px", height: "auto" }}
                     src={logo}
                     alt="Company Logo"
                     className="h-7 w-14 mr-2 pr-2"
@@ -41,7 +41,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              {/* 2nd column */}
+
               <div
                 className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1 mt-5 md:mt-0 py-2 md-py-0"
                 style={{ width: "200px" }}
@@ -98,7 +98,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              {/* 3rd column */}
+
               <div
                 className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1 py-2 md-py-0"
                 style={{ width: "200px" }}
@@ -147,7 +147,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              {/* 4th column */}
+
               <div
                 className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1 py-2 md-py-0"
                 style={{ width: "200px" }}
@@ -180,7 +180,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              {/* 5th column */}
+
               <div
                 className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1 py-2 md-py-0"
                 style={{ width: "250px" }}
