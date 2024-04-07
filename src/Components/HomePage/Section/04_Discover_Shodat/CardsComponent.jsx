@@ -10,7 +10,7 @@ import Cloud from "../../../../Assets/Components/HomePage/04_Discover_Shodat/Clo
 const cards = [
   {
     title: "",
-    fontSize: "text-4xl",
+    fontSize: "text-[44px]",
     lg: "lg:col-span-8",
   },
   {
@@ -88,24 +88,22 @@ const CardsComponent = () => {
       <div className=" h-16 w-full bg-[#E6F0F2]"></div>
       <div className="container">
         <div className="flex justify-center  bg-[#F8F4FF] items-center m-8.0 py-14 px-10 ">
-          <div className="grid grid-cols-12 gap-8 md:px-4">
+          <div className="grid grid-cols-12 gap-4 md:gap-8 px-0 md:px-4 ">
             {cards.map((card, index) => (
               <div key={index} className={`col-span-12 ${card.lg}`}>
                 <div
-                  className={`relative transition duration-300 bg-white overflow-hidden h-64 w-full rounded-lg ${
+                  className={`relative transition duration-300 w-[90%]  md:w-full lg:w-full bg-white overflow-hidden h-64 rounded-lg ${
                     index !== 0 ? "shadow-md" : ""
                   }`}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={() => handleMouseLeave(index)}
                 >
                   {index === 0 ? (
-                    <h1 className=" bg-[#F8F4FF] font-sans md:text-[44px] text-3xl h-64 leading-6 md:leading-[55px] ">
-                      <span
-                        className={`font-bold ${card.fontSize} text-indigo-900 text-xl  md:text-[44px]`}
-                      >
+                    <h1 className=" bg-[#F8F4FF] font-sans md:text-[44px] text-3xl h-64  md:leading-[55px] ">
+                      <span className={`font-bold  text-indigo-900  `}>
                         Discover
                       </span>
-                      <span className="font-light text-black  text-xl md:text-[44px] md:leading-[55px] leading-9">
+                      <span className="font-light text-black  ">
                         &nbsp;how Shodat can elevate your business with our
                         bespoke data analytics solutions
                       </span>
@@ -120,12 +118,12 @@ const CardsComponent = () => {
                             index !== 0 && hovered[index]
                               ? "rgba(67, 32, 113, 0.9)"
                               : "transparent",
-                          padding: "60px",
-                          paddingTop: "130px",
-                          borderRadius: "8px",
-                          height: "100%",
+                          //padding: "60px",
+                          //paddingTop: "130px",
+                          //borderRadius: "8px",
+                          //height: "100%",
                         }}
-                        className="h-250"
+                        className="md:h-250  h-full   p-10 pt-32"
                       >
                         <h2
                           align="left"
